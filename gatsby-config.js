@@ -5,6 +5,29 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    // Simple config, passing URL
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "WPGraphQL",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "wpgraphql",
+        // Url to query from
+        url: "http://boligpartner.local/graphql",
+
+        // refetch interval in seconds
+        refetchInterval: 60,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Lato']
+        }
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

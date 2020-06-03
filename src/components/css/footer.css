@@ -1,0 +1,26 @@
+.section-footer {
+  background: #111F38;
+  color: #ffffff;
+  padding: 3rem 0;  
+}
+
+.section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.section-footer h2 {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.section-footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.section-footer p {
+    margin-bottom: 0;
+}
