@@ -36,3 +36,10 @@ exports.createResolvers = async (
         },
     })
 }
+
+/* create pages */
+const createPages = require("./src/create/createPage")
+
+exports.createPagesStatefully = async ({ graphql, actions, reporter }, options) => {
+    await createPages({ actions, graphql, reporter }, options)
+}
