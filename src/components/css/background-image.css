@@ -4,8 +4,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    background-color: rgba(26, 49, 93, 0.85);
+    /* background-blend-mode: hard-light; */
+    /* background-color: rgb(26, 49, 93); */
     /* margin-bottom: 10px; */
 }
 
@@ -17,6 +17,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-color: rgba(26, 49, 93, 0.85);
+    mix-blend-mode: hard-light;
 
 
 }
@@ -43,7 +45,7 @@
 .contentbox p {
     font-size: 20px;
     color: #ffffff;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .bp-checkmark::before {
