@@ -14,19 +14,19 @@ module.exports = {
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
         fieldName: "wpgraphql",
         // Url to query from
-        url: "http://boligpartner.local/graphql",
+        url: "http://bp.turbotobias.xyz/graphql",
 
         // refetch interval in seconds
         refetchInterval: 60,
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Lato']
-        }
-      }
+          families: ["Lato"],
+        },
+      },
     },
     `gatsby-plugin-react-helmet`,
     {

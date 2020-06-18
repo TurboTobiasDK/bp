@@ -1,45 +1,64 @@
-const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
+const path = require(`path`)
+const glob = require(`glob`)
 
-exports.createResolvers = async (
-    {
-        actions,
-        cache,
-        createNodeId,
-        createResolvers,
-        store,
-        reporter,
-    },
-) => {
-    const { createNode } = actions
+const createServices = require(`./create/createServices`)
 
-    await createResolvers({
-        WPGraphQL_MediaItem: {
-            imageFile: {
-                type: "File",
-                async resolve(source) {
-                    let sourceUrl = source.sourceUrl
-
-                    if (source.mediaItemUrl !== undefined) {
-                        sourceUrl = source.mediaItemUrl
-                    }
-
-                    return await createRemoteFileNode({
-                        url: encodeURI(sourceUrl),
-                        store,
-                        cache,
-                        createNode,
-                        createNodeId,
-                        reporter,
-                    })
-                },
-            },
-        },
-    })
+const getTemplates = () => {
+  const sitePath = path.resolve(`./`)
+  return glob.sync(`./src/templates/**/*.js`, { cwd: sitePath })
 }
 
-/* create pages */
-const createPages = require("./src/create/createPage")
+exports.createPages = async props => {
+  const { data: wpSettings } = await props.graphql(/* GraphQL */ `
+    {
+      wpgraphql {
+        readingSettings {
+          postsPerPage
+        }
+      }
+    }
+  `)
 
-exports.createPagesStatefully = async ({ graphql, actions, reporter }, options) => {
-    await createPages({ actions, graphql, reporter }, options)
+  const perPage = wpSettings.wpgraphql.readingSettings.postsPerPage || 10
+  const templates = getTemplates()
+
+  await createServices(props, { perPage })
+}
+
+/* create remotefile */
+const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
+
+exports.createResolvers = async ({
+  actions,
+  cache,
+  createNodeId,
+  createResolvers,
+  store,
+  reporter,
+}) => {
+  const { createNode } = actions
+
+  await createResolvers({
+    WPGraphQL_MediaItem: {
+      imageFile: {
+        type: "File",
+        async resolve(source) {
+          let sourceUrl = source.sourceUrl
+
+          if (source.mediaItemUrl !== undefined) {
+            sourceUrl = source.mediaItemUrl
+          }
+
+          return await createRemoteFileNode({
+            url: encodeURI(sourceUrl),
+            store,
+            cache,
+            createNode,
+            createNodeId,
+            reporter,
+          })
+        },
+      },
+    },
+  })
 }
