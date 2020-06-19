@@ -19,10 +19,13 @@ module.exports = async ({ actions, graphql }, options) => {
     }
   `)
 
-  // const chunkedContentNodes = chunk(data.allWpPost.nodes, perPage)
+  const chunkedContentNodes = chunk(
+    data.wpgraphql.services.edges.nodes,
+    perPage
+  )
   if (
-    !data.wpgraphql.services.edges[0].node ||
-    data.wpgraphql.services.edges[0].node.length === 0
+    !data.wpgraphql.services.edges.node ||
+    data.wpgraphql.services.edges.node.length === 0
   )
     return
 
