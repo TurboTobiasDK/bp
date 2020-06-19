@@ -27,7 +27,7 @@ module.exports = async ({ actions, graphql }, options) => {
     return
 
   await Promise.all(
-    data.wpgraphql.services.edges[0].node.map(async (services, index) => {
+    data.wpgraphql.services.edges.map(async (services, index) => {
       const { data } = await graphql(/* GraphQL */ `
         {
           wpgraphql {
