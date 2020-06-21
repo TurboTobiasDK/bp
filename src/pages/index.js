@@ -1,41 +1,65 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { Link, graphql } from "gatsby"
-import parse from 'html-react-parser'
+import parse from "html-react-parser"
 import Img from "gatsby-image"
-import "./index.css"
+import "../components/css/forside.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = (props) => {
+const IndexPage = props => {
   const { wpgraphql } = props.data
   console.log(props.data)
 
   return (
-    < Layout >
+    <Layout>
       <SEO title="Home" />
       <BackgroundImage
         className="masthead"
         fadeIn
-        fluid={wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroImage.imageFile.childImageSharp.fluid}
+        fluid={
+          wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroImage
+            .imageFile.childImageSharp.fluid
+        }
       >
         <div className="black-overlay">
           <div className="contentbox">
-            <h1>{wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroOverskrift}</h1>
-            <h2>{wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroSubheading}</h2>
-            <span>{parse(`${wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroBullets}`)}</span>
+            <h1>
+              {
+                wpgraphql.pages.edges[0].node.undersideACFgraphql.hero
+                  .heroOverskrift
+              }
+            </h1>
+            <h2>
+              {
+                wpgraphql.pages.edges[0].node.undersideACFgraphql.hero
+                  .heroSubheading
+              }
+            </h2>
+            <span>
+              {parse(
+                `${wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroBullets}`
+              )}
+            </span>
           </div>
         </div>
       </BackgroundImage>
       <div className="container">
         <div className="wrapper">
           <div className="boxa">
-            {parse(`${wpgraphql.pages.edges[0].node.undersideACFgraphql.mainText}`)}
+            {parse(
+              `${wpgraphql.pages.edges[0].node.undersideACFgraphql.mainText}`
+            )}
           </div>
           <div className="boxb">
             <h2>Kontakt mig her!</h2>
-            <form name="contact" method="POST" data-netlify="true" className="hero-form">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              className="hero-form"
+            >
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
@@ -46,7 +70,11 @@ const IndexPage = (props) => {
                 <input type="phone" name="phone" placeholder="Dit tlf. nr." />
               </p>
               <p>
-                <textarea name="message" placeholder="Skriv evt. hvad det handler om" rows="5"></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Skriv evt. hvad det handler om"
+                  rows="5"
+                ></textarea>
               </p>
               <p>
                 <button type="submit">Send</button>
@@ -58,60 +86,187 @@ const IndexPage = (props) => {
       <section className="icon-grid-section">
         <div className="container three-grid">
           <div className="item">
-            <img src={wpgraphql.pages.edges[0].node.undersideACFgraphql.iconVenstre.sourceUrl} className="grid-icon" alt="" />
-            <p className="icon-text">{wpgraphql.pages.edges[0].node.undersideACFgraphql.overskriftIkonVenstre}</p>
+            <img
+              src={
+                wpgraphql.pages.edges[0].node.undersideACFgraphql.iconVenstre
+                  .sourceUrl
+              }
+              className="grid-icon"
+              alt=""
+            />
+            <p className="icon-text">
+              {
+                wpgraphql.pages.edges[0].node.undersideACFgraphql
+                  .overskriftIkonVenstre
+              }
+            </p>
           </div>
           <div className="item">
-            <img src={wpgraphql.pages.edges[0].node.undersideACFgraphql.ikonMidt.sourceUrl} className="grid-icon" alt="" />
-            <p className="icon-text">{wpgraphql.pages.edges[0].node.undersideACFgraphql.overskriftIkonMidt}</p>
+            <img
+              src={
+                wpgraphql.pages.edges[0].node.undersideACFgraphql.ikonMidt
+                  .sourceUrl
+              }
+              className="grid-icon"
+              alt=""
+            />
+            <p className="icon-text">
+              {
+                wpgraphql.pages.edges[0].node.undersideACFgraphql
+                  .overskriftIkonMidt
+              }
+            </p>
           </div>
           <div className="item">
-            <img src={wpgraphql.pages.edges[0].node.undersideACFgraphql.ikonHojre.sourceUrl} className="grid-icon" alt="" />
-            <p className="icon-text">{wpgraphql.pages.edges[0].node.undersideACFgraphql.overskriftIkonHojre}</p>
+            <img
+              src={
+                wpgraphql.pages.edges[0].node.undersideACFgraphql.ikonHojre
+                  .sourceUrl
+              }
+              className="grid-icon"
+              alt=""
+            />
+            <p className="icon-text">
+              {
+                wpgraphql.pages.edges[0].node.undersideACFgraphql
+                  .overskriftIkonHojre
+              }
+            </p>
           </div>
         </div>
       </section>
       <section className="trustpilot-section">
         <div className="container">
-          <h2>{wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotSektionOverskrift}</h2>
+          <h2>
+            {
+              wpgraphql.pages.edges[0].node.undersideACFgraphql
+                .trustpilotSektionOverskrift
+            }
+          </h2>
           <span className="img-container">
-            <Img fluid={wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotIkon.imageFile.childImageSharp.fluid} />
+            <Img
+              fluid={
+                wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotIkon
+                  .imageFile.childImageSharp.fluid
+              }
+            />
           </span>
           <div className="trustpilot-grid">
-            <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://dk.trustpilot.com/review/bolig-partner.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="item">
-                <p className="trustpilot-header">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial1.testimonial1Overskrift}</p>
+                <p className="trustpilot-header">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial1.testimonial1Overskrift
+                  }
+                </p>
                 <span className="grid-img-container">
-                  <Img fluid={wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotIkon.imageFile.childImageSharp.fluid} />
+                  <Img
+                    fluid={
+                      wpgraphql.pages.edges[0].node.undersideACFgraphql
+                        .trustpilotIkon.imageFile.childImageSharp.fluid
+                    }
+                  />
                 </span>
-                <p className="trustpilot-review">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial1.testimonial1Review}</p>
-                <p className="trustpilot-name">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial1.testimonial1Navn}</p>
+                <p className="trustpilot-review">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial1.testimonial1Review
+                  }
+                </p>
+                <p className="trustpilot-name">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial1.testimonial1Navn
+                  }
+                </p>
               </div>
             </a>
-            <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://dk.trustpilot.com/review/bolig-partner.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="item">
-                <p className="trustpilot-header">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial2.testimonial2Overskrift}</p>
+                <p className="trustpilot-header">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial2.testimonial2Overskrift
+                  }
+                </p>
                 <span className="grid-img-container">
-                  <Img fluid={wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotIkon.imageFile.childImageSharp.fluid} />
+                  <Img
+                    fluid={
+                      wpgraphql.pages.edges[0].node.undersideACFgraphql
+                        .trustpilotIkon.imageFile.childImageSharp.fluid
+                    }
+                  />
                 </span>
-                <p className="trustpilot-review">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial2.testimonial2Review}</p>
-                <p className="trustpilot-name">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial2.testimonial2Navn}</p>
+                <p className="trustpilot-review">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial2.testimonial2Review
+                  }
+                </p>
+                <p className="trustpilot-name">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial2.testimonial2Navn
+                  }
+                </p>
               </div>
             </a>
-            <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://dk.trustpilot.com/review/bolig-partner.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="item">
-                <p className="trustpilot-header">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial3.testimonial3Overskrift}</p>
+                <p className="trustpilot-header">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial3.testimonial3Overskrift
+                  }
+                </p>
                 <span className="grid-img-container">
-                  <Img fluid={wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotIkon.imageFile.childImageSharp.fluid} />
+                  <Img
+                    fluid={
+                      wpgraphql.pages.edges[0].node.undersideACFgraphql
+                        .trustpilotIkon.imageFile.childImageSharp.fluid
+                    }
+                  />
                 </span>
-                <p className="trustpilot-review">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial3.testimonial3Review}</p>
-                <p className="trustpilot-name">{wpgraphql.pages.edges[0].node.undersideACFgraphql.testimonial3.testimonial3Navn}</p>
+                <p className="trustpilot-review">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial3.testimonial3Review
+                  }
+                </p>
+                <p className="trustpilot-name">
+                  {
+                    wpgraphql.pages.edges[0].node.undersideACFgraphql
+                      .testimonial3.testimonial3Navn
+                  }
+                </p>
               </div>
             </a>
           </div>
-          <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://dk.trustpilot.com/review/bolig-partner.dk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="trustpilot-img-container">
-              <Img fixed={wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotBundBillede.imageFile.childImageSharp.fixed} />
+              <Img
+                fixed={
+                  wpgraphql.pages.edges[0].node.undersideACFgraphql
+                    .trustpilotBundBillede.imageFile.childImageSharp.fixed
+                }
+              />
             </span>
           </a>
         </div>
@@ -120,21 +275,29 @@ const IndexPage = (props) => {
         <div className="container">
           <div className="pricing-grid">
             <div className="col">
-              {parse(`${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel1}`)}
+              {parse(
+                `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel1}`
+              )}
             </div>
             <div className="col">
-              {parse(`${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel2}`)}
+              {parse(
+                `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel2}`
+              )}
             </div>
             <div className="col">
-              {parse(`${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel3}`)}
+              {parse(
+                `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel3}`
+              )}
             </div>
             <div className="col">
-              {parse(`${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel4}`)}
+              {parse(
+                `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel4}`
+              )}
             </div>
           </div>
         </div>
       </section>
-    </Layout >
+    </Layout>
   )
 }
 
@@ -143,7 +306,7 @@ export default IndexPage
 export const query = graphql`
   query {
     wpgraphql {
-      pages(where: {id: 91}) {
+      pages(where: { id: 91 }) {
         edges {
           node {
             undersideACFgraphql {
@@ -221,4 +384,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

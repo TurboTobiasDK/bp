@@ -1,42 +1,73 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import "../components/css/header.css"
+
+const Header = () => (
+  <nav>
+    <div className="container">
+      <div id="logo">BoligPartner</div>
+
+      <label for="drop" className="toggle">
+        Menu
+      </label>
+      <input type="checkbox" id="drop" />
+      <ul className="menu">
+        <li>
+          <Link to="/">Forside</Link>
+        </li>
+        <li>
+          <label for="drop-1" className="toggle">
+            WordPress +
+          </label>
+          <a href="#">Ydelser</a>
+          <input type="checkbox" id="drop-1" />
+          <ul>
+            <li>
+              <Link to="/ydelser/koeberpakke/">Køberpakke</Link>
+            </li>
+            <li>
+              <Link to="/ydelser/koeber-gennemgang/">Køber - Gennemgang</Link>
+            </li>
+            <li>
+              <Link to="/ydelser/berigtigelse-af-bolighandel/">
+                Berigtigelse af bolighandel
+              </Link>
+            </li>
+            <li>
+              <Link to="/ydelser/tinglysning-af-skoede/">
+                Tinglysning af skøde
+              </Link>
+            </li>
+            <li>
+              <Link to="/ydelser/skilsmisseskoede/">Skilsmisseskøde</Link>
+            </li>
+            <li>
+              <Link to="/ydelser/skifteretsattest/">Skifteretsattest</Link>
+            </li>
+            <li>
+              <Link to="/ydelser/auktionsskoede/">Auktionsskøde</Link>
+            </li>
+            <li>
+              <Link to="/ydelser/selvsalg/">Selvsalg</Link>
+            </li>
+            <li>
+              <Link to="/ydelser/andet/">Andet</Link>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Artikler/Blog</a>
+        </li>
+        <li>
+          <a href="#">Om BoligPartner</a>
+        </li>
+        <li>
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

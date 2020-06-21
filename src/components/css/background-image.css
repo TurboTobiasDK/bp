@@ -1,60 +1,61 @@
 .masthead {
-    height: 75vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-blend-mode: hard-light; */
-    /* background-color: rgb(26, 49, 93); */
-    /* margin-bottom: 10px; */
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .black-overlay {
-    height: 100%;
-    color: white;
-    /* background-color: rgba(26, 49, 93, 0.80); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: rgba(26, 49, 93, 0.85);
-    mix-blend-mode: hard-light;
-
-
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(26, 49, 93, 0.85);
+  mix-blend-mode: hard-light;
 }
 
 .contentbox {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contentbox {
+    padding-left: 20px;
+  }
 }
 
 .contentbox h1 {
-    font-size: 60px;
-    font-weight: 900;
-    color: #ffffff;
-    margin-bottom: 5px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .contentbox h2 {
-    font-size: 30px;
-    color: #ffffff;
-    margin-bottom: 5px;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .contentbox p {
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 0px;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 0px;
 }
 
 .bp-checkmark::before {
-    content: ''; 
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 2px;
-    width: 1.5em;
-    height: 1.5em;
-    z-index: 99999999;
-    background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='21' height='21' fill='%2300A344' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>") no-repeat; 
-      }
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 2px;
+  width: 1.5em;
+  height: 1.5em;
+  z-index: 99999999;
+  background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='21' height='21' fill='%2300A344' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>")
+    no-repeat;
+}

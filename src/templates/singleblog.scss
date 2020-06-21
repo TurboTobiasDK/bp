@@ -1,0 +1,20 @@
+@import '../layouts/sass/main.scss';
+
+figure.aligncenter.size-large {
+    margin: 0;
+  }
+  
+  
+  figure.aligncenter.size-large img {
+      width: 100%;
+      height: auto;
+  }
+
+  figure.wp-block-image.size-large {
+    margin: 0;
+}
+
+figure.wp-block-image.size-large img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,342 @@
+body {
+  overflow: hidden;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+/* main text section */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+
+@media (min-width: 767px) {
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+/* box section */
+
+.boxa {
+  background-color: #ffffff !important;
+  width: calc(100% / 3 * 2 - 20px);
+  padding: 50px;
+  margin-right: 25px;
+  box-shadow: 0 -60px 20px 1px rgba(0, 0, 0, 0.16);
+  z-index: 999999;
+  margin-top: -170px;
+}
+
+.boxa h2 {
+  color: #1a315d;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+}
+
+.boxa p {
+  color: #3b4f70;
+  font-size: 18px;
+}
+
+.boxb {
+  background-color: #ffffff !important;
+  width: calc(100% / 3);
+  padding: 35px;
+  box-shadow: 0 -60px 20px 1px rgba(0, 0, 0, 0.16);
+  z-index: 999999;
+  margin-top: -350px;
+}
+
+.boxb h2 {
+  color: #1a315d;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .boxa {
+    margin-top: auto;
+    width: 100%;
+    margin-right: 0px;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .boxb {
+    margin-top: auto;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+/* icon section */
+
+.icon-grid-section {
+  background-color: #f4f5f7;
+}
+
+.three-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+  grid-template-rows: 30vh;
+  align-items: center;
+  height: 30vh;
+}
+
+@media (max-width: 1280px) {
+  .three-grid {
+    height: auto;
+  }
+}
+
+.grid-icon {
+  width: 88px;
+  height: 90px;
+}
+
+.item {
+  text-align: center;
+}
+
+.icon-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: #1a315d;
+}
+
+/* trustpilot section */
+.trustpilot-section {
+  height: 70vh;
+  background-color: rgba(26, 49, 93, 0.14);
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .trustpilot-section {
+    height: auto;
+  }
+}
+
+.img-container {
+  display: block;
+  width: 413px;
+  height: 77px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .img-container {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.grid-img-container {
+  display: block;
+  width: 196px;
+  height: 37px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1280px) {
+  .grid-img-container {
+    width: 30%;
+    height: auto;
+  }
+}
+
+.trustpilot-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #1a315d;
+}
+
+.trustpilot-section a {
+  text-decoration: none;
+}
+
+.trustpilot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+  grid-template-rows: 30vh;
+  align-items: center;
+}
+
+.trustpilot-header {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1a315d;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+
+.trustpilot-review {
+  margin-top: 20px;
+  color: #3b4f70;
+  font-size: 18px;
+}
+
+.trustpilot-name {
+  color: #3b4f70;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.trustpilot-img-container {
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+}
+
+/* pricing tables section */
+.pricing-section {
+  background: #ffffff;
+  height: 100vh;
+}
+
+@media (max-width: 1280px) {
+  .pricing-section {
+    height: auto;
+  }
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 4fr));
+  grid-gap: 10px;
+  grid-auto-rows: 1fr;
+  grid-template-rows: 100vh;
+  align-items: center;
+}
+
+.price-box {
+  background: #f4f5f7;
+  color: #1a315d;
+  font-size: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  min-height: 700px;
+  position: relative;
+}
+
+.price-header {
+  background-color: rgba(26, 49, 93, 0.14);
+  color: #1a315d;
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 0px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-box .price {
+  background-color: #1a315d;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.checkmark {
+  position: relative;
+  padding-left: 2em;
+  padding-left: calc(2em + 15px);
+  padding-right: 15px;
+  line-height: 1.2;
+}
+
+.checkmark:before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  padding-right: 2px;
+  margin-left: 15px;
+  width: 1.5em;
+  height: 1.5em;
+  background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='21' height='21' fill='%2300A344' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>")
+    no-repeat;
+}
+
+.price-box .emph {
+  text-align: center;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.price-box .disclaimer {
+  padding-left: 15px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* form */
+.hero-form input {
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  padding: 10px;
+}
+
+.hero-form textarea {
+  width: 100%;
+  border: 1px solid #d1d1d1;
+}
+
+.hero-form button {
+  background: #4caf50;
+  border: none;
+  width: 100%;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+  cursor: pointer;
+}
