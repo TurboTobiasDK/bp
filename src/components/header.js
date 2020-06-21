@@ -18,7 +18,7 @@ const Header = () => (
         </li>
         <li>
           <label for="drop-1" className="toggle">
-            WordPress +
+            Ydelser +
           </label>
           <a href="#">Ydelser</a>
           <input type="checkbox" id="drop-1" />
@@ -57,7 +57,7 @@ const Header = () => (
           </ul>
         </li>
         <li>
-          <a href="#">Artikler/Blog</a>
+          <Link to="/bloggen/">Artikler/Blog</Link>
         </li>
         <li>
           <a href="#">Om BoligPartner</a>

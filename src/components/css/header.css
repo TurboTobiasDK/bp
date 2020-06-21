@@ -16,6 +16,10 @@ nav {
   z-index: 999999999999999999999999999;
 }
 
+main {
+  margin-top: 60px;
+}
+
 #logo {
   display: block;
   padding: 0 30px;

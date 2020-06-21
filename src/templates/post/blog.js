@@ -9,13 +9,9 @@ const Blog = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO
-        title="Blog"
-        description="Blog posts"
-        keywords={[`blog`]}
-      />
+      <SEO title="Blog" description="Blog posts" keywords={[`blog`]} />
 
-      {nodes && nodes.map(post => <PostEntry key={post.postId} post={post}/>)}
+      {nodes && nodes.map(post => <PostEntry key={post.postId} post={post} />)}
 
       <Pagination
         pageNumber={pageNumber}
