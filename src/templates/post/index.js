@@ -11,14 +11,12 @@ const Post = ({ pageContext }) => {
 
   return (
     <Layout>
-      <div className="container">
-        <SEO title={title} />
+      <SEO title={title} />
 
-        <FluidImage image={featuredImage} style={{ marginBottom: "15px" }} />
+      <FluidImage image={featuredImage} style={{ marginBottom: "15px" }} />
 
-        <h1> {title} </h1>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      </div>
+      <h1> {title} </h1>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </Layout>
   )
 }

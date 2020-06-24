@@ -20,14 +20,6 @@ module.exports = {
         refetchInterval: 60,
       },
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Lato"],
-        },
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

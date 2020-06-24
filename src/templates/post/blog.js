@@ -10,15 +10,18 @@ const Blog = ({ pageContext }) => {
   return (
     <Layout>
       <SEO title="Blog" description="Blog posts" keywords={[`blog`]} />
+      <div className="container">
+        <h1>Dette er en blog :D</h1>
 
-      {nodes && nodes.map(post => <PostEntry key={post.postId} post={post} />)}
+        {nodes && nodes.map(post => <PostEntry key={post.postId} post={post} />)}
 
-      <Pagination
-        pageNumber={pageNumber}
-        hasNextPage={hasNextPage}
-        allPosts={allPosts}
-        itemsPerPage={itemsPerPage}
-      />
+        <Pagination
+          pageNumber={pageNumber}
+          hasNextPage={hasNextPage}
+          allPosts={allPosts}
+          itemsPerPage={itemsPerPage}
+        />
+      </div>
     </Layout>
   )
 }
