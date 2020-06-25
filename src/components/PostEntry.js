@@ -2,21 +2,24 @@ import React from "react"
 import { Link } from "gatsby"
 import { blogURI } from "../../globals"
 import FluidImage from "./FluidImage"
+import parse from "html-react-parser"
 import "../components/css/postentry.css"
 
 const PostEntry = ({ post }) => {
   const { uri, title, featuredImage, excerpt } = post
 
   return (
-    <div className="container">
-      <header>
-        <Link to={`/${uri}/`}>
-          <h2 style={{ marginBottom: "5px" }}>{title}</h2>
+    <div className="card">
+      <Link to={`/${uri}/`}>
+        <div class="card-header">
           <FluidImage image={featuredImage} style={{ margin: 0 }} />
-        </Link>
-      </header>
-
-      <div dangerouslySetInnerHTML={{ __html: excerpt }} />
+        </div>
+        <div class="card-body">
+          <h2 style={{ marginBottom: "5px" }}>{parse(`${title}`)}</h2>
+          <div dangerouslySetInnerHTML={{ __html: excerpt }} />
+        </div>
+        <p className="read-more">LÆS ARTIKEL</p>
+      </Link>
     </div>
   )
 }

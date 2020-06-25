@@ -4,6 +4,7 @@ const PostTemplateFragment = `
         postId
         title
         content
+        excerpt
         link
         featuredImage {
             sourceUrl

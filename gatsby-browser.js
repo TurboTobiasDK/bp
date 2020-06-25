@@ -1,1 +1,1 @@
-import "typeface-lato";
+import "typeface-lato"

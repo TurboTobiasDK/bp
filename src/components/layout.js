@@ -28,7 +28,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main>
+        <div id="wrapper">{children}</div>
+      </main>
       <Footer />
     </>
   )
