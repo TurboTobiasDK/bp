@@ -16,7 +16,7 @@ const Footer = () => (
                     <a href="mailto:info@bolig-partner.dk">M: info@bolig-partner.dk</a></p>
             </div>
             <div>
-                <h2>Åbningstider</h2>
+                <h2>Telefontider</h2>
                 <p>Mandag - Fredag: 09:00-17:00</p>
             </div>
             <div>

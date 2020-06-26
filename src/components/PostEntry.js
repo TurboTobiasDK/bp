@@ -16,7 +16,7 @@ const PostEntry = ({ post }) => {
         </div>
         <div class="card-body">
           <h2 style={{ marginBottom: "5px" }}>{parse(`${title}`)}</h2>
-          <div dangerouslySetInnerHTML={{ __html: excerpt }} />
+          {parse(`${excerpt}`)}
         </div>
         <p className="read-more">LÆS ARTIKEL</p>
       </Link>

@@ -60,7 +60,7 @@ const Header = () => (
           <Link to="/bloggen/">Artikler/Blog</Link>
         </li>
         <li>
-          <a href="#">Om BoligPartner</a>
+          <Link to="/om-boligpartner/">Om BoligPartner</Link>
         </li>
         <li>
           <a href="#">Kontakt</a>

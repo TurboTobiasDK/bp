@@ -7,7 +7,7 @@ import "../../components/css/blog.css"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-const Blog = ({ pageContext }) => {
+const Blog = ({ pageContext, data }) => {
   const { nodes, pageNumber, hasNextPage, itemsPerPage, allPosts } = pageContext
 
   return (
@@ -16,7 +16,7 @@ const Blog = ({ pageContext }) => {
         className="masthead"
         fadeIn
         fluid={
-          wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero.heroImage
+          data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero.heroImage
             .imageFile.childImageSharp.fluid
         }
       >
@@ -24,13 +24,13 @@ const Blog = ({ pageContext }) => {
           <div className="contentbox">
             <h1>
               {
-                wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
+                data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
                   .heroOverskrift
               }
             </h1>
             <h2>
               {
-                wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
+                data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
                   .heroSubheading
               }
             </h2>

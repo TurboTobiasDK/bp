@@ -9,7 +9,6 @@ import "../../components/css/ydelser.css"
 
 const servicesPage = props => {
   const { wpgraphql } = props.data
-  console.log(props.data)
 
   return (
     <Layout>
