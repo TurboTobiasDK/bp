@@ -9,12 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wrapper {
-  min-height: 100%;
-  margin-bottom: 370px;
-  margin-top: 60px;
-}
-
 article,
 aside,
 details,

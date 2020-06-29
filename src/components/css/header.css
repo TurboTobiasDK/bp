@@ -22,11 +22,22 @@ main {
 
 #logo {
   display: block;
-  padding: 0 30px;
+  padding: 10px 30px;
   float: left;
   font-size: 30px;
-  line-height: 60px;
   color: #1a315d;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -42,7 +53,7 @@ nav:after {
  * and adding "position:reltive" */
 nav ul {
   float: right;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   list-style: none;
   position: relative;
@@ -74,9 +85,13 @@ nav ul li ul li:hover {
 }
 
 /* Background color change on Hover */
-nav a:hover {
+ul.menu a:hover {
   background-color: #1a315d;
   color: #ffffff;
+}
+
+#logo a:hover {
+  background-color: #ffffff;
 }
 
 /* Hide Dropdowns by Default
