@@ -25,7 +25,7 @@ export default () => {
           </Link>
         </div>
 
-        <label for="drop" className="toggle">
+        <label htmlFor="drop" className="toggle">
           Menu
         </label>
         <input type="checkbox" id="drop" />
@@ -34,7 +34,7 @@ export default () => {
             <Link to="/">Forside</Link>
           </li>
           <li>
-            <label for="drop-1" className="toggle">
+            <label htmlFor="drop-1" className="toggle">
               Ydelser +
             </label>
             <a href="#">Ydelser</a>
@@ -80,7 +80,7 @@ export default () => {
             <Link to="/om-boligpartner/">Om BoligPartner</Link>
           </li>
           <li>
-            <a href="#">Kontakt</a>
+            <a href="/kontakt">Kontakt</a>
           </li>
         </ul>
       </div>
