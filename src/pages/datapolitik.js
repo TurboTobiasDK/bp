@@ -11,6 +11,10 @@ const dataPage = props => {
 
   return (
     <Layout>
+      <SEO
+        title={wpgraphql.pages.edges[0].node.seo.title}
+        description={wpgraphql.pages.edges[0].node.seo.metaDesc}
+      />
       <BackgroundImage
         className="masthead"
         fadeIn
@@ -53,6 +57,10 @@ export const query = graphql`
       pages(where: { id: 754 }) {
         edges {
           node {
+            seo {
+              metaDesc
+              title
+            }
             politikACFgraphql {
               maintext
               hero {

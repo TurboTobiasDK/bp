@@ -3,15 +3,16 @@ import parse from "html-react-parser"
 import Layout from "../../components/layout"
 import SEO from "../../components/SEO"
 import FluidImage from "../../components/FluidImage"
+import { graphql } from "gatsby"
 
-const Post = ({ pageContext }) => {
+const Post = ({ pageContext, data }) => {
   const {
-    post: { title, content, featuredImage },
+    post: { title, content, featuredImage, seo },
   } = pageContext
 
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={parse(`${title}`)} description={seo.metaDesc} />
       <div className="container">
         <FluidImage image={featuredImage} style={{ marginBottom: "15px" }} />
         <h1> {parse(`${title}`)} </h1>

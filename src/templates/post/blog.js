@@ -12,6 +12,10 @@ const Blog = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <SEO
+        title={data.wpgraphql.pages.edges[0].node.seo.title}
+        description={data.wpgraphql.pages.edges[0].node.seo.metaDesc}
+      />
       <BackgroundImage
         className="masthead"
         fadeIn
@@ -38,7 +42,6 @@ const Blog = ({ pageContext, data }) => {
         </div>
       </BackgroundImage>
       <section className="bloggen">
-        <SEO title="Blog" description="Blog posts" keywords={[`blog`]} />
         <div className="container">
           {nodes &&
             nodes.map(post => <PostEntry key={post.postId} post={post} />)}
@@ -63,6 +66,10 @@ export const query = graphql`
       pages(where: { id: 536 }) {
         edges {
           node {
+            seo {
+              metaDesc
+              title
+            }
             bloggenACFgraphql {
               hero {
                 heroOverskrift

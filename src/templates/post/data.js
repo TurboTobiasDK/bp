@@ -6,6 +6,9 @@ const PostTemplateFragment = `
         content
         excerpt
         link
+        seo {
+            metaDesc
+          }
         featuredImage {
             sourceUrl
             altText
@@ -48,6 +51,9 @@ const BlogPreviewFragment = `
         slug
         excerpt
         content
+        seo {
+            metaDesc
+          }
         featuredImage {
             sourceUrl
             altText

@@ -12,7 +12,10 @@ const servicesPage = props => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title={wpgraphql.ydelser.edges[0].node.seo.title}
+        description={wpgraphql.ydelser.edges[0].node.seo.metaDesc}
+      />
       <BackgroundImage
         className="masthead"
         fadeIn
@@ -146,6 +149,10 @@ export const query = graphql`
       ydelser(where: { id: 496 }) {
         edges {
           node {
+            seo {
+              metaDesc
+              title
+            }
             ydelserACFgraphql {
               hero {
                 heroBullets

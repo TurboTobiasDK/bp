@@ -1,8 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    siteUrl: "https://bolig-partner.dk",
+    author: "Louise Birkedal",
+    title: "BoligPartner",
+    description: "Professionel Boligrådgivning",
+    image: "/kieberaftale.jpg",
+    keywords: [
+      "Boligrådgivning",
+      "Skilsmisseskøde",
+      "Bolighandel",
+      "Køberrådgivning",
+    ],
   },
   plugins: [
     // Simple config, passing URL

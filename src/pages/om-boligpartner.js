@@ -11,7 +11,10 @@ const omPage = props => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title={wpgraphql.pages.edges[0].node.seo.title}
+        description={wpgraphql.pages.edges[0].node.seo.metaDesc}
+      />
       <BackgroundImage
         className="masthead"
         fadeIn
@@ -102,6 +105,10 @@ export const query = graphql`
       pages(where: { id: 700 }) {
         edges {
           node {
+            seo {
+              metaDesc
+              title
+            }
             subpageACFgraphql {
               hero {
                 heroOverskrift
