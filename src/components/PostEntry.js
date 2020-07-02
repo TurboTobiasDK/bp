@@ -11,7 +11,7 @@ const PostEntry = ({ post }) => {
   return (
     <div className="card">
       <Link to={`/${uri}/`}>
-        <div class="card-header">
+        <div className="card-header">
           <FluidImage image={featuredImage} style={{ margin: 0 }} />
         </div>
         <div class="card-body">

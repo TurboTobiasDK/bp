@@ -9,3 +9,4 @@ const FluidImageFragment = `
 `
 
 module.exports.FluidImageFragment = FluidImageFragment
+

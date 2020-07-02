@@ -18,15 +18,15 @@ const Footer = () => (
           <br />
           CVR. nr. 31 38 92 59
           <br />
-          <br />
-          <a href="tel:70605038">T: 70 60 50 38</a>
-          <br />
-          <a href="mailto:info@bolig-partner.dk">M: info@bolig-partner.dk</a>
         </p>
       </div>
       <div>
         <h2>Telefontider</h2>
         <p>Mandag - Fredag: 09:00-17:00</p>
+        <br />
+        <a href="tel:70605038">T: 70 60 50 38</a>
+        <br />
+        <a href="mailto:info@bolig-partner.dk">M: info@bolig-partner.dk</a>
       </div>
       <div>
         <h2>Nyttige links</h2>

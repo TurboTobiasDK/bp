@@ -36,7 +36,7 @@ h6 {
   margin-right: 25px;
   box-shadow: 0 -60px 20px 1px rgba(0, 0, 0, 0.16);
   z-index: 999999;
-  margin-top: -170px;
+  margin-top: -140px;
 }
 
 .ydelser-boxa h2 {
@@ -70,7 +70,7 @@ h6 {
   width: calc(100% / 3);
   padding: 35px;
   z-index: 999999;
-  margin-top: -350px;
+  margin-top: -300px;
 }
 
 .ydelser-boxb h2 {

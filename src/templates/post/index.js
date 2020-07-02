@@ -5,14 +5,14 @@ import SEO from "../../components/SEO"
 import FluidImage from "../../components/FluidImage"
 import { graphql } from "gatsby"
 
-const Post = ({ pageContext, data }) => {
+const Post = ({ pageContext }) => {
   const {
-    post: { title, content, featuredImage, seo },
+    post: { title, content, featuredImage },
   } = pageContext
-
+  console.log(pageContext)
   return (
     <Layout>
-      <SEO title={parse(`${title}`)} description={seo.metaDesc} />
+      <SEO title={parse(`${title}`)} />
       <div className="container">
         <FluidImage image={featuredImage} style={{ marginBottom: "15px" }} />
         <h1> {parse(`${title}`)} </h1>
