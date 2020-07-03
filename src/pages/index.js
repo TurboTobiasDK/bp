@@ -10,7 +10,6 @@ import SEO from "../components/seo"
 
 const IndexPage = props => {
   const { wpgraphql } = props.data
-  console.log(props.data)
 
   return (
     <Layout>
