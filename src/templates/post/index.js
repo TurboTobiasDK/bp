@@ -1,7 +1,7 @@
 import React from "react"
 import parse from "html-react-parser"
 import Layout from "../../components/layout"
-import SEO from "../../components/SEO"
+import SEO from "../../components/seo"
 import FluidImage from "../../components/FluidImage"
 import { graphql } from "gatsby"
 
