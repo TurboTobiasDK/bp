@@ -146,14 +146,14 @@ const IndexPage = props => {
                 .trustpilotSektionOverskrift
             }
           </h2>
-          <p className="img-container">
+          <span className="img-container">
             <Img
               fluid={
                 wpgraphql.pages.edges[0].node.undersideACFgraphql.trustpilotIkon
                   .imageFile.childImageSharp.fluid
               }
             />
-          </p>
+          </span>
           <div className="trustpilot-grid">
             <a
               href="https://dk.trustpilot.com/review/bolig-partner.dk"
