@@ -22,7 +22,7 @@ module.exports = {
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
         fieldName: "wpgraphql",
         // Url to query from
-        url: "http://bp.turbotobias.xyz/graphql",
+        url: "https://bp.turbotobias.xyz/graphql",
 
         // refetch interval in seconds
         refetchInterval: 60,
