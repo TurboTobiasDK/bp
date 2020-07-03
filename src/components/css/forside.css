@@ -128,6 +128,10 @@ h6 {
   align-items: center;
 }
 
+.trustpilot-section .fremragende {
+  padding-top: 40px;
+}
+
 @media (max-width: 767px) {
   .trustpilot-section {
     height: auto;
@@ -187,7 +191,6 @@ h6 {
   font-size: 25px;
   font-weight: 700;
   color: #1a315d;
-  padding-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -233,8 +236,8 @@ h6 {
 .pricing-grid .col {
   background: #f4f5f7;
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .price-box {

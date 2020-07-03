@@ -140,7 +140,7 @@ const IndexPage = props => {
       </section>
       <section className="trustpilot-section">
         <div className="container">
-          <h2>
+          <h2 className="fremragende">
             {
               wpgraphql.pages.edges[0].node.undersideACFgraphql
                 .trustpilotSektionOverskrift
@@ -282,8 +282,14 @@ const IndexPage = props => {
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel1}`
               )}
               <div class="bestil">
-                <p class="disclaimer">* Tinglysningsafgift til staten tillægges</p>
-                <p class="emph"><Link to="/ydelser/koeberpakke/" class="button">Bestil her</Link></p>
+                <p class="disclaimer">
+                  * Tinglysningsafgift til staten tillægges
+                </p>
+                <p class="emph">
+                  <Link to="/ydelser/koeberpakke/" class="button">
+                    Bestil her
+                  </Link>
+                </p>
               </div>
             </div>
             <div className="col">
@@ -291,7 +297,11 @@ const IndexPage = props => {
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel2}`
               )}
               <div class="bestil">
-                <p class="emph"><Link to="/ydelser/koeber-gennemgang/" class="button">Bestil her</Link></p>
+                <p class="emph">
+                  <Link to="/ydelser/koeber-gennemgang/" class="button">
+                    Bestil her
+                  </Link>
+                </p>
               </div>
             </div>
             <div className="col">
@@ -299,8 +309,17 @@ const IndexPage = props => {
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel3}`
               )}
               <div class="bestil">
-                <p class="disclaimer">* Tinglysningsafgift til staten tillægges</p>
-                <p class="emph"><Link to="/ydelser/berigtigelse-af-bolighandel/" class="button">Bestil her</Link></p>
+                <p class="disclaimer">
+                  * Tinglysningsafgift til staten tillægges
+                </p>
+                <p class="emph">
+                  <Link
+                    to="/ydelser/berigtigelse-af-bolighandel/"
+                    class="button"
+                  >
+                    Bestil her
+                  </Link>
+                </p>
               </div>
             </div>
             <div className="col">
@@ -308,8 +327,14 @@ const IndexPage = props => {
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel4}`
               )}
               <div class="bestil">
-                <p class="disclaimer">* Tinglysningsafgift på til staten tillægges</p>
-                <p class="emph"><Link to="/ydelser/skilsmisseskoede/" class="button">Bestil her</Link></p>
+                <p class="disclaimer">
+                  * Tinglysningsafgift på til staten tillægges
+                </p>
+                <p class="emph">
+                  <Link to="/ydelser/skilsmisseskoede/" class="button">
+                    Bestil her
+                  </Link>
+                </p>
               </div>
             </div>
           </div>
