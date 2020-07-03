@@ -281,12 +281,12 @@ const IndexPage = props => {
               {parse(
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel1}`
               )}
-              <div class="bestil">
-                <p class="disclaimer">
+              <div className="bestil">
+                <p className="disclaimer">
                   * Tinglysningsafgift til staten tillægges
                 </p>
-                <p class="emph">
-                  <Link to="/ydelser/koeberpakke/" class="button">
+                <p className="emph">
+                  <Link to="/ydelser/koeberpakke/" className="button">
                     Bestil her
                   </Link>
                 </p>
@@ -296,9 +296,9 @@ const IndexPage = props => {
               {parse(
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel2}`
               )}
-              <div class="bestil">
-                <p class="emph">
-                  <Link to="/ydelser/koeber-gennemgang/" class="button">
+              <div className="bestil">
+                <p className="emph">
+                  <Link to="/ydelser/koeber-gennemgang/" className="button">
                     Bestil her
                   </Link>
                 </p>
@@ -308,14 +308,14 @@ const IndexPage = props => {
               {parse(
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel3}`
               )}
-              <div class="bestil">
-                <p class="disclaimer">
+              <div className="bestil">
+                <p className="disclaimer">
                   * Tinglysningsafgift til staten tillægges
                 </p>
-                <p class="emph">
+                <p className="emph">
                   <Link
                     to="/ydelser/berigtigelse-af-bolighandel/"
-                    class="button"
+                    className="button"
                   >
                     Bestil her
                   </Link>
@@ -326,12 +326,12 @@ const IndexPage = props => {
               {parse(
                 `${wpgraphql.pages.edges[0].node.undersideACFgraphql.pristabel4}`
               )}
-              <div class="bestil">
-                <p class="disclaimer">
+              <div className="bestil">
+                <p className="disclaimer">
                   * Tinglysningsafgift på til staten tillægges
                 </p>
-                <p class="emph">
-                  <Link to="/ydelser/skilsmisseskoede/" class="button">
+                <p className="emph">
+                  <Link to="/ydelser/skilsmisseskoede/" className="button">
                     Bestil her
                   </Link>
                 </p>
