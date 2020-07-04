@@ -3,8 +3,8 @@ module.exports = {
     siteUrl: "https://bolig-partner.dk",
     author: "Louise Birkedal",
     title: "BoligPartner",
-    description: "Professionel Boligrådgivning",
-    image: "/kieberaftale.jpg",
+    description: "",
+    image: "/koeberaftale.jpg",
     keywords: [
       "Boligrådgivning",
       "Skilsmisseskøde",
@@ -41,13 +41,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `bolig-partner-en-tryg-bolighandel`,
+        short_name: `BoligPartner`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1a315d`,
+        theme_color: `#1a315d`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gBoligPartner_huse-logo.jpg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
