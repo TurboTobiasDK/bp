@@ -80,7 +80,7 @@ export default () => {
             <Link to="/om-boligpartner/">Om BoligPartner</Link>
           </li>
           <li>
-            <a href="/kontakt">Kontakt</a>
+            <Link to="/kontakt">Kontakt</Link>
           </li>
         </ul>
       </div>
