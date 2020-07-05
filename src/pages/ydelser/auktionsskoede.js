@@ -72,15 +72,17 @@ const servicesPage = props => {
           </div>
           <div className="ydelser-boxb">
             <h2>Bestil tinglysning af auktionsskøde</h2>
-            <p>Udfyld formularen, så ringer vi dig op hurtigst muligt.
-            Sammen gennemgår vi dit behov og først når vi er enige, sender vi dig en ordrebekræftelse.
-
-Indtast din kontaktoplysninger nedenfor:</p>
+            <p>
+              Udfyld formularen, så ringer vi dig op hurtigst muligt. Sammen
+              gennemgår vi dit behov og først når vi er enige, sender vi dig en
+              ordrebekræftelse. Indtast din kontaktoplysninger nedenfor:
+            </p>
             <form
               name="contact"
               method="POST"
               data-netlify="true"
               className="hero-form"
+              subject="Bestilling auktionsskøde"
             >
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
