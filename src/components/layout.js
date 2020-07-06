@@ -29,7 +29,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <meta name="robots" content="noindex" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-664120405" />
         <script type="application/ld+json">{`
       window.dataLayer = window.dataLayer || [];

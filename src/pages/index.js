@@ -61,7 +61,10 @@ const IndexPage = props => {
               method="POST"
               data-netlify="true"
               className="hero-form"
+              data-netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="bot-field" />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
