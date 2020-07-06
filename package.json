@@ -20,7 +20,6 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
-    "react-script-tag": "^1.1.2",
     "typeface-lato": "0.0.75"
   },
   "devDependencies": {
