@@ -83,10 +83,9 @@ const servicesPage = props => {
               data-netlify="true"
               className="hero-form"
               data-netlify-honeypot="bot-field"
-              action="/tak-for-din-henvendelse/"
             >
               <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="subject" value="Bestilling af auktionsskøde" />
+              <input type="hidden" name="Bestilling af auktionsskøde" value="subject" />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
