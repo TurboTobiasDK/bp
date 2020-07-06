@@ -63,7 +63,7 @@ const omPage = props => {
             )}
           </div>
           <div className="ydelser-boxb">
-            <h2>Kontakt mig her!</h2>
+            <h2>Kontakt os her!</h2>
             <form
               name="contact"
               method="POST"
