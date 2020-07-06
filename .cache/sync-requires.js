@@ -13,6 +13,7 @@ exports.components = {
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\Tobias\\Desktop\\Gatsby\\bp\\src\\pages\\index.js"))),
   "component---src-pages-kontakt-js": hot(preferDefault(require("C:\\Users\\Tobias\\Desktop\\Gatsby\\bp\\src\\pages\\kontakt.js"))),
   "component---src-pages-om-boligpartner-js": hot(preferDefault(require("C:\\Users\\Tobias\\Desktop\\Gatsby\\bp\\src\\pages\\om-boligpartner.js"))),
+  "component---src-pages-tak-for-din-henvendelse-js": hot(preferDefault(require("C:\\Users\\Tobias\\Desktop\\Gatsby\\bp\\src\\pages\\tak-for-din-henvendelse.js"))),
   "component---src-pages-ydelser-andet-js": hot(preferDefault(require("C:\\Users\\Tobias\\Desktop\\Gatsby\\bp\\src\\pages\\ydelser\\andet.js"))),
   "component---src-pages-ydelser-auktionsskoede-js": hot(preferDefault(require("C:\\Users\\Tobias\\Desktop\\Gatsby\\bp\\src\\pages\\ydelser\\auktionsskoede.js"))),
   "component---src-pages-ydelser-berigtigelse-af-bolighandel-js": hot(preferDefault(require("C:\\Users\\Tobias\\Desktop\\Gatsby\\bp\\src\\pages\\ydelser\\berigtigelse-af-bolighandel.js"))),

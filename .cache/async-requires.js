@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-kontakt-js": () => import("./../src/pages/kontakt.js" /* webpackChunkName: "component---src-pages-kontakt-js" */),
   "component---src-pages-om-boligpartner-js": () => import("./../src/pages/om-boligpartner.js" /* webpackChunkName: "component---src-pages-om-boligpartner-js" */),
+  "component---src-pages-tak-for-din-henvendelse-js": () => import("./../src/pages/tak-for-din-henvendelse.js" /* webpackChunkName: "component---src-pages-tak-for-din-henvendelse-js" */),
   "component---src-pages-ydelser-andet-js": () => import("./../src/pages/ydelser/andet.js" /* webpackChunkName: "component---src-pages-ydelser-andet-js" */),
   "component---src-pages-ydelser-auktionsskoede-js": () => import("./../src/pages/ydelser/auktionsskoede.js" /* webpackChunkName: "component---src-pages-ydelser-auktionsskoede-js" */),
   "component---src-pages-ydelser-berigtigelse-af-bolighandel-js": () => import("./../src/pages/ydelser/berigtigelse-af-bolighandel.js" /* webpackChunkName: "component---src-pages-ydelser-berigtigelse-af-bolighandel-js" */),

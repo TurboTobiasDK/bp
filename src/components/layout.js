@@ -30,6 +30,14 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <meta name="robots" content="noindex" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-664120405" />
+        <script type="application/ld+json">{`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-664120405');
+    `}</script>
       </Helmet>
       <Header />
       <main>
