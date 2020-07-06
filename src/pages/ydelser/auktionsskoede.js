@@ -85,7 +85,7 @@ const servicesPage = props => {
               data-netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" id="currentUrl" name="currentUrl" value="Bestilling af auktionsskøde">
+              <input type="hidden" id="currentUrl" name="currentUrl" value="Bestilling af auktionsskøde" />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
