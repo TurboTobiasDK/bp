@@ -55,7 +55,12 @@ export default () => {
           <img src={HDI} alt="HDI Gerling professionelt ansvarsforsikret" />
         </div>
       </div>
-      <span className="floating-trustpilot"><Img fixed={data.file.childImageSharp.fixed} /></span>
+      <a
+        href="https://dk.trustpilot.com/review/bolig-partner.dk"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="floating-trustpilot"><Img fixed={data.file.childImageSharp.fixed} /></span></a>
     </footer>
   )
 }
