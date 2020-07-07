@@ -10,7 +10,7 @@ export default () => {
   query {
     file(relativePath: { eq: "Trustpilot ratings 4star-RGB.png" }) {
       childImageSharp {
-        fixed(height: 196) {
+        fixed(height: 194) {
           ...GatsbyImageSharpFixed
         }
       }

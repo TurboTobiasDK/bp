@@ -33,7 +33,7 @@ span.floating-trustpilot {
   margin: 0;
 }
 
-@media (min-width: 1281px) {
+@media (max-width: 1281px) {
   span.floating-trustpilot {
     display: none;
   }
