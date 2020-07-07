@@ -4,7 +4,8 @@ module.exports = {
     author: "Louise Birkedal",
     title: "BoligPartner",
     description: "",
-    image: "/OpenGraph_Boligpartner_Web.png",
+    image:
+      "https://bolig-partner.dk/static/8f427c4be6256c72240ea53cc8f506fe/497c6/OpenGraph_Boligpartner_Web.png ",
     keywords: [
       "Boligrådgivning",
       "Skilsmisseskøde",
