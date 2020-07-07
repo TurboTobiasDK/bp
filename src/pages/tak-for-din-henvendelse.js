@@ -8,52 +8,52 @@ import parse from "html-react-parser"
 import { Helmet } from "react-helmet"
 
 const landingPage = props => {
-    const { wpgraphql } = props.data
+  const { wpgraphql } = props.data
 
-    return (
-        <Layout>
-            <Helmet>
-                <meta name="robots" content="noindex" />
-                <script type="application/ld+json">{`
+  return (
+    <Layout>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+        <script type="application/ld+json">{`
       gtag('event', 'conversion', {'send_to': 'AW-664120405/VNxECKqV3sUBENXY1rwC'});
     `}</script>
-            </Helmet>
-            <SEO
-                title={wpgraphql.pages.edges[0].node.seo.title}
-                description={wpgraphql.pages.edges[0].node.seo.metaDesc}
-            />
-            <BackgroundImage
-                className="masthead"
-                fadeIn
-                fluid={
-                    wpgraphql.pages.edges[0].node.landingACFgraphql.hero.heroImage
-                        .imageFile.childImageSharp.fluid
-                }
-            >
-                <div className="black-overlay">
-                    <div className="contentbox">
-                        <h1>
-                            {
-                                wpgraphql.pages.edges[0].node.landingACFgraphql.hero
-                                    .heroOverskrift
-                            }
-                        </h1>
-                        <h2>
-                            {
-                                wpgraphql.pages.edges[0].node.landingACFgraphql.hero
-                                    .heroSubheading
-                            }
-                        </h2>
-                    </div>
-                </div>
-            </BackgroundImage>
-            <section className="politik">
-                <div className="container">
-                    {parse(`${wpgraphql.pages.edges[0].node.landingACFgraphql.maintext}`)}
-                </div>
-            </section>
-        </Layout>
-    )
+      </Helmet>
+      <SEO
+        title={wpgraphql.pages.edges[0].node.seo.title}
+        description={wpgraphql.pages.edges[0].node.seo.metaDesc}
+      />
+      <BackgroundImage
+        className="masthead"
+        fadeIn
+        fluid={
+          wpgraphql.pages.edges[0].node.landingACFgraphql.hero.heroImage
+            .imageFile.childImageSharp.fluid
+        }
+      >
+        <div className="black-overlay">
+          <div className="contentbox">
+            <h1>
+              {
+                wpgraphql.pages.edges[0].node.landingACFgraphql.hero
+                  .heroOverskrift
+              }
+            </h1>
+            <h2>
+              {
+                wpgraphql.pages.edges[0].node.landingACFgraphql.hero
+                  .heroSubheading
+              }
+            </h2>
+          </div>
+        </div>
+      </BackgroundImage>
+      <section className="politik">
+        <div className="container">
+          {parse(`${wpgraphql.pages.edges[0].node.landingACFgraphql.maintext}`)}
+        </div>
+      </section>
+    </Layout>
+  )
 }
 
 export default landingPage
@@ -77,7 +77,7 @@ export const query = graphql`
                   sourceUrl
                   imageFile {
                     childImageSharp {
-                      fluid {
+                      fluid(maxWidth: 1920, quality: 100) {
                         ...GatsbyImageSharpFluid_withWebp
                       }
                     }
