@@ -30,7 +30,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
-    'gatsby-plugin-netlify-cache',
+    "gatsby-plugin-netlify-cache",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,7 +61,7 @@ module.exports = {
         // whitelist: ['.price-box', '.price-header', '.price-box .price', '.price-box .price moms', '.checkmark', '.checkmark:before', '.kontakt-boxa kontakt-price-maintext', '.kontakt-boxa .kontakt-price-main', '.trustpilot-kontakt-header', '.bp-checkmark::before'],
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -94,9 +94,9 @@ module.exports = {
               changefreq: `daily`,
               priority: 0.7,
             }
-          })
-      }
+          }),
+      },
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
 }
