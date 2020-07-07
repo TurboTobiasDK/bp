@@ -49,7 +49,7 @@ module.exports = {
         background_color: `#1a315d`,
         theme_color: `#1a315d`,
         display: `minimal-ui`,
-        icon: `src/images/BoligPartner_huse-logo.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/BoligPartner_huse-logo.png`, // This path is relative to the root of the site.
       },
     },
     {
