@@ -68,8 +68,8 @@ nav ul li {
   background-color: #ffffff;
 }
 
-.dropdown-list li {
-  padding: 5px 0px;
+nav .dropdown-list a {
+  padding: 10px 20px;
 }
 
 /* Styling the links */
