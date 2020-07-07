@@ -253,7 +253,7 @@ h6 {
   min-height: 625px;
   position: relative;
 }
-
+/* purgecss ignore */
 .price-header {
   background-color: rgba(26, 49, 93, 0.14);
   color: #1a315d;

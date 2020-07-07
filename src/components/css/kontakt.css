@@ -99,6 +99,7 @@ body {
     text-decoration: none;
   }
   
+  /* purgecss ignore */
   .trustpilot-kontakt-header {
     font-size: 25px;
     font-weight: 700;
