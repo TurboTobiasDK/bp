@@ -25,3 +25,16 @@
 .section-footer p {
   margin-bottom: 0;
 }
+
+span.floating-trustpilot {
+  position: fixed;
+  top: 40vh;
+  left: 0;
+  margin: 0;
+}
+
+@media (min-width: 1281px) {
+  span.floating-trustpilot {
+    display: none;
+  }
+}

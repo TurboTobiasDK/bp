@@ -1,47 +1,61 @@
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 import HDI from "../images/HDI - Gerling forsikring-03.svg"
+import Img from "gatsby-image"
 
 import "../components/css/footer.css"
 
-const Footer = () => (
-  <footer className="section-footer">
-    <div className="container">
-      <div>
-        <h2>Kontakt</h2>
-        <p>
-          BoligPartner
+export default () => {
+  const data = useStaticQuery(graphql`
+  query {
+    file(relativePath: { eq: "Trustpilot ratings 4star-RGB.png" }) {
+      childImageSharp {
+        fixed(height: 196) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+  `)
+
+  return (
+    <footer className="section-footer">
+      <div className="container">
+        <div>
+          <h2>Kontakt</h2>
+          <p>
+            BoligPartner
           <br />
           Sdr. Stationsvej 26, 2<br />
           4200 Slagelse
           <br />
-          <br />
+            <br />
           CVR. nr. 31 38 92 59
           <br />
-        </p>
+          </p>
+        </div>
+        <div>
+          <h2>Telefontider</h2>
+          <p>Mandag - Fredag: 09:00-17:00</p>
+          <br />
+          <a href="tel:70605038">T: 70 60 50 38</a>
+          <br />
+          <a href="mailto:info@bolig-partner.dk">M: info@bolig-partner.dk</a>
+        </div>
+        <div>
+          <h2>Nyttige links</h2>
+          <Link to="/forretningsbetingelser/">Forretningsbetingelser</Link>
+          <br />
+          <Link to="/cookiepolitik/">Cookiepolitik</Link>
+          <br />
+          <Link to="/datapolitik/">Datapolitik</Link>
+        </div>
+        <div>
+          <h2>Mærkninger</h2>
+          <img src={HDI} alt="HDI Gerling professionelt ansvarsforsikret" />
+        </div>
       </div>
-      <div>
-        <h2>Telefontider</h2>
-        <p>Mandag - Fredag: 09:00-17:00</p>
-        <br />
-        <a href="tel:70605038">T: 70 60 50 38</a>
-        <br />
-        <a href="mailto:info@bolig-partner.dk">M: info@bolig-partner.dk</a>
-      </div>
-      <div>
-        <h2>Nyttige links</h2>
-        <Link to="/forretningsbetingelser/">Forretningsbetingelser</Link>
-        <br />
-        <Link to="/cookiepolitik/">Cookiepolitik</Link>
-        <br />
-        <Link to="/datapolitik/">Datapolitik</Link>
-      </div>
-      <div>
-        <h2>Mærkninger</h2>
-        <img src={HDI} alt="HDI Gerling professionelt ansvarsforsikret" />
-      </div>
-    </div>
-  </footer>
-)
-
-export default Footer
+      <span className="floating-trustpilot"><Img fixed={data.file.childImageSharp.fixed} /></span>
+    </footer>
+  )
+}
