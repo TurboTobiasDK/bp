@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { blogURI } from "../../globals"
 import FluidImage from "./FluidImage"
 import parse from "html-react-parser"
 import "../components/css/postentry.css"

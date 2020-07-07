@@ -3,13 +3,12 @@ import parse from "html-react-parser"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import FluidImage from "../../components/FluidImage"
-import { graphql } from "gatsby"
 
 const Post = ({ pageContext }) => {
   const {
     post: { title, content, featuredImage },
   } = pageContext
-  console.log(pageContext)
+
   return (
     <Layout>
       <SEO title={parse(`${title}`)} />

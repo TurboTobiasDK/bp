@@ -39,7 +39,7 @@ export default () => {
             </label>
             <a href="#">Ydelser</a>
             <input type="checkbox" id="drop-1" />
-            <ul>
+            <ul className="dropdown-list">
               <li>
                 <Link to="/ydelser/koeberpakke/">Køberpakke</Link>
               </li>
