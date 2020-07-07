@@ -97,6 +97,14 @@ ul.menu a:hover {
   background-color: #ffffff;
 }
 
+/* cta btn */
+.cta {
+  color: white;
+  transition: all 0.2s;
+  background-color: green;
+  padding: 5px 20px;
+}
+
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {

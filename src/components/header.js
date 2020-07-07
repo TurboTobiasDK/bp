@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 import Img from "gatsby-image"
+import phone from "../images/SVG/phone.svg"
 import "../components/css/header.css"
 
 export default () => {
@@ -81,6 +82,17 @@ export default () => {
           </li>
           <li>
             <Link to="/kontakt">Kontakt</Link>
+          </li>
+          <li>
+            <a href="tel:70605038" className="cta">
+              <img
+                src={phone}
+                alt="phone icon"
+                style={{ width: 16, height: 16 }}
+                className="icon"
+              />{" "}
+              70 60 50 38
+            </a>
           </li>
         </ul>
       </div>
