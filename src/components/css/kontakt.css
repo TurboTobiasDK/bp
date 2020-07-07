@@ -53,12 +53,12 @@ body {
   .kontakt-boxa .tillaegges {
     font-size: 12px;
   }
-  
+  /* purgecss ignore */
   .kontakt-boxa .kontakt-price-maintext {
     margin-bottom: 0px;
     font-size: 26px;
   }
-  
+  /* purgecss ignore */
   .kontakt-boxa .kontakt-price-main {
     font-size: 26px;
   }

@@ -241,6 +241,7 @@ h6 {
   justify-content: space-between;
 }
 
+/* purgecss ignore */
 .price-box {
   background: #f4f5f7;
   color: #1a315d;
@@ -267,7 +268,7 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-
+/* purgecss ignore */
 .price-box .price {
   background-color: #1a315d;
   font-size: 24px;
@@ -277,12 +278,12 @@ h6 {
   text-transform: uppercase;
   padding: 20px;
 }
-
+/* purgecss ignore */
 .price-box .price .moms {
   font-size: 10px;
   display: block;
 }
-
+/* purgecss ignore */
 .checkmark {
   position: relative;
   padding-left: 2em;
@@ -290,7 +291,7 @@ h6 {
   padding-right: 15px;
   line-height: 1.2;
 }
-
+/* purgecss ignore */
 .checkmark:before {
   content: "";
   position: absolute;

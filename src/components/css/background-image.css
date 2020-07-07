@@ -47,7 +47,7 @@
   color: #ffffff;
   margin-bottom: 0px;
 }
-
+/* purgecss ignore */
 .bp-checkmark::before {
   content: "";
   display: inline-block;
