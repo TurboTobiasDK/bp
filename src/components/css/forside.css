@@ -181,7 +181,7 @@ h6 {
   margin-bottom: 20px;
   padding-top: 40px;
 }
-
+/* purgecss ignore */
 .trustpilot-review {
   margin-top: 20px;
   color: #3b4f70;
