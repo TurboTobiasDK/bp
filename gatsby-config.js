@@ -59,7 +59,7 @@ module.exports = {
         printRejected: true, // Print removed selectors and processed file names
         // develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['.price-box', '.price-header', '.price-box .price', '.price-box .price moms', '.checkmark', '.checkmark:before', '.kontakt-boxa kontakt-price-maintext', '.kontakt-boxa .kontakt-price-main', '.trustpilot-kontakt-header', '.bp-checkmark::before'],
+        whitelist: ['.price-box'],
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
