@@ -120,10 +120,8 @@ h6 {
 /* trustpilot section */
 .trustpilot-section {
   height: auto;
-  padding: 50px;
+  padding: 50px 0px;
   background-color: rgba(26, 49, 93, 0.14);
-  display: flex;
-  align-items: center;
 }
 
 .img-container {
@@ -171,8 +169,7 @@ h6 {
 .trustpilot-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-  grid-gap-column: 50px;
-    grid-auto-rows: 1fr;
+  grid-column-gap: 50px;
   align-items: center;
   justify-content: center;
 }
