@@ -94,7 +94,6 @@ h6 {
 .three-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
-  grid-template-rows: 30vh;
   align-items: center;
   height: 30vh;
 }
@@ -183,7 +182,6 @@ h6 {
 .trustpilot-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
-  grid-template-rows: 30vh;
   align-items: center;
 }
 
