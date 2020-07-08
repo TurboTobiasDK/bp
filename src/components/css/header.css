@@ -101,7 +101,7 @@ ul.menu a:hover {
 .cta {
   color: white;
   transition: all 0.2s;
-  background-color: green;
+  background-color: #4caf50;
   padding: 5px 20px;
 }
 
