@@ -5,6 +5,10 @@ import parse from "html-react-parser"
 import Img from "gatsby-image"
 import "../components/css/forside.css"
 
+import handshake from "../images/SVG/handshake.svg"
+import order from "../images/SVG/order.svg"
+import destination from "../images/SVG/destination.svg"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -92,10 +96,7 @@ const IndexPage = props => {
         <div className="container three-grid">
           <div className="item">
             <img
-              src={
-                wpgraphql.pages.edges[0].node.undersideACFgraphql.iconVenstre
-                  .sourceUrl
-              }
+              src={order}
               className="grid-icon"
               alt=""
             />
@@ -108,10 +109,7 @@ const IndexPage = props => {
           </div>
           <div className="item">
             <img
-              src={
-                wpgraphql.pages.edges[0].node.undersideACFgraphql.ikonMidt
-                  .sourceUrl
-              }
+              src={destination}
               className="grid-icon"
               alt=""
             />
@@ -124,10 +122,7 @@ const IndexPage = props => {
           </div>
           <div className="item">
             <img
-              src={
-                wpgraphql.pages.edges[0].node.undersideACFgraphql.ikonHojre
-                  .sourceUrl
-              }
+              src={handshake}
               className="grid-icon"
               alt=""
             />
@@ -363,15 +358,6 @@ export const query = graphql`
               overskriftIkonMidt
               overskriftIkonHojre
               overskriftIkonVenstre
-              ikonMidt {
-                sourceUrl
-              }
-              ikonHojre {
-                sourceUrl
-              }
-              iconVenstre {
-                sourceUrl
-              }
               trustpilotSektionOverskrift
               trustpilotIkon {
                 sourceUrl
