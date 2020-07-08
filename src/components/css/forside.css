@@ -93,7 +93,7 @@ h6 {
 
 .three-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
   align-items: center;
   height: 30vh;
 }
