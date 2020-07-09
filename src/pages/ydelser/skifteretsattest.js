@@ -82,6 +82,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
               data-netlify="true"
               className="hero-form"
               data-netlify-honeypot="bot-field"
+              action="/tak-for-din-henvendelse/"
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
@@ -93,7 +94,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
               </p>
               <p>
                 <input type="phone" name="phone" placeholder="Dit tlf. nr." />
-                <input type="text" name="produkt" defaultValue="Skifteretsattest" className="hidden" />
+                <input type="text" name="subject" defaultValue="Bestilt skifteretsattest" className="hidden" />
               </p>
               <p>
                 <textarea
