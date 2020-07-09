@@ -86,7 +86,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="subject" defaultValue="Bestilt skifteretsattest" />
+              <input type="hidden" name="url" defaultValue={wpgraphql.ydelser.edges[0].node.slug} />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
@@ -158,6 +158,7 @@ export const query = graphql`
       ydelser(where: { id: 493 }) {
         edges {
           node {
+            slug
             seo {
               metaDesc
               title
