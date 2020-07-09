@@ -82,10 +82,11 @@ Indtast din kontaktoplysninger nedenfor:</p>
               data-netlify="true"
               className="hero-form"
               data-netlify-honeypot="bot-field"
-              action="/tak-for-din-henvendelse/"
+              action="https://bolig-partner.dk/tak-for-din-henvendelse/"
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
+              <input type="hidden" name="subject" defaultValue="Bestilt skifteretsattest" />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
@@ -94,7 +95,6 @@ Indtast din kontaktoplysninger nedenfor:</p>
               </p>
               <p>
                 <input type="phone" name="phone" placeholder="Dit tlf. nr." />
-                <input type="hidden" name="subject" defaultValue="Bestilt skifteretsattest" />
               </p>
               <p>
                 <textarea
