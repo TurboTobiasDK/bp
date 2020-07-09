@@ -94,7 +94,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
               </p>
               <p>
                 <input type="phone" name="phone" placeholder="Dit tlf. nr." />
-                <input type="text" name="subject" defaultValue="Bestilt skifteretsattest" className="hidden" />
+                <input type="hidden" name="subject" defaultValue="Bestilt skifteretsattest" />
               </p>
               <p>
                 <textarea
