@@ -83,9 +83,9 @@ Indtast din kontaktoplysninger nedenfor:</p>
               className="hero-form"
               data-netlify-honeypot="bot-field"
             >
-              <input type="text" name="subject" value="Bestilt skifteretsattest" class="hidden" />
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
+              <input type="text" name="subject" defaultValue="Bestilt skifteretsattest" className="hidden" />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
