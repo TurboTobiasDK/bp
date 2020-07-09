@@ -85,7 +85,6 @@ Indtast din kontaktoplysninger nedenfor:</p>
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="subject" defaultValue="Bestilt skifteretsattest" />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
@@ -94,6 +93,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
               </p>
               <p>
                 <input type="phone" name="phone" placeholder="Dit tlf. nr." />
+                <input type="text" name="produkt" defaultValue="Skifteretsattest" className="hidden" />
               </p>
               <p>
                 <textarea
