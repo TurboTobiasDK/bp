@@ -26,17 +26,9 @@ const Layout = ({ children }) => {
       gtag('js', new Date());
     
       gtag('config', 'AW-664120405');
+      gtag('config', 'UA-149252612-1');
     `}</script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149252612-1" />
-        <script type="application/ld+json">{`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-149252612-1');
-    
-    `}</script>
       </Helmet>
       <Header />
       <main>
