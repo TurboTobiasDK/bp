@@ -24,7 +24,7 @@ const landingPage = props => {
       />
       <BackgroundImage
         className="masthead"
-        fadeIn
+        fadeIn={false}
         fluid={
           wpgraphql.pages.edges[0].node.landingACFgraphql.hero.heroImage
             .imageFile.childImageSharp.fluid
@@ -78,7 +78,7 @@ export const query = graphql`
                   imageFile {
                     childImageSharp {
                       fluid(maxWidth: 1920, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
+                        ...GatsbyImageSharpFluid_withWebp_noBase64
                       }
                     }
                   }

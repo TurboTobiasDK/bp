@@ -18,7 +18,7 @@ const servicesPage = props => {
       />
       <BackgroundImage
         className="masthead"
-        fadeIn
+        fadeIn={false}
         fluid={
           wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
             .imageFile.childImageSharp.fluid
@@ -86,7 +86,6 @@ Indtast din kontaktoplysninger nedenfor:</p>
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="url" defaultValue={wpgraphql.ydelser.edges[0].node.slug} />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
@@ -158,7 +157,6 @@ export const query = graphql`
       ydelser(where: { id: 493 }) {
         edges {
           node {
-            slug
             seo {
               metaDesc
               title
@@ -173,7 +171,7 @@ export const query = graphql`
                   imageFile {
                     childImageSharp {
                       fluid(maxWidth: 1920, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
+                        ...GatsbyImageSharpFluid_withWebp_noBase64
                       }
                     }
                   }

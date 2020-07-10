@@ -18,7 +18,7 @@ const servicesPage = props => {
       />
       <BackgroundImage
         className="masthead"
-        fadeIn
+        fadeIn={false}
         fluid={
           wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
             .imageFile.childImageSharp.fluid
@@ -170,7 +170,7 @@ export const query = graphql`
                   imageFile {
                     childImageSharp {
                       fluid(maxWidth: 1920, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
+                        ...GatsbyImageSharpFluid_withWebp_noBase64
                       }
                     }
                   }
