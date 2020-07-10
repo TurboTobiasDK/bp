@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-664120405" />
-        <script type="application/ld+json">{`
+        <script>{`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
