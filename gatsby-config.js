@@ -106,7 +106,7 @@ module.exports = {
         trackingIds: [
           "UA-149252612-1", // Google Analytics / GA
           "AW-664120405", // Google Ads / Adwords / AW
-          "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+          // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
@@ -122,7 +122,7 @@ module.exports = {
           // Setting this parameter is also optional
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
+          //  exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
     },
