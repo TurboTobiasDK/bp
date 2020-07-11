@@ -76,7 +76,7 @@ const servicesPage = props => {
             Sammen gennemgår vi dit behov og først når vi er enige, sender vi dig en ordrebekræftelse.
 
 Indtast din kontaktoplysninger nedenfor:</p>
-            {parse(`<form
+            <form
               name="contact"
               method="POST"
               data-netlify="true"
@@ -106,7 +106,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
               <p>
                 <button type="submit">Send</button>
               </p>
-            </form>`)}
+            </form>
             <a
               href="https://dk.trustpilot.com/review/bolig-partner.dk"
               target="_blank"
