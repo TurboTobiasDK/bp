@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Footer from "../components/footer"
 import Header from "./header"
-import { Helmet } from "react-helmet"
 
 import "./layout.css"
 import "../components/css/background-image.css"
@@ -18,18 +17,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-664120405" />
-        <script>{`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-664120405');
-      gtag('config', 'UA-149252612-1');
-    `}</script>
-
-      </Helmet>
       <Header />
       <main>
         <div id="wrapper">{children}</div>
