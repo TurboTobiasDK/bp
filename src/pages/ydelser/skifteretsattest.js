@@ -76,16 +76,17 @@ const servicesPage = props => {
             Sammen gennemgår vi dit behov og først når vi er enige, sender vi dig en ordrebekræftelse.
 
 Indtast din kontaktoplysninger nedenfor:</p>
-            <form
+            {parse(`<form
               name="contact"
               method="POST"
               data-netlify="true"
               className="hero-form"
               data-netlify-honeypot="bot-field"
-              action="https://bolig-partner.dk/tak-for-din-henvendelse/"
+              action="/tak-for-din-henvendelse/"
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
+              <input type="hidden" name="subject" value="Bestilt skifteretsattest" />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" />
               </p>
@@ -105,7 +106,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
               <p>
                 <button type="submit">Send</button>
               </p>
-            </form>
+            </form>`)}
             <a
               href="https://dk.trustpilot.com/review/bolig-partner.dk"
               target="_blank"
@@ -145,7 +146,7 @@ Indtast din kontaktoplysninger nedenfor:</p>
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout >
   )
 }
 
