@@ -27,18 +27,6 @@ main {
   color: #1a315d;
 }
 
-nav .container {
-  display: flex;
-  align-items: center;
-}
-
-@media all and (max-width: 768px) {
-  nav .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
@@ -157,9 +145,9 @@ li > a:only-child:after {
 
 @media all and (max-width: 768px) {
   #logo {
-    display: block;
+    display: inline-block;
     padding: 0;
-    width: 100%;
+    width: 75%;
     text-align: center;
     float: none;
   }
@@ -177,11 +165,11 @@ li > a:only-child:after {
 
   /* Stylinf the toggle lable */
   .toggle {
-    display: block;
+    display: inline-block;
     background-color: #ffffff;
-    padding: 14px 20px;
+    padding: 0px 20px;
     color: ##1a315d;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
     border: none;
   }
@@ -192,13 +180,15 @@ li > a:only-child:after {
 
   /* Display Dropdown when clicked on Parent Lable */
   [id^="drop"]:checked + ul {
-    display: block;
+    display: inline-block;
   }
 
   /* Change menu item's width to 100% */
   nav ul li {
-    display: block;
+    display: inline-block;
     width: 100%;
+    border-bottom: 1px solid #ededed;
+    padding: 10px;
   }
 
   nav ul ul .toggle,
@@ -244,7 +234,7 @@ li > a:only-child:after {
 
   /* Fisrt Tier Dropdown */
   nav ul ul li {
-    display: block;
+    display: inline-block;
     width: 100%;
   }
 
@@ -256,7 +246,14 @@ li > a:only-child:after {
 
 @media all and (max-width: 330px) {
   nav ul li {
-    display: block;
+    display: inline-block;
     width: 94%;
+  }
+}
+
+@media all and (min-width: 769px) {
+  nav .container {
+    display: flex;
+    align-items: center;
   }
 }
