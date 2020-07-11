@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Footer from "../components/footer"
 import Header from "./header"
+import Bottomnav from "./bottomnav"
 
 import "./layout.css"
 import "../components/css/background-image.css"
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
         <div id="wrapper">{children}</div>
       </main>
       <Footer />
+      <Bottomnav />
     </>
   )
 }

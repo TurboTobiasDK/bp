@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import { blogURI, siteUrl } from "../../globals"
+import { siteUrl } from "../../globals"
 import FluidImage from "./FluidImage"
 import parse from "html-react-parser"
 import "../components/css/postentry.css"
 
 const PostEntry = ({ post }) => {
   const { uri, title, featuredImage, excerpt } = post
-  console.log({ siteUrl })
+
   return (
     <div className="card">
       <Link to={`${siteUrl}${uri}`}>
