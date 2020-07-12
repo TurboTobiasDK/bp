@@ -25,7 +25,6 @@ const landingPage = props => {
       <section className="hero">
         <div className="hero__image-wrapper">
           <Img
-            fadeIn={false}
             loading="eager"
             fluid={
               wpgraphql.pages.edges[0].node.landingACFgraphql.hero.heroImage
@@ -83,7 +82,7 @@ export const query = graphql`
                   imageFile {
                     childImageSharp {
                       fluid(maxWidth: 1920, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp_noBase64
+                        ...GatsbyImageSharpFluid_withWebp
                       }
                     }
                   }
