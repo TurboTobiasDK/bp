@@ -2,7 +2,7 @@
   "name": "gatsby-boligpartner-site",
   "private": true,
   "description": "A GatsbyJS site for Bolig-partner.dk",
-  "version": "1.0",
+  "version": "0.1.0",
   "author": "Tobias Magnussen <mig@turbotobias.dk>",
   "dependencies": {
     "gatsby": "^2.24.2",
