@@ -1,5 +1,4 @@
 import React from "react"
-import BackgroundImage from "gatsby-background-image"
 import { Link, graphql } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
@@ -21,36 +20,40 @@ const IndexPage = props => {
         title={wpgraphql.pages.edges[0].node.seo.title}
         description={wpgraphql.pages.edges[0].node.seo.metaDesc}
       />
-      <BackgroundImage
-        className="masthead"
-        fadeIn={false}
-        fluid={
-          wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroImage
-            .imageFile.childImageSharp.fluid
-        }
-      >
-        <div className="black-overlay">
-          <div className="contentbox">
-            <h1>
-              {
-                wpgraphql.pages.edges[0].node.undersideACFgraphql.hero
-                  .heroOverskrift
-              }
-            </h1>
-            <h2>
-              {
-                wpgraphql.pages.edges[0].node.undersideACFgraphql.hero
-                  .heroSubheading
-              }
-            </h2>
-            <span>
-              {parse(
-                `${wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroBullets}`
-              )}
-            </span>
-          </div>
+      <section className="hero">
+        <div className="hero__image-wrapper">
+          <Img
+            fadeIn={false}
+            fluid={
+              wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroImage
+                .imageFile.childImageSharp.fluid
+            }
+            id="hero__image"
+            style={{
+              position: "initial",
+            }}
+          />
         </div>
-      </BackgroundImage>
+        <div className="hero__text">
+          <h1>
+            {
+              wpgraphql.pages.edges[0].node.undersideACFgraphql.hero
+                .heroOverskrift
+            }
+          </h1>
+          <h2>
+            {
+              wpgraphql.pages.edges[0].node.undersideACFgraphql.hero
+                .heroSubheading
+            }
+          </h2>
+          <span>
+            {parse(
+              `${wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroBullets}`
+            )}
+          </span>
+        </div>
+      </section>
       <div className="container">
         <div className="wrapper">
           <div className="boxa">
@@ -95,11 +98,7 @@ const IndexPage = props => {
       <section className="icon-grid-section">
         <div className="container three-grid">
           <div className="item">
-            <img
-              src={order}
-              className="grid-icon"
-              alt=""
-            />
+            <img src={order} className="grid-icon" alt="" />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -108,11 +107,7 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img
-              src={destination}
-              className="grid-icon"
-              alt=""
-            />
+            <img src={destination} className="grid-icon" alt="" />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -121,11 +116,7 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img
-              src={handshake}
-              className="grid-icon"
-              alt=""
-            />
+            <img src={handshake} className="grid-icon" alt="" />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql

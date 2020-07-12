@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
@@ -16,36 +15,40 @@ const servicesPage = props => {
         title={wpgraphql.ydelser.edges[0].node.seo.title}
         description={wpgraphql.ydelser.edges[0].node.seo.metaDesc}
       />
-      <BackgroundImage
-        className="masthead"
-        fadeIn={false}
-        fluid={
-          wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
-            .imageFile.childImageSharp.fluid
-        }
-      >
-        <div className="black-overlay">
-          <div className="contentbox">
-            <h1>
-              {
-                wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
-                  .heroOverskrift
-              }
-            </h1>
-            <h2>
-              {
-                wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
-                  .heroSubheading
-              }
-            </h2>
-            <span>
-              {parse(
-                `${wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroBullets}`
-              )}
-            </span>
-          </div>
+      <section className="hero">
+        <div className="hero__image-wrapper">
+          <Img
+            fadeIn={false}
+            fluid={
+              wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
+                .imageFile.childImageSharp.fluid
+            }
+            id="hero__image"
+            style={{
+              position: "initial",
+            }}
+          />
         </div>
-      </BackgroundImage>
+        <div className="hero__text">
+          <h1>
+            {
+              wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
+                .heroOverskrift
+            }
+          </h1>
+          <h2>
+            {
+              wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
+                .heroSubheading
+            }
+          </h2>
+          <span>
+            {parse(
+              `${wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroBullets}`
+            )}
+          </span>
+        </div>
+      </section>
       <div className="container">
         <div className="wrapper">
           <div className="ydelser-boxa">
@@ -72,10 +75,11 @@ const servicesPage = props => {
           </div>
           <div className="ydelser-boxb">
             <h2>Bestil tinglysning af skilsmisseskøde</h2>
-            <p>Udfyld formularen, så ringer vi dig op hurtigst muligt.
-            Sammen gennemgår vi dit behov og først når vi er enige, sender vi dig en ordrebekræftelse.
-
-Indtast din kontaktoplysninger nedenfor:</p>
+            <p>
+              Udfyld formularen, så ringer vi dig op hurtigst muligt. Sammen
+              gennemgår vi dit behov og først når vi er enige, sender vi dig en
+              ordrebekræftelse. Indtast din kontaktoplysninger nedenfor:
+            </p>
             <form
               name="contact"
               method="POST"

@@ -5,7 +5,7 @@ import Pagination from "../../components/Pagination"
 import SEO from "../../components/seo"
 import "../../components/css/blog.css"
 import { graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 
 const Blog = ({ pageContext, data }) => {
   const { nodes, pageNumber, hasNextPage, itemsPerPage, allPosts } = pageContext
@@ -16,31 +16,35 @@ const Blog = ({ pageContext, data }) => {
         title={data.wpgraphql.pages.edges[0].node.seo.title}
         description={data.wpgraphql.pages.edges[0].node.seo.metaDesc}
       />
-      <BackgroundImage
-        className="masthead"
-        fadeIn={false}
-        fluid={
-          data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero.heroImage
-            .imageFile.childImageSharp.fluid
-        }
-      >
-        <div className="black-overlay">
-          <div className="contentbox">
-            <h1>
-              {
-                data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
-                  .heroOverskrift
-              }
-            </h1>
-            <h2>
-              {
-                data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
-                  .heroSubheading
-              }
-            </h2>
-          </div>
+      <section className="hero">
+        <div className="hero__image-wrapper">
+          <Img
+            fadeIn={false}
+            fluid={
+              data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
+                .heroImage.imageFile.childImageSharp.fluid
+            }
+            id="hero__image"
+            style={{
+              position: "initial",
+            }}
+          />
         </div>
-      </BackgroundImage>
+        <div className="hero__text">
+          <h1>
+            {
+              data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
+                .heroOverskrift
+            }
+          </h1>
+          <h2>
+            {
+              data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
+                .heroSubheading
+            }
+          </h2>
+        </div>
+      </section>
       <section className="bloggen">
         <div className="container">
           {nodes &&

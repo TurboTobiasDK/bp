@@ -38,7 +38,7 @@ export default () => {
             <label htmlFor="drop-1" className="toggle">
               Ydelser +
             </label>
-            <a href="#">Ydelser</a>
+            <a href="#0">Ydelser</a>
             <input type="checkbox" id="drop-1" />
             <ul className="dropdown-list">
               <li>

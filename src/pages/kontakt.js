@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import parse from "html-react-parser"
 import "../components/css/kontakt.css"
@@ -15,30 +15,34 @@ const kontaktPage = props => {
         title={wpgraphql.pages.edges[0].node.seo.title}
         description={wpgraphql.pages.edges[0].node.seo.metaDesc}
       />
-      <BackgroundImage
-        className="masthead"
-        fadeIn={false}
-        fluid={
-          wpgraphql.pages.edges[0].node.subpageACFgraphql.hero.heroImage
-            .imageFile.childImageSharp.fluid
-        }
-      >
-        <div className="black-overlay">
-          <div className="contentbox">
-            <h1>
-              {
-                wpgraphql.pages.edges[0].node.subpageACFgraphql.hero
-                  .heroOverskrift
-              }
-            </h1>
-            <h2>
-              {parse(
-                `${wpgraphql.pages.edges[0].node.subpageACFgraphql.hero.heroSubheading}`
-              )}
-            </h2>
-          </div>
+      <section className="hero">
+        <div className="hero__image-wrapper">
+          <Img
+            fadeIn={false}
+            fluid={
+              wpgraphql.pages.edges[0].node.subpageACFgraphql.hero.heroImage
+                .imageFile.childImageSharp.fluid
+            }
+            id="hero__image"
+            style={{
+              position: "initial",
+            }}
+          />
         </div>
-      </BackgroundImage>
+        <div className="hero__text">
+          <h1>
+            {
+              wpgraphql.pages.edges[0].node.subpageACFgraphql.hero
+                .heroOverskrift
+            }
+          </h1>
+          <h2>
+            {parse(
+              `${wpgraphql.pages.edges[0].node.subpageACFgraphql.hero.heroSubheading}`
+            )}
+          </h2>
+        </div>
+      </section>
       <div className="container">
         <div className="wrapper">
           <div className="kontakt-boxa">
