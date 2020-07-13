@@ -1,7 +1,7 @@
 {
   "name": "gatsby-boligpartner-site",
   "private": true,
-  "description": "A GatsbyJS site for Bolig-partner.dk",
+  "description": "A GatsbyJS/WordPress site for Bolig-partner.dk",
   "version": "0.1.0",
   "author": "Tobias Magnussen <mig@turbotobias.dk>",
   "dependencies": {
