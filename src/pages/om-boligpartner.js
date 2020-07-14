@@ -18,6 +18,7 @@ const omPage = props => {
       <section className="hero">
         <div className="hero__image-wrapper">
           <Img
+            fadeIn={false}
             loading="eager"
             fluid={
               wpgraphql.pages.edges[0].node.subpageACFgraphql.hero.heroImage
@@ -125,7 +126,7 @@ export const query = graphql`
                   imageFile {
                     childImageSharp {
                       fluid(maxWidth: 1640, quality: 100) {
-                        ...GatsbyImageSharpFluid_withWebp
+                        ...GatsbyImageSharpFluid_withWebp_noBase64
                       }
                     }
                   }
