@@ -5,155 +5,205 @@ import { graphql } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
 import "../../components/css/ydelser.css"
+import { navigateTo } from "gatsby-link"
 
-const servicesPage = props => {
-  const { wpgraphql } = props.data
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
 
-  return (
-    <Layout>
-      <SEO
-        title={wpgraphql.ydelser.edges[0].node.seo.title}
-        description={wpgraphql.ydelser.edges[0].node.seo.metaDesc}
-      />
-      <section className="hero">
-        <div className="hero__image-wrapper">
-          <Img
-            fadeIn={false}
-            loading="eager"
-            fluid={
-              wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
-                .imageFile.childImageSharp.fluid
-            }
-            id="hero__image"
-            style={{
-              position: "initial",
-            }}
-          />
-        </div>
-        <div className="hero__text">
-          <h1>
-            {
-              wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
-                .heroOverskrift
-            }
-          </h1>
-          <h2>
-            {
-              wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
-                .heroSubheading
-            }
-          </h2>
-          <span>
-            {parse(
-              `${wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroBullets}`
-            )}
-          </span>
-        </div>
-      </section>
-      <div className="container">
-        <div className="wrapper">
-          <div className="ydelser-boxa">
-            <h2>
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+      .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error))
+  }
+
+  render(props) {
+    const { wpgraphql } = props.data
+    return (
+      <Layout>
+        <SEO
+          title={wpgraphql.ydelser.edges[0].node.seo.title}
+          description={wpgraphql.ydelser.edges[0].node.seo.metaDesc}
+        />
+        <section className="hero">
+          <div className="hero__image-wrapper">
+            <Img
+              fadeIn={false}
+              loading="eager"
+              fluid={
+                wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
+                  .imageFile.childImageSharp.fluid
+              }
+              id="hero__image"
+              style={{
+                position: "initial",
+              }}
+            />
+          </div>
+          <div className="hero__text">
+            <h1>
               {
                 wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
                   .heroOverskrift
               }
+            </h1>
+            <h2>
+              {
+                wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
+                  .heroSubheading
+              }
             </h2>
-            <div className="ydelser-maintext-price">
-              <p className="ydelser-price-maintext">
+            <span>
+              {parse(
+                `${wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroBullets}`
+              )}
+            </span>
+          </div>
+        </section>
+        <div className="container">
+          <div className="wrapper">
+            <div className="ydelser-boxa">
+              <h2>
                 {
                   wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
-                    .heroSubheading
+                    .heroOverskrift
                 }
-              </p>
-              <p className="tillaegges">
-                {wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.tillaegges}
-              </p>
-            </div>
-            {parse(
-              `${wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.mainText}`
-            )}
-          </div>
-          <div className="ydelser-boxb">
-            <h2>Bestil tinglysning af skøde</h2>
-            <p>
-              Udfyld formularen, så ringer vi dig op hurtigst muligt. Sammen
-              gennemgår vi dit behov og først når vi er enige, sender vi dig en
-              ordrebekræftelse. Indtast din kontaktoplysninger nedenfor:
-            </p>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              className="hero-form"
-              data-netlify-honeypot="bot-field"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
-              <p>
-                <input type="text" name="name" placeholder="Dit navn" />
-              </p>
-              <p>
-                <input type="email" name="email" placeholder="Din email" />
-              </p>
-              <p>
-                <input type="phone" name="phone" placeholder="Dit tlf. nr." />
-              </p>
-              <p>
-                <textarea
-                  name="message"
-                  placeholder="Skriv evt. hvad det handler om"
-                  rows="5"
-                ></textarea>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
-            <a
-              href="https://dk.trustpilot.com/review/bolig-partner.dk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="trustpilot-sidebar"
-            >
-              <div className="item">
-                <p className="trustpilot-ydelser-header">
+              </h2>
+              <div className="ydelser-maintext-price">
+                <p className="ydelser-price-maintext">
                   {
-                    wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
-                      .trustpilotYdelser.header
+                    wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero
+                      .heroSubheading
                   }
                 </p>
-                <span className="grid-img-container">
-                  <Img
-                    fluid={
-                      wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
-                        .trustpilotYdelser.ikonBillede.imageFile.childImageSharp
-                        .fluid
-                    }
-                  />
-                </span>
-                <p className="trustpilot-review">
-                  {
-                    wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
-                      .trustpilotYdelser.review
-                  }
-                </p>
-                <p className="trustpilot-name">
-                  {
-                    wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
-                      .trustpilotYdelser.person
-                  }
+                <p className="tillaegges">
+                  {wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.tillaegges}
                 </p>
               </div>
-            </a>
+              {parse(
+                `${wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.mainText}`
+              )}
+            </div>
+            <div className="ydelser-boxb">
+              <h2>Bestil tinglysning af skøde</h2>
+              <p>
+                Udfyld formularen, så ringer vi dig op hurtigst muligt. Sammen
+                gennemgår vi dit behov og først når vi er enige, sender vi dig
+                en ordrebekræftelse. Indtast din kontaktoplysninger nedenfor:
+              </p>
+              <form
+                name="contact"
+                method="POST"
+                action="/tak-for-din-henvendelse/"
+                data-netlify="true"
+                className="hero-form"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleSubmit}
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                  <input name="bot-field" onChange={this.handleChange} />
+                </p>
+                <p>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Dit navn"
+                    onChange={this.handleChange}
+                  />
+                </p>
+                <p>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Din email"
+                    onChange={this.handleChange}
+                  />
+                </p>
+                <p>
+                  <input
+                    type="phone"
+                    name="phone"
+                    placeholder="Dit tlf. nr."
+                    onChange={this.handleChange}
+                  />
+                </p>
+                <p>
+                  <textarea
+                    name="message"
+                    placeholder="Skriv evt. hvad det handler om"
+                    rows="5"
+                    onChange={this.handleChange}
+                  ></textarea>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+              <a
+                href="https://dk.trustpilot.com/review/bolig-partner.dk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="trustpilot-sidebar"
+              >
+                <div className="item">
+                  <p className="trustpilot-ydelser-header">
+                    {
+                      wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
+                        .trustpilotYdelser.header
+                    }
+                  </p>
+                  <span className="grid-img-container">
+                    <Img
+                      fluid={
+                        wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
+                          .trustpilotYdelser.ikonBillede.imageFile
+                          .childImageSharp.fluid
+                      }
+                    />
+                  </span>
+                  <p className="trustpilot-review">
+                    {
+                      wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
+                        .trustpilotYdelser.review
+                    }
+                  </p>
+                  <p className="trustpilot-name">
+                    {
+                      wpgraphql.ydelser.edges[0].node.ydelserACFgraphql
+                        .trustpilotYdelser.person
+                    }
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
-  )
+      </Layout>
+    )
+  }
 }
-
-export default servicesPage
 
 export const query = graphql`
   query {

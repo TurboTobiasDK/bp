@@ -27,10 +27,10 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "typeface-lato": "0.0.75"
+    "typeface-lato": "^0.0.75"
   },
   "devDependencies": {
-    "prettier": "2.0.4"
+    "prettier": "^2.0.4"
   },
   "keywords": [
     "gatsby"
