@@ -19,7 +19,7 @@ const Blog = ({ pageContext, data }) => {
       <section className="hero">
         <div className="hero__image-wrapper">
           <Img
-            fadeIn="false"
+            fadeIn={false}
             loading="eager"
             fluid={
               data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
