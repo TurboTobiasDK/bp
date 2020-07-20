@@ -21,7 +21,6 @@ const Blog = ({ pageContext, data }) => {
           <Img
             fadeIn="false"
             loading="eager"
-            critical
             fluid={
               data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
                 .heroImage.imageFile.childImageSharp.fluid

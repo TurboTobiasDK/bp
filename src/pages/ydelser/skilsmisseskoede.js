@@ -20,7 +20,6 @@ const servicesPage = props => {
           <Img
             fadeIn="false"
             loading="eager"
-            critical
             fluid={
               wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
                 .imageFile.childImageSharp.fluid
