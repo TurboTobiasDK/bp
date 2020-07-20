@@ -18,8 +18,9 @@ const cookiePage = props => {
       <section className="hero">
         <div className="hero__image-wrapper">
           <Img
-            fadeIn={false}
+            fadeIn="false"
             loading="eager"
+            critical
             fluid={
               wpgraphql.pages.edges[0].node.politikACFgraphql.hero.heroImage
                 .imageFile.childImageSharp.fluid

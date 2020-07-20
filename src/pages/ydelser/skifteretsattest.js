@@ -18,8 +18,9 @@ const servicesPage = props => {
       <section className="hero">
         <div className="hero__image-wrapper">
           <Img
-            fadeIn={false}
+            fadeIn="false"
             loading="eager"
+            critical
             fluid={
               wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
                 .imageFile.childImageSharp.fluid
