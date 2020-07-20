@@ -85,7 +85,7 @@ const servicesPage = props => {
               data-netlify="true"
               className="hero-form"
               data-netlify-honeypot="bot-field"
-              action="/tak-for-din-henvendelse/"
+              action="/tak-for-din-henvendelse"
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
