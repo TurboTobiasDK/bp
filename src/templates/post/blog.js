@@ -17,20 +17,18 @@ const Blog = ({ pageContext, data }) => {
         description={data.wpgraphql.pages.edges[0].node.seo.metaDesc}
       />
       <section className="hero">
-        <div className="hero__image-wrapper">
-          <Img
-            fadeIn={false}
-            loading="eager"
-            fluid={
-              data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
-                .heroImage.imageFile.childImageSharp.fluid
-            }
-            id="hero__image"
-            style={{
-              position: "initial",
-            }}
-          />
-        </div>
+        <Img
+          fadeIn={false}
+          loading="eager"
+          fluid={
+            data.wpgraphql.pages.edges[0].node.bloggenACFgraphql.hero
+              .heroImage.imageFile.childImageSharp.fluid
+          }
+          id="hero__image"
+          style={{
+            position: "initial",
+          }}
+        />
         <div className="hero__text">
           <h1>
             {
