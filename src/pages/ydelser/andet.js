@@ -16,15 +16,18 @@ const servicesPage = props => {
         description={wpgraphql.ydelser.edges[0].node.seo.metaDesc}
       />
       <section className="hero">
-        <div class="hero__image-wrapper">
-          <img src={
+        <Img
+          fadeIn={false}
+          loading="eager"
+          fluid={
             wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
-              .sourceUrl
+              .imageFile.childImageSharp.fluid
           }
-            id="hero__image"
-            alt="hero image"
-          />
-        </div>
+          id="hero__image"
+          style={{
+            position: "initial",
+          }}
+        />
         <div className="hero__text">
           <h1>
             {
