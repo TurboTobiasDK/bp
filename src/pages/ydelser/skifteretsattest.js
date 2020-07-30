@@ -5,9 +5,17 @@ import { graphql } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
 import "../../components/css/ydelser.css"
+import { useNavigate } from "@reach/router"
 
-const servicesPage = props => {
+const ServicesPage = props => {
   const { wpgraphql } = props.data
+
+  const navigate = useNavigate();
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    navigate('/tak-for-din-henvendelse');
+  }
 
   return (
     <Layout>
@@ -85,7 +93,7 @@ const servicesPage = props => {
               data-netlify="true"
               className="hero-form"
               data-netlify-honeypot="bot-field"
-              action="/tak-for-din-henvendelse"
+              onSubmit={onSubmitHandler}
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
@@ -157,7 +165,7 @@ const servicesPage = props => {
   )
 }
 
-export default servicesPage
+export default ServicesPage
 
 export const query = graphql`
   query {
