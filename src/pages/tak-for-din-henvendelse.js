@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/css/blog.css"
@@ -7,16 +7,17 @@ import Img from "gatsby-image"
 import parse from "html-react-parser"
 import { Helmet } from "react-helmet"
 
-const landingPage = props => {
+const LandingPage = props => {
   const { wpgraphql } = props.data
+
+  useEffect(() => {
+    typeof window !== "undefined" && window.gtag('event', 'conversion', { 'send_to': 'AW-664120405/VNxECKqV3sUBENXY1rwC' })
+  }, [])
 
   return (
     <Layout>
       <Helmet>
         <meta name="robots" content="noindex" />
-        <script type="application/ld+json">{`
-      gtag('event', 'conversion', {'send_to': 'AW-664120405/VNxECKqV3sUBENXY1rwC'});
-    `}</script>
       </Helmet>
       <SEO
         title={wpgraphql.pages.edges[0].node.seo.title}
@@ -59,7 +60,7 @@ const landingPage = props => {
   )
 }
 
-export default landingPage
+export default LandingPage
 
 export const query = graphql`
   query {
