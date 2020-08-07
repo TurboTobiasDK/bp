@@ -124,11 +124,6 @@ const ServicesPage = props => {
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
-              <input
-                type="hidden"
-                name="subject"
-                value="Bestilt skifteretsattest"
-              />
               <p>
                 <input type="text" name="name" placeholder="Dit navn" value={name} onChange={(e) => setName(e.currentTarget.value)} />
               </p>

@@ -1,13 +1,48 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import { graphql } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
 import "../../components/css/ydelser.css"
+import { useNavigate } from "@reach/router"
 
-const servicesPage = props => {
+const ServicesPage = props => {
   const { wpgraphql } = props.data
+
+  const navigate = useNavigate();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+      )
+      .join("&");
+  }
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+      },
+      body: encode({
+        name,
+        email,
+        phone,
+        message,
+        "form-name": 'contact'
+      })
+    })
+
+    navigate('/tak-for-din-henvendelse');
+
+  }
 
   return (
     <Layout>
@@ -85,22 +120,24 @@ const servicesPage = props => {
               data-netlify="true"
               className="hero-form"
               data-netlify-honeypot="bot-field"
+              onSubmit={onSubmitHandler}
             >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
               <p>
-                <input type="text" name="name" placeholder="Dit navn" />
+                <input type="text" name="name" placeholder="Dit navn" value={name} onChange={(e) => setName(e.currentTarget.value)} />
               </p>
               <p>
-                <input type="email" name="email" placeholder="Din email" />
+                <input type="email" name="email" placeholder="Din email" value={email} onChange={(e) => setEmail(e.currentTarget.value)} />
               </p>
               <p>
-                <input type="phone" name="phone" placeholder="Dit tlf. nr." />
+                <input type="phone" name="phone" placeholder="Dit tlf. nr." value={phone} onChange={(e) => setPhone(e.currentTarget.value)} />
               </p>
               <p>
                 <textarea
                   name="message"
                   placeholder="Skriv evt. hvad det handler om"
+                  value={message} onChange={(e) => setMessage(e.currentTarget.value)}
                   rows="5"
                 ></textarea>
               </p>
@@ -151,7 +188,7 @@ const servicesPage = props => {
   )
 }
 
-export default servicesPage
+export default ServicesPage
 
 export const query = graphql`
   query {
