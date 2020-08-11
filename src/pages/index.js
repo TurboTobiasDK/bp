@@ -315,7 +315,7 @@ const IndexPage = props => {
               )}
               <div className="bestil">
                 <p className="disclaimer">
-                  * Tinglysningsafgift på til staten tillægges
+                  * Tinglysningsafgift til staten tillægges
                 </p>
                 <p className="emph">
                   <Link to="/ydelser/skilsmisseskoede/" className="button">
