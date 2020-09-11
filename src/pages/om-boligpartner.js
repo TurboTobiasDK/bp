@@ -123,7 +123,8 @@ export const query = graphql`
                   sourceUrl
                   imageFile {
                     childImageSharp {
-                      fluid(maxWidth: 1640, quality: 100) {
+                      fluid(maxHeight: 520, quality: 100) {
+                        aspectRatio
                         ...GatsbyImageSharpFluid_withWebp_noBase64
                       }
                     }

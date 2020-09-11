@@ -11,7 +11,10 @@ const LandingPage = props => {
   const { wpgraphql } = props.data
 
   useEffect(() => {
-    typeof window !== "undefined" && window.gtag('event', 'conversion', { 'send_to': 'AW-664120405/VNxECKqV3sUBENXY1rwC' })
+    typeof window !== "undefined" &&
+      window.gtag("event", "conversion", {
+        send_to: "AW-664120405/VNxECKqV3sUBENXY1rwC",
+      })
   }, [])
 
   return (
@@ -56,7 +59,7 @@ const LandingPage = props => {
           {parse(`${wpgraphql.pages.edges[0].node.landingACFgraphql.maintext}`)}
         </div>
       </section>
-    </Layout >
+    </Layout>
   )
 }
 
@@ -81,7 +84,8 @@ export const query = graphql`
                   sourceUrl
                   imageFile {
                     childImageSharp {
-                      fluid(maxWidth: 1640, quality: 100) {
+                      fluid(maxHeight: 520, quality: 100) {
+                        aspectRatio
                         ...GatsbyImageSharpFluid_withWebp_noBase64
                       }
                     }
