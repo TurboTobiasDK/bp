@@ -29,7 +29,6 @@ module.exports = {
         refetchInterval: 60,
       },
     },
-    "gatsby-plugin-preload-link-crossorigin",
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     "gatsby-plugin-netlify-cache",
