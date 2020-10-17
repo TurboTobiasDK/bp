@@ -30,7 +30,7 @@ const LandingPage = props => {
         paddingTop: "75px",
       }}>
         <div className="container">
-          <h1>Tak for din henvendelse</h1>
+          <h1 style={{ color: '#1a315d' }}>Tak for din henvendelse</h1>
           {parse(`${wpgraphql.pages.edges[0].node.landingACFgraphql.maintext}`)}
           <p>Med venlig hilsen,</p>
           <Link to="/">

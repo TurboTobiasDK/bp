@@ -17,8 +17,6 @@ const forretningsbetingelserPage = props => {
       />
       <section className="hero">
         <Img
-          fadeIn={false}
-          loading="eager"
           fluid={
             wpgraphql.pages.edges[0].node.politikACFgraphql.hero.heroImage
               .imageFile.childImageSharp.fluid
