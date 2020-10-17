@@ -619,3 +619,7 @@ pre tt:after {
 .hero-form .hidden {
   display: none;
 }
+
+main {
+  min-height: calc(100vh - 350px);
+}

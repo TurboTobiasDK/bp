@@ -66,21 +66,6 @@ export const query = graphql`
             }
             politikACFgraphql {
               maintext
-              hero {
-                heroOverskrift
-                heroSubheading
-                heroImage {
-                  sourceUrl
-                  imageFile {
-                    childImageSharp {
-                      fluid(maxHeight: 520, quality: 100) {
-                        aspectRatio
-                        ...GatsbyImageSharpFluid_withWebp_noBase64
-                      }
-                    }
-                  }
-                }
-              }
             }
           }
         }

@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/css/blog.css"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import parse from "html-react-parser"
 import { Helmet } from "react-helmet"
@@ -26,40 +26,28 @@ const LandingPage = props => {
         title={wpgraphql.pages.edges[0].node.seo.title}
         description={wpgraphql.pages.edges[0].node.seo.metaDesc}
       />
-      <section className="hero">
-        <Img
-          fadeIn={false}
-          loading="eager"
-          fluid={
-            wpgraphql.pages.edges[0].node.landingACFgraphql.hero.heroImage
-              .imageFile.childImageSharp.fluid
-          }
-          id="hero__image"
-          style={{
-            position: "initial",
-          }}
-        />
-        <div className="hero__text">
-          <h1>
-            {
-              wpgraphql.pages.edges[0].node.landingACFgraphql.hero
-                .heroOverskrift
-            }
-          </h1>
-          <h2>
-            {
-              wpgraphql.pages.edges[0].node.landingACFgraphql.hero
-                .heroSubheading
-            }
-          </h2>
-        </div>
-      </section>
-      <section className="politik">
+      <section className="politik" style={{
+        paddingTop: "75px",
+      }}>
         <div className="container">
+          <h1>Tak for din henvendelse</h1>
           {parse(`${wpgraphql.pages.edges[0].node.landingACFgraphql.maintext}`)}
+          <p>Med venlig hilsen,</p>
+          <Link to="/">
+            <Img fixed={props.data.file.childImageSharp.fixed} />
+          </Link>
+          <br /><br />
+          <p style={{ textDecoration: 'none' }}>
+            <a href="https://dk.trustpilot.com/review/bolig-partner.dk?utm_medium=Trustbox&utm_source=EmailSignature4" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', textUnderline: 'none' }}><img src="https://emailsignature.trustpilot.com/signature/da-DK/4/5d932eafe4debe0001cd9e8d/text.png" border={0} height={21} style={{ maxHeight: '21px', border: 'none' }} alt="Trustpilot Human score" /></a>
+        &nbsp;&nbsp;
+        <a href="https://dk.trustpilot.com/review/bolig-partner.dk?utm_medium=Trustbox&utm_source=EmailSignature4" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', textUnderline: 'none' }}><img src="https://emailsignature.trustpilot.com/signature/da-DK/4/5d932eafe4debe0001cd9e8d/stars.png" border={0} height={21} style={{ maxHeight: '21px', border: 'none' }} alt="Trustpilot Stars" /></a>
+        &nbsp;&nbsp;
+        <a href="https://dk.trustpilot.com/review/bolig-partner.dk?utm_medium=Trustbox&utm_source=EmailSignature4" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', textUnderline: 'none' }}><img src="https://emailsignature.trustpilot.com/brand/s/4/logo.png" border={0} height={21} style={{ maxHeight: '21px', border: 'none' }} alt="Trustpilot Logo" /></a>
+          </p>
+
         </div>
       </section>
-    </Layout>
+    </Layout >
   )
 }
 
@@ -67,6 +55,13 @@ export default LandingPage
 
 export const query = graphql`
   query {
+    file(relativePath: { eq: "boligpartner-logo.jpg" }) {
+      childImageSharp {
+        fixed(width: 332, height: 80) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
     wpgraphql {
       pages(where: { id: 1039 }) {
         edges {
@@ -77,21 +72,6 @@ export const query = graphql`
             }
             landingACFgraphql {
               maintext
-              hero {
-                heroOverskrift
-                heroSubheading
-                heroImage {
-                  sourceUrl
-                  imageFile {
-                    childImageSharp {
-                      fluid(maxHeight: 520, quality: 100) {
-                        aspectRatio
-                        ...GatsbyImageSharpFluid_withWebp_noBase64
-                      }
-                    }
-                  }
-                }
-              }
             }
           }
         }
