@@ -6,7 +6,7 @@ import "../components/css/forside.css"
 
 import handshake from "../images/SVG/handshake.svg"
 import order from "../images/SVG/order.svg"
-import destination from "../images/SVG/destination.svg"
+import denmark from "../images/SVG/denmark.svg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -104,7 +104,7 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img src={destination} className="grid-icon" alt="" />
+            <img src={denmark} className="grid-icon" alt="" />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
