@@ -6,7 +6,7 @@ import "../components/css/forside.css"
 
 import handshake from "../images/SVG/handshake.svg"
 import order from "../images/SVG/order.svg"
-import denmark from "../images/SVG/denmarkIcon.svg"
+import denmark from "../images/SVG/denmark.svg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
