@@ -52,7 +52,7 @@ export default () => {
         </div>
         <div>
           <h2>Mærkninger</h2>
-          <img src={HDI} alt="HDI Gerling professionelt ansvarsforsikret" />
+          <img src={HDI} alt="HDI Gerling professionelt ansvarsforsikret" style={{width: 287, height: 98}} />
         </div>
       </div>
       <a
