@@ -27,6 +27,7 @@ const IndexPage = props => {
               .imageFile.childImageSharp.fluid
           }
           id="hero__image"
+          loading="eager"
           style={{
             position: "initial",
           }}
