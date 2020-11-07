@@ -12,19 +12,19 @@ export default () => {
         <div className="mobile-bottom-nav">
             <div className="mobile-bottom-nav__item">
                 <Link to="/" className="mobile-bottom-nav__item-content">
-                    <img src={home} className="sticky-footer-icon" alt="house icon" scale={0} />
+                    <img src={home} className="sticky-footer-icon" alt="house icon" scale={0} style={{width: 20, height: 20}} />
         Forside
       </Link>
             </div>
             <a href="mailto:info@bolig-partner.dk" className="mobile-bottom-nav__item">
                 <div className="mobile-bottom-nav__item-content">
-                    <img src={email} className="sticky-footer-icon" alt="email icon" scale={0} />
+                    <img src={email} className="sticky-footer-icon" alt="email icon" scale={0} style={{width: 20, height: 20}} />
         Mail
       </div>
             </a>
             <a href="tel:70605038" className="mobile-bottom-nav__item">
                 <div className="mobile-bottom-nav__item-content">
-                    <img src={phone} className="sticky-footer-icon" alt="phone icon" scale={0} />
+                    <img src={phone} className="sticky-footer-icon" alt="phone icon" scale={0} style={{width: 20, height: 20}} />
         Ring
       </div>
             </a>

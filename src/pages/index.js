@@ -95,7 +95,7 @@ const IndexPage = props => {
       <section className="icon-grid-section">
         <div className="container three-grid">
           <div className="item">
-            <img src={order} className="grid-icon" alt="" />
+            <img src={order} className="grid-icon" alt="" style={{width: 88, height: 90}} />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -104,7 +104,7 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img src={denmark} className="grid-icon" alt="" />
+            <img src={denmark} className="grid-icon" alt="" style={{width: 88, height: 90}} />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -113,7 +113,7 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img src={handshake} className="grid-icon" alt="" />
+            <img src={handshake} className="grid-icon" alt="" style={{width: 88, height: 90}} />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql

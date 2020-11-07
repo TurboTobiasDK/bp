@@ -101,11 +101,6 @@ h6 {
   height: auto;
 }
 
-.grid-icon {
-  width: 88px;
-  height: 90px;
-}
-
 .item {
   text-align: center;
 }
@@ -246,7 +241,6 @@ h6 {
   transition: 0.3s;
   position: relative;
 }
-
 
 @media (min-width: 1280px) {
   .price-box {
