@@ -30,7 +30,7 @@ const IndexPage = props => {
           fadeIn="false" 
           loading="eager"
           style={{
-            position: "initial",
+            position: "initial", width: 1000, height: 1000
           }}
         />
         <div className="hero__text">
