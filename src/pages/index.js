@@ -27,11 +27,9 @@ const IndexPage = props => {
               .imageFile.childImageSharp.fluid
           }
           id="hero__image"
-          fadeIn="false" 
-          loading="eager"
           style={{
-            position: "initial", width: 1000, height: 1000
-          }}
+            position: "initial"
+                    }}
         />
         <div className="hero__text">
           <h1>
