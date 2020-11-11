@@ -53,6 +53,8 @@ const ServicesPage = props => {
             wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero.heroImage
               .imageFile.childImageSharp.fluid
           }
+          fadeIn={false}
+          loading="eager"
           id="hero__image"
           style={{
             position: "initial",
@@ -220,7 +222,7 @@ export const query = graphql`
                     childImageSharp {
                       fluid(maxHeight: 520, quality: 100) {
                         aspectRatio
-                        ...GatsbyImageSharpFluid_withWebp_noBase64
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
                       }
                     }
                   }
