@@ -59,6 +59,7 @@ export default () => {
         href="https://dk.trustpilot.com/review/bolig-partner.dk"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="trustpilot stjerner"
       >
         <span className="floating-trustpilot"><Img fixed={data.file.childImageSharp.fixed} /></span></a>
     </footer>

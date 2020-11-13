@@ -250,6 +250,7 @@ const IndexPage = props => {
             href="https://dk.trustpilot.com/review/bolig-partner.dk"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Trustpilot ikon"
           >
             <span className="trustpilot-img-container">
               <Img

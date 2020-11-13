@@ -21,7 +21,7 @@ export default () => {
     <nav>
       <div className="container">
         <div id="logo">
-          <Link to="/">
+          <Link to="/" aria-label="BoligPartner logo">
             <Img fixed={data.file.childImageSharp.fixed} />
           </Link>
         </div>
