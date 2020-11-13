@@ -52,6 +52,10 @@ module.exports = {
         theme_color: `#1a315d`,
         display: `minimal-ui`,
         icon: `src/images/BoligPartner_huse-logo.png`, // This path is relative to the root of the site.
+        icon_options: {
+          // For all the options available, please see the additional resources below.
+          purpose: `any maskable`,
+        },
       },
     },
     {
