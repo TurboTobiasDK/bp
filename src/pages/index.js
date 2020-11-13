@@ -70,26 +70,27 @@ const IndexPage = props => {
               className="hero-form"
               data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" aria-label="name" />
+              <input type="hidden" name="bot-field" aria-label="bot field" />
               <p>
-                <input type="text" name="name" placeholder="Dit navn" />
+                <input type="text" name="name" placeholder="Dit navn" aria-label="name" />
               </p>
               <p>
-                <input type="email" name="email" placeholder="Din email" />
+                <input type="email" name="email" placeholder="Din email" aria-label="email" />
               </p>
               <p>
-                <input type="phone" name="phone" placeholder="Dit tlf. nr." />
+                <input type="phone" name="phone" placeholder="Dit tlf. nr." aria-label="phone" />
               </p>
               <p>
                 <textarea
                   name="message"
                   placeholder="Skriv evt. hvad det handler om"
                   rows="5"
+                  aria-label="message"
                 ></textarea>
               </p>
               <p>
-                <button type="submit">Send</button>
+                <button type="submit" aria-label="submit">Send</button>
               </p>
             </form>
           </div>
