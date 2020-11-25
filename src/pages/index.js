@@ -26,13 +26,11 @@ const IndexPage = props => {
             wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroImage
               .imageFile.childImageSharp.fluid
           }
-          fadeIn={false}
-          loading="eager"
 
           id="hero__image"
           style={{
             position: "initial"
-                    }}
+          }}
         />
         <div className="hero__text">
           <h1>
@@ -99,7 +97,7 @@ const IndexPage = props => {
       <section className="icon-grid-section">
         <div className="container three-grid">
           <div className="item">
-            <img src={order} className="grid-icon" alt="pakke ikon" style={{width: 88, height: 90}} />
+            <img src={order} className="grid-icon" alt="pakke ikon" style={{ width: 88, height: 90 }} />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -108,7 +106,7 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img src={denmark} className="grid-icon" alt="denmark icon" style={{width: 88, height: 90}} />
+            <img src={denmark} className="grid-icon" alt="denmark icon" style={{ width: 88, height: 90 }} />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -117,7 +115,7 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img src={handshake} className="grid-icon" alt="handshake icon" style={{width: 88, height: 90}} />
+            <img src={handshake} className="grid-icon" alt="handshake icon" style={{ width: 88, height: 90 }} />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -400,7 +398,7 @@ export const query = graphql`
                     childImageSharp {
                       fluid(maxHeight: 520, quality: 100) {
                         aspectRatio
-                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                        ...GatsbyImageSharpFluid_withWebp
                       }
                     }
                   }
