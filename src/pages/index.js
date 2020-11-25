@@ -26,7 +26,8 @@ const IndexPage = props => {
             wpgraphql.pages.edges[0].node.undersideACFgraphql.hero.heroImage
               .imageFile.childImageSharp.fluid
           }
-
+          fadeIn={false}
+          loading="eager"
           id="hero__image"
           style={{
             position: "initial"
@@ -398,7 +399,7 @@ export const query = graphql`
                     childImageSharp {
                       fluid(maxHeight: 520, quality: 100) {
                         aspectRatio
-                        ...GatsbyImageSharpFluid_withWebp
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
                       }
                     }
                   }
