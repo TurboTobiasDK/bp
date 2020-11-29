@@ -8,8 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "./layout.css"
-import "../css/background-image.css"
+// import "./layout.css"
+// import "../css/background-image.css"
 
 const Layout = ({ children }) => {
 
