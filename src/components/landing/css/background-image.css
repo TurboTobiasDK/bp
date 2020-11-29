@@ -1,0 +1,100 @@
+/* purgecss start ignore */
+.hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
+  height: 800px;
+  max-height: 800px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  object-fit: cover;
+}
+
+.hero:after {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(26, 49, 93, 0.85);
+  mix-blend-mode: hard-light;
+}
+
+.hero__image-wrapper {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#hero__image {
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.hero__text {
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero__text h1 {
+  max-width: 900px;
+  font-size: 46px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bp-fordele {
+  margin-bottom: 25px;
+}
+
+.hero__text h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero__text p {
+  max-width: 777px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__text h1 {
+    margin: 0 0 16px;
+    font-size: 30px;
+  }
+
+  .hero__text p {
+    font-size: 22px;
+  }
+}
+
+.bp-checkmark::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 2px;
+  width: 1.5em;
+  height: 1.5em;
+  z-index: 99999999;
+  background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='21' height='21' fill='%2300A344' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>")
+    no-repeat;
+}
+/* purgecss end ignore */
