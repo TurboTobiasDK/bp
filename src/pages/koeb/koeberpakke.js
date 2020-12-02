@@ -4,7 +4,7 @@ import SEO from "../../components/seo"
 import { graphql, Link } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
-import "../../components/landing/css/landing.css"
+// import "../../components/landing/css/landing.css"
 import { useNavigate } from "@reach/router"
 import { Helmet } from "react-helmet"
 

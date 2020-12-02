@@ -8,8 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "./landing-layout.css"
-import "../css/landing-background-image.css"
+// import "./landing-layout.css"
+// import "../css/landing-background-image.css"
 
 const Layout = ({ children }) => {
 
