@@ -1,137 +1,81 @@
 body {
-    overflow: hidden;
-  }
-  
-  body,
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Lato", sans-serif;
-  }
+  overflow: hidden;
+}
 
-  /* button */
-  .button {
-    background-color: #319e60;
-    font-family: 'Roboto', sans-serif;
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: 700;
-    text-transform: none;
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* button */
+.button {
+  background-color: #319e60;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+/* main text section */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+
+@media (min-width: 767px) {
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
   }
-  
-  /* main text section */
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0;
-  }
-  
-  @media (min-width: 767px) {
-    .wrapper {
-      display: flex;
-      align-items: flex-start;
-    }
-  }
-  
-  /* box section */
-  
-  .ydelser-boxa {
-    background-color: #ffffff !important;
-    width: calc(100% / 3 * 2 - 20px);
-    padding: 50px;
-    margin-right: 25px;
-    box-shadow: 0 -60px 20px 1px rgba(0, 0, 0, 0.16);
-    z-index: 999999;
-    margin-top: -140px;
-  }
-  
-  .ydelser-boxa h2 {
-    color: #1a315d;
-    font-size: 40px;
-    font-weight: 900;
-    letter-spacing: 0px;
-    margin-bottom: 10px;
-  }
-  
-  .ydelser-boxa p {
-    color: #3b4f70;
-    font-size: 18px;
-  }
-  
-  .ydelser-boxa .tillaegges {
-    font-size: 12px;
-  }
-  
-  .ydelser-boxa .ydelser-price-maintext {
-    margin-bottom: 0px;
-    font-size: 26px;
-  }
-  
-  .ydelser-boxa .ydelser-price-main {
-    font-size: 26px;
-  }
-  
-  .ydelser-boxb {
-    background-color: #ffffff !important;
-    width: calc(100% / 3);
-    padding: 35px;
-    z-index: 999999;
-    margin-top: -250px;
-  }
-  
-  .ydelser-boxb h2 {
-    color: #1a315d;
-    font-size: 40px;
-    font-weight: 900;
-    letter-spacing: 0px;
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 767px) {
-    .ydelser-boxa {
-      margin-top: auto;
-      width: 100%;
-      margin-right: 0px;
-      box-shadow: none;
-      padding: 20px;
-    }
-  
-    .ydelser-boxb {
-      margin-top: auto;
-      width: 100%;
-      box-shadow: none;
-    }
-  }
-  
-  /* ydelser trust pilot */
-  .trustpilot-sidebar {
-    text-decoration: none;
-  }
-  
-  .trustpilot-ydelser-header {
-    font-size: 25px;
-    font-weight: 700;
-    color: #1a315d;
-    margin-bottom: 20px;
-  }
-  
-  .trustpilot-review {
-    margin-top: 20px;
-    color: #3b4f70;
-    font-size: 18px;
-  }
-  
-  .trustpilot-name {
-    color: #3b4f70;
-    font-size: 18px;
-    font-weight: 900;
-  }
-  
+}
+
+/* landing page icons section */
+
+.icon-grid-section {
+  background-color: #ffffff;
+  padding: 75px 0px;
+}
+
+.container.three-grid {
+  background: #f7f7f7;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  position: relative;
+  margin-top: -175px;
+}
+
+/* features section */
+.landing-features-section {
+  height: auto;
+  padding: 50px 0px;
+  background-color: #ffffff;
+}
+
+.landing-features-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #666f79;
+}
+
+.landing-features-section p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #6b6b6b;
+  max-width: 693px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -44,6 +44,9 @@
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__text h1 {
@@ -52,7 +55,7 @@
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bp-fordele {
@@ -64,7 +67,7 @@
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero__text p {
@@ -72,7 +75,7 @@
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (max-width: 768px) {

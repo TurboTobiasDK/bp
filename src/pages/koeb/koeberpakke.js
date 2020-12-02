@@ -4,9 +4,13 @@ import SEO from "../../components/seo"
 import { graphql, Link } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
-// import "../../components/landing/css/landing.css"
+import "../../components/landing/css/landing.css"
 import { useNavigate } from "@reach/router"
 import { Helmet } from "react-helmet"
+
+import handshake from "../../images/SVG/handshake.svg"
+import order from "../../images/SVG/order.svg"
+import denmark from "../../images/SVG/denmark.svg"
 
 const ServicesPage = props => {
   const { wpgraphql } = props.data
@@ -72,17 +76,43 @@ const ServicesPage = props => {
           <h2>
             Køberpakke kr. 5.995,- inkl. moms
           </h2>
-          <div className="bp-fordele">
-            <p className="bp-checkmark">Få hjælp til de vigtige papirer.</p>
-            <p className="bp-checkmark">Få rådgivningsskrivelse omkring juridiske forhold.</p>
-            <p className="bp-checkmark">Få helt styr på boligkøbet – vi gennemgår købsaftale og dokumenter.</p>
-          </div>
           <Link
             to="/ydelser/berigtigelse-af-bolighandel/"
             className="button"
           >
             Få køberrådgivning
                   </Link>
+        </div>
+      </section>
+      <section className="icon-grid-section">
+        <div className="container three-grid">
+          <div className="item">
+            <img src={order} className="grid-icon" alt="pakke ikon" style={{ width: 88, height: 90 }} />
+            <p className="icon-text">
+            En lille tekst
+            </p>
+          </div>
+          <div className="item">
+            <img src={denmark} className="grid-icon" alt="denmark icon" style={{ width: 88, height: 90 }} />
+            <p className="icon-text">
+            En lille tekst
+            </p>
+          </div>
+          <div className="item">
+            <img src={handshake} className="grid-icon" alt="handshake icon" style={{ width: 88, height: 90 }} />
+            <p className="icon-text">
+En lille tekst
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="landing-features-section">
+        <div className="container">
+          <h2 className="features-heading">
+          Buyer Package Include
+          </h2>
+         <p>The buyer package is the full solution, where we participate
+from A - Z and our customers' preferred choices</p>
         </div>
       </section>
     </Layout>
