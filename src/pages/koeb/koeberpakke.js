@@ -111,9 +111,30 @@ En lille tekst
           <h2 className="features-heading">
           Buyer Package Include
           </h2>
-         <p>The buyer package is the full solution, where we participate
+         <p className="subhead">The buyer package is the full solution, where we participate
 from A - Z and our customers' preferred choices</p>
-        </div>
+<div className="features-list">
+  <div className="list-one">
+  <p class="bp-checkmark">Vi gennemgår købsaftalen og alle handlens dokumenter</p>
+<p class="bp-checkmark">Vi fremsender rådgivningsskrivelse til køber, om de særlige forhold ved handlen, man skal være opmærksom på</p>
+<p class="bp-checkmark">Vi udarbejder godkendelsesskrivelse, med eventuelle forbehold for handlen</p>
+<p class="bp-checkmark">Vi sørger for korrespondancen med handlens parter om godkendelse af handlen</p>
+</div>
+  <div className="list-two"><img src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></div>
+  <div className="list-three"> <p class="bp-checkmark">Vi gennemgår købsaftalen og alle handlens dokumenter</p>
+<p class="bp-checkmark">Vi fremsender rådgivningsskrivelse til køber, om de særlige forhold ved handlen, man skal være opmærksom på</p>
+<p class="bp-checkmark">Vi udarbejder godkendelsesskrivelse, med eventuelle forbehold for handlen</p>
+<p class="bp-checkmark">Vi sørger for korrespondancen med handlens parter om godkendelse af handlen</p></div>
+</div>
+<div class="btn-wrapper">
+<Link
+            to="/ydelser/berigtigelse-af-bolighandel/"
+            className="button"
+          >
+            Få køberrådgivning
+                  </Link>
+                  </div>
+</div>
       </section>
     </Layout>
   )

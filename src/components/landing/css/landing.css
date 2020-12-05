@@ -70,7 +70,7 @@ h6 {
   color: #666f79;
 }
 
-.landing-features-section p {
+.landing-features-section .subhead {
   text-align: center;
   font-size: 24px;
   font-weight: 400;
@@ -78,4 +78,40 @@ h6 {
   max-width: 693px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 6rem;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column-gap: 2rem;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.features-list p {
+  color: #6b6b6b;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.features-list img {
+  margin-bottom: 0px;
+}
+
+.list-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-features-section .btn-wrapper {
+  text-align: center;
 }
