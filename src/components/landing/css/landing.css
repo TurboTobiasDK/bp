@@ -115,3 +115,22 @@ h6 {
 .landing-features-section .btn-wrapper {
   text-align: center;
 }
+
+/* testimonial section */
+.testimonial-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-auto-rows: 1fr;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #506397;
+  color: #ffffff;
+}

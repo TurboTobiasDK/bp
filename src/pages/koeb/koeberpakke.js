@@ -136,6 +136,29 @@ from A - Z and our customers' preferred choices</p>
                   </div>
 </div>
       </section>
+      <section className="landing-testimonial">
+        <div className="container">
+          <div className="testimonial-box">
+            <div className="text-section">
+            <span className="grid-img-container">
+            <Img
+          fluid={wpgraphql.landings.edges[0].node.landingACFgraphql.trustpilotLandingpage.ikonBillede.imageFile.childImageSharp.fluid
+          }
+        />
+        </span>
+            <h1>hej</h1>
+            </div>
+            <div className="img-section">
+              <Img
+          fluid={
+            wpgraphql.landings.edges[0].node.landingACFgraphql.trustpilotLandingpage.imgTwoColumn
+              .imageFile.childImageSharp.fluid
+          }
+        />
+          </div>
+        </div>
+        </div>
+      </section>
     </Layout>
   )
 }
@@ -158,6 +181,30 @@ export const query = graphql`
                 heroOverskrift
                 heroSubheading
                 heroImage {
+                  sourceUrl
+                  imageFile {
+                    childImageSharp {
+                      fluid(maxHeight: 520, quality: 100) {
+                        aspectRatio
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                      }
+                    }
+                  }
+                }
+              }
+              trustpilotLandingpage {
+                ikonBillede {
+                  sourceUrl
+                  imageFile {
+                    childImageSharp {
+                      fluid(maxWidth: 500, quality: 100) {
+                        aspectRatio
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
+                  }
+                }
+              }
+                imgTwoColumn {
                   sourceUrl
                   imageFile {
                     childImageSharp {
