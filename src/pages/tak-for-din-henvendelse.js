@@ -40,7 +40,7 @@ const LandingPage = props => {
           <p style={{ textDecoration: 'none' }}>
             <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', textUnderline: 'none' }}><img src="https://emailsignature.trustpilot.com/signature/da-DK/4/5d932eafe4debe0001cd9e8d/text.png" border={0} height={21} style={{ maxHeight: '21px', border: 'none' }} alt="Trustpilot Human score" /></a>
         &nbsp;&nbsp;
-        <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', textUnderline: 'none' }}><img src="https://emailsignature.trustpilot.com/signature/da-DK/4/5d932eafe4debe0001cd9e8d/stars.png" border={0} height={21} style={{ maxHeight: '21px', border: 'none' }} alt="Trustpilot stars icon" /></a>
+        <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', textUnderline: 'none' }}><img src="https://emailsignature.trustpilot.com/signature/da-DK/4/5d932eafe4debe0001cd9e8d/stars.png" border={0} height={21} style={{ maxHeight: '21px', border: 'none' }} alt="Trustpilot stars" /></a>
         &nbsp;&nbsp;
         <a href="https://dk.trustpilot.com/review/bolig-partner.dk" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', textUnderline: 'none' }}><img src="https://emailsignature.trustpilot.com/brand/s/4/logo.png" border={0} height={21} style={{ maxHeight: '21px', border: 'none' }} alt="Trustpilot Logo" /></a>
           </p>
