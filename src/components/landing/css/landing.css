@@ -65,16 +65,15 @@ h6 {
 
 .landing-features-section h2 {
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  color: #666f79;
+  font-size: 40px;
+  font-weight: 900;
+  color: #1a315d;
 }
 
 .landing-features-section .subhead {
   text-align: center;
-  font-size: 24px;
-  font-weight: 400;
-  color: #6b6b6b;
+  font-size: 26px;
+  color: #3b4f70;
   max-width: 693px;
   margin-left: auto;
   margin-right: auto;
@@ -126,6 +125,40 @@ h6 {
   grid-auto-rows: 1fr;
 }
 
+.testimonial-box h2 {
+  padding: 20px 100px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.testimonial-box p {
+  padding: 0px 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.testimonial-box .navn {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
 .text-section {
   display: flex;
   flex-direction: column;
@@ -133,4 +166,259 @@ h6 {
   justify-content: center;
   background-color: #506397;
   color: #ffffff;
+}
+
+/* bliv ringet op sektion */
+.landing-ring-op {
+  height: auto;
+  background-color: #506397;
+  padding: 50px 0px;
+}
+
+section.landing-ring-op .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 3rem;
+  text-align: center;
+  align-content: center;
+}
+
+.kontakt-ring-op {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 50px;
+}
+
+.kontakt-ring-op h2 {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.kontakt-ring-op p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.testimonial-ring-op {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial-ring-op h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.testimonial-ring-op p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.testimonial-box .trustpilot-navn {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
+  padding-top: 30px;
+}
+
+/* team section */
+
+.landing-team {
+  height: auto;
+  padding: 100px 0px;
+  background-color: #ffffff;
+}
+
+.team-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  color: #666f79;
+}
+
+.team-subhead {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #6b6b6b;
+  max-width: 693px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.advisor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 3rem;
+  padding: 50px 0px;
+  position: relative;
+}
+
+.advisor-billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.advisor-billeder img {
+  z-index: 10;
+}
+
+.advisor-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.advisor-text p {
+  background: #f6f6f6;
+  padding: 50px 40px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #6b6b6b;
+  position: absolute;
+  left: 366px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  padding-left: 250px;
+}
+
+/* FAQ section */
+.landing-faq-section {
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.landing-faq-section h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #1a315d;
+}
+
+.landing-faq-section .subhead {
+  text-align: center;
+  font-size: 26px;
+  color: #3b4f70;
+  max-width: 693px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6rem;
+}
+/* accordion */
+.faq-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.row {
+  display: flex;
+}
+.row .col {
+  flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #ffffff;
+  border: 2px solid #f1f1f1;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  color: #3b4f70;
+}
+.tab-label:hover {
+  background: #506397;
+  color: #ffffff;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+.faq-input:checked + .tab-label {
+  background: #506397;
+  color: #ffffff;
+}
+.faq-input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.faq-input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
 }

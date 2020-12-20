@@ -12,7 +12,6 @@ import PropTypes from "prop-types"
 // import "../css/landing-background-image.css"
 
 const Layout = ({ children }) => {
-
   return (
     <>
       <main>
