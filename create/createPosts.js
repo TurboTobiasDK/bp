@@ -30,7 +30,6 @@ const GET_POSTS = `
                     endCursor
                 }
                 nodes {
-                    uri
                     # This is the fragment used for the Post Template
                     ...PostTemplateFragment
                     #This is the fragment used for the blog preview on archive pages

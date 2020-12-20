@@ -20,7 +20,7 @@ const FluidImage = ({ image, withFallback = false, ...props }) => {
     ) : null
   }
 
-  if (image && image.imageFile) {
+  if (image && image.node.imageFile) {
     return (
       <GatsbyImage
         fluid={image.node.imageFile.childImageSharp.fluid}
@@ -30,7 +30,7 @@ const FluidImage = ({ image, withFallback = false, ...props }) => {
     )
   }
 
-  return <img src={image.node.sourceUrl} alt={image.node.altText} {...props} />
+  return <img src={image.node.sourceUrl} alt={image.altText} {...props} />
 }
 
 export default FluidImage
