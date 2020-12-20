@@ -7,15 +7,15 @@ import "../components/css/footer.css"
 
 export default () => {
   const data = useStaticQuery(graphql`
-  query {
-    file(relativePath: { eq: "Trustpilot ratings 4star-RGB.png" }) {
-      childImageSharp {
-        fixed(height: 194) {
-          ...GatsbyImageSharpFixed
+    query {
+      file(relativePath: { eq: "Trustpilot ratings 4star-RGB.png" }) {
+        childImageSharp {
+          fixed(height: 194) {
+            ...GatsbyImageSharpFixed
+          }
         }
       }
     }
-  }
   `)
 
   return (
@@ -25,13 +25,13 @@ export default () => {
           <h2>Kontakt</h2>
           <p>
             BoligPartner
-          <br />
-          Sdr. Stationsvej 26, 2<br />
-          4200 Slagelse
-          <br />
             <br />
-          CVR. nr. 31 38 92 59
-          <br />
+            Sdr. Stationsvej 26, 2<br />
+            4200 Slagelse
+            <br />
+            <br />
+            CVR. nr. 31 38 92 59
+            <br />
           </p>
         </div>
         <div>
@@ -49,10 +49,16 @@ export default () => {
           <Link to="/cookiepolitik/">Cookiepolitik</Link>
           <br />
           <Link to="/datapolitik/">Datapolitik</Link>
+          <br />
+          <Link to="/bloggen/">Artikler/Blog</Link>
         </div>
         <div>
           <h2>Mærkninger</h2>
-          <img src={HDI} alt="HDI Gerling professionelt ansvarsforsikret" style={{width: 287, height: 98}} />
+          <img
+            src={HDI}
+            alt="HDI Gerling professionelt ansvarsforsikret"
+            style={{ width: 287, height: 98 }}
+          />
         </div>
       </div>
       <a
@@ -61,7 +67,10 @@ export default () => {
         rel="noopener noreferrer"
         aria-label="trustpilot stjerner"
       >
-        <span className="floating-trustpilot"><Img fixed={data.file.childImageSharp.fixed} /></span></a>
+        <span className="floating-trustpilot">
+          <Img fixed={data.file.childImageSharp.fixed} />
+        </span>
+      </a>
     </footer>
   )
 }

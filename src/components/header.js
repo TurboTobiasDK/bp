@@ -75,9 +75,6 @@ export default () => {
             </ul>
           </li>
           <li>
-            <Link to="/bloggen/">Artikler/Blog</Link>
-          </li>
-          <li>
             <Link to="/om-boligpartner/">Om BoligPartner</Link>
           </li>
           <li>
