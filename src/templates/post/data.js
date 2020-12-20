@@ -7,6 +7,7 @@ const PostTemplateFragment = `
         excerpt
         link
         featuredImage {
+            node {
             sourceUrl
             altText
             imageFile {
@@ -14,6 +15,7 @@ const PostTemplateFragment = `
                     fluid(maxHeight: 400, maxWidth: 800, quality: 90, cropFocus: CENTER) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
+                }
                 }
             }
         }
@@ -31,10 +33,6 @@ const PostTemplateFragment = `
                 id
             }
         }
-        author {
-            name
-            slug
-        }
     }
 `
 
@@ -49,6 +47,7 @@ const BlogPreviewFragment = `
         excerpt
         content
         featuredImage {
+            node {
             sourceUrl
             altText
             imageFile {
@@ -58,10 +57,7 @@ const BlogPreviewFragment = `
                     }
                 }
             }
-        }
-        author {
-            name
-            slug
+            }
         }
     }
 `
