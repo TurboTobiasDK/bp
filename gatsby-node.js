@@ -11,14 +11,16 @@ exports.createPagesStatefully = async (
 /* create remotefile */
 const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
 
-exports.createResolvers = async ({
-  actions,
-  cache,
-  createNodeId,
-  createResolvers,
-  store,
-  reporter,
-}) => {
+exports.createResolvers = async (
+  {
+    actions,
+    cache,
+    createNodeId,
+    createResolvers,
+    store,
+    reporter,
+  },
+) => {
   const { createNode } = actions
 
   await createResolvers({
@@ -26,7 +28,7 @@ exports.createResolvers = async ({
       imageFile: {
         type: "File",
         async resolve(source) {
-          let { sourceUrl } = source
+          let sourceUrl = source.sourceUrl
 
           if (source.mediaItemUrl !== undefined) {
             sourceUrl = source.mediaItemUrl
