@@ -30,7 +30,7 @@ const IndexPage = props => {
           loading="eager"
           id="hero__image"
           style={{
-            position: "initial"
+            position: "initial",
           }}
         />
         <div className="hero__text">
@@ -56,6 +56,12 @@ const IndexPage = props => {
       <div className="container">
         <div className="wrapper">
           <div className="boxa">
+            <h3 style={{ marginBottom: "5px" }}>
+              Vi holder åbent mellem jul &amp; nytår
+            </h3>
+            <p>
+              Alle henvendelser vil fortsat blive besvaret mellm jul & nytår
+            </p>
             {parse(
               `${wpgraphql.pages.edges[0].node.undersideACFgraphql.mainText}`
             )}
@@ -69,16 +75,36 @@ const IndexPage = props => {
               className="hero-form"
               data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="form-name" value="contact" aria-label="name" />
+              <input
+                type="hidden"
+                name="form-name"
+                value="contact"
+                aria-label="name"
+              />
               <input type="hidden" name="bot-field" aria-label="bot field" />
               <p>
-                <input type="text" name="name" placeholder="Dit navn" aria-label="name" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Dit navn"
+                  aria-label="name"
+                />
               </p>
               <p>
-                <input type="email" name="email" placeholder="Din email" aria-label="email" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Din email"
+                  aria-label="email"
+                />
               </p>
               <p>
-                <input type="phone" name="phone" placeholder="Dit tlf. nr." aria-label="phone" />
+                <input
+                  type="phone"
+                  name="phone"
+                  placeholder="Dit tlf. nr."
+                  aria-label="phone"
+                />
               </p>
               <p>
                 <textarea
@@ -89,7 +115,9 @@ const IndexPage = props => {
                 ></textarea>
               </p>
               <p>
-                <button type="submit" aria-label="submit">Send</button>
+                <button type="submit" aria-label="submit">
+                  Send
+                </button>
               </p>
             </form>
           </div>
@@ -98,7 +126,12 @@ const IndexPage = props => {
       <section className="icon-grid-section">
         <div className="container three-grid">
           <div className="item">
-            <img src={order} className="grid-icon" alt="pakke ikon" style={{ width: 88, height: 90 }} />
+            <img
+              src={order}
+              className="grid-icon"
+              alt="pakke ikon"
+              style={{ width: 88, height: 90 }}
+            />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -107,7 +140,12 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img src={denmark} className="grid-icon" alt="denmark icon" style={{ width: 88, height: 90 }} />
+            <img
+              src={denmark}
+              className="grid-icon"
+              alt="denmark icon"
+              style={{ width: 88, height: 90 }}
+            />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
@@ -116,7 +154,12 @@ const IndexPage = props => {
             </p>
           </div>
           <div className="item">
-            <img src={handshake} className="grid-icon" alt="handshake icon" style={{ width: 88, height: 90 }} />
+            <img
+              src={handshake}
+              className="grid-icon"
+              alt="handshake icon"
+              style={{ width: 88, height: 90 }}
+            />
             <p className="icon-text">
               {
                 wpgraphql.pages.edges[0].node.undersideACFgraphql
