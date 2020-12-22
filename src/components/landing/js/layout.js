@@ -7,6 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Header from "./header-landing"
+import Footer from "./footer-landing"
 
 // import "./landing-layout.css"
 // import "../css/landing-background-image.css"
@@ -14,9 +16,11 @@ import PropTypes from "prop-types"
 const Layout = ({ children }) => {
   return (
     <>
+      <Header />
       <main>
         <div id="wrapper">{children}</div>
       </main>
+      <Footer />
     </>
   )
 }

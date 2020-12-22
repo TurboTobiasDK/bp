@@ -1,0 +1,143 @@
+/* Giving a background-color to the nav container. */
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1999999999999 !important;
+}
+
+main {
+  margin-top: 60px;
+}
+
+#logo {
+  display: block;
+  float: left;
+  font-size: 30px;
+  color: #1a315d;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+  float: right;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 99999999;
+  margin-top: 0px;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #ffffff;
+}
+
+nav .dropdown-list a {
+  padding: 10px 20px;
+}
+
+/* Styling the links */
+nav a {
+  display: block;
+  padding: 5px 20px;
+  color: #1a315d;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+nav ul li ul li:hover {
+  background: #1a315d;
+  color: #ffffff;
+}
+
+/* Background color change on Hover */
+ul.menu a:hover {
+  background-color: #1a315d;
+  border: 2px solid#1a315d;
+  color: #ffffff;
+}
+
+#logo a:hover {
+  background-color: #ffffff;
+}
+
+/* cta btn */
+a.cta {
+  color: #ffffff;
+  transition: all 0.2s;
+  background-color: #319e60;
+  border: 2px solid#319e60;
+  font-weight: 900;
+  padding: 5px 20px;
+}
+
+a.get-call {
+  border: 2px solid#319e60;
+  color: #319e60;
+  margin-right: 5px;
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width: 768px) {
+  #logo {
+    display: inline-block;
+    padding: 0;
+    width: 75%;
+    text-align: center;
+    float: none;
+  }
+}
+
+nav {
+  margin: 0;
+}
+
+nav a:hover,
+nav ul ul ul a {
+  background-color: #1a315d;
+}
+
+nav ul li ul li .toggle,
+nav ul ul a,
+nav ul ul ul a {
+  padding: 14px 20px;
+  color: #1a315d;
+  font-size: 17px;
+}
+
+@media all and (max-width: 330px) {
+  nav ul li {
+    display: inline-block;
+    width: 94%;
+  }
+}
+
+@media all and (min-width: 769px) {
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
