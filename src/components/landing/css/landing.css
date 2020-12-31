@@ -43,17 +43,37 @@ h6 {
 
 /* landing page icons section */
 
-.icon-grid-section {
+.landing-icon-grid-section {
   background-color: #ffffff;
   padding: 75px 0px;
 }
 
-.container.three-grid {
+.container.landing-three-grid {
   background: #f7f7f7;
   padding-top: 75px;
   padding-bottom: 75px;
   position: relative;
   margin-top: -175px;
+}
+
+.landing-three-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.landing-item {
+  text-align: center;
+}
+
+.landing-icon-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: #1a315d;
+  margin-bottom: 0;
 }
 
 /* features section */

@@ -83,12 +83,6 @@ const ServicesPage = props => {
       <div className="container">
         <div className="wrapper">
           <div className="ydelser-boxa">
-            <h3 style={{ marginBottom: "5px" }}>
-              Vi holder åbent mellem jul &amp; nytår
-            </h3>
-            <p>
-              Alle henvendelser vil fortsat blive besvaret mellm jul & nytår
-            </p>
             <h2>
               {
                 wpgraphql.ydelser.edges[0].node.ydelserACFgraphql.hero

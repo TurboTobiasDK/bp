@@ -15,7 +15,7 @@ main {
   margin-top: 60px;
 }
 
-#logo {
+#landing-logo {
   display: block;
   float: left;
   font-size: 30px;
@@ -71,18 +71,18 @@ nav ul li ul li:hover {
 }
 
 /* Background color change on Hover */
-ul.menu a:hover {
+ul.landing-menu a:hover {
   background-color: #1a315d;
   border: 2px solid#1a315d;
   color: #ffffff;
 }
 
-#logo a:hover {
+#landing-logo a:hover {
   background-color: #ffffff;
 }
 
 /* cta btn */
-a.cta {
+a.landing-cta {
   color: #ffffff;
   transition: all 0.2s;
   background-color: #319e60;
@@ -91,7 +91,7 @@ a.cta {
   padding: 5px 20px;
 }
 
-a.get-call {
+a.landing-get-call {
   border: 2px solid#319e60;
   color: #319e60;
   margin-right: 5px;
@@ -101,7 +101,7 @@ a.get-call {
 --------------------------------------------- */
 
 @media all and (max-width: 768px) {
-  #logo {
+  #landing-logo {
     display: inline-block;
     padding: 0;
     width: 75%;

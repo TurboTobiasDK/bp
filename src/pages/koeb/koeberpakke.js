@@ -4,7 +4,7 @@ import SEO from "../../components/seo"
 import { graphql, Link } from "gatsby"
 import parse from "html-react-parser"
 import Img from "gatsby-image"
-// import "../../components/landing/css/landing.css"
+import "../../components/landing/css/landing.css"
 import { useNavigate } from "@reach/router"
 import { Helmet } from "react-helmet"
 
@@ -55,7 +55,7 @@ const ServicesPage = props => {
         title={wpgraphql.landings.edges[0].node.seo.title}
         description={wpgraphql.landings.edges[0].node.seo.metaDesc}
       />
-      <section className="hero">
+      <section className="landing-hero">
         <Img
           fluid={
             wpgraphql.landings.edges[0].node.landingACFgraphql.hero.heroImage
@@ -63,12 +63,12 @@ const ServicesPage = props => {
           }
           fadeIn={false}
           loading="eager"
-          id="hero__image"
+          id="landing-hero__image"
           style={{
             position: "initial",
           }}
         />
-        <div className="hero__text">
+        <div className="landing-hero__text">
           <h1>
             Følg dig tryg igennem hele din handel.
             <br />
@@ -80,30 +80,30 @@ const ServicesPage = props => {
           </Link>
         </div>
       </section>
-      <section className="icon-grid-section">
-        <div className="container three-grid">
-          <div className="item">
+      <section className="landing-icon-grid-section">
+        <div className="container landing-three-grid">
+          <div className="landing-item">
             <img
               src={order}
-              className="grid-icon"
+              className="landing-grid-icon"
               alt="pakke ikon"
               style={{ width: 88, height: 90 }}
             />
             <p className="icon-text">En lille tekst</p>
           </div>
-          <div className="item">
+          <div className="landing-item">
             <img
               src={denmark}
-              className="grid-icon"
+              className="landing-grid-icon"
               alt="denmark icon"
               style={{ width: 88, height: 90 }}
             />
             <p className="icon-text">En lille tekst</p>
           </div>
-          <div className="item">
+          <div className="landing-item">
             <img
               src={handshake}
-              className="grid-icon"
+              className="landing-grid-icon"
               alt="handshake icon"
               style={{ width: 88, height: 90 }}
             />

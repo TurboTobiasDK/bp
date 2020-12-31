@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import Header from "./header-landing"
 import Footer from "./footer-landing"
 
-// import "./landing-layout.css"
-// import "../css/landing-background-image.css"
+import "./landing-layout.css"
+import "../css/landing-background-image.css"
 
 const Layout = ({ children }) => {
   return (

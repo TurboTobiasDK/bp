@@ -56,12 +56,6 @@ const IndexPage = props => {
       <div className="container">
         <div className="wrapper">
           <div className="boxa">
-            <h3 style={{ marginBottom: "5px" }}>
-              Vi holder åbent mellem jul &amp; nytår
-            </h3>
-            <p>
-              Alle henvendelser vil fortsat blive besvaret mellm jul & nytår
-            </p>
             {parse(
               `${wpgraphql.pages.edges[0].node.undersideACFgraphql.mainText}`
             )}

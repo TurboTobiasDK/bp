@@ -20,24 +20,24 @@ export default () => {
   return (
     <nav>
       <div className="container">
-        <div id="logo">
+        <div id="landing-logo">
           <Link to="/" aria-label="BoligPartner logo">
             <Img fixed={data.file.childImageSharp.fixed} />
           </Link>
         </div>
-        <ul className="menu">
+        <ul className="landing-menu">
           <li>
-            <Link to="/kontakt" className="get-call">
+            <Link to="/kontakt" className="landing-get-call">
               Bliv ringet op
             </Link>
           </li>
           <li>
-            <a href="tel:70605038" className="cta">
+            <a href="tel:70605038" className="landing-cta">
               <img
                 src={phone}
                 alt="phone icon"
                 style={{ width: 16, height: 16 }}
-                className="icon"
+                className="landing-icon"
               />{" "}
               70 60 50 38
             </a>
