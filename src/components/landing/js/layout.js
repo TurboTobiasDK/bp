@@ -11,7 +11,7 @@ import Header from "./header-landing"
 import Footer from "./footer-landing"
 
 import "./landing-layout.css"
-import "../css/landing-background-image.css"
+// import "../css/landing-background-image.css"
 
 const Layout = ({ children }) => {
   return (

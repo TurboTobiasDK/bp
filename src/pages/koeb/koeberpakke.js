@@ -68,16 +68,86 @@ const ServicesPage = props => {
             position: "initial",
           }}
         />
-        <div className="landing-hero__text">
-          <h1>
-            Følg dig tryg igennem hele din handel.
-            <br />
-            Din boligrådgiver klarer alt det praktiske.
-          </h1>
-          <h2>Køberpakke kr. 5.995,- inkl. moms</h2>
-          <Link to="/ydelser/berigtigelse-af-bolighandel/" className="button">
-            Få køberrådgivning
-          </Link>
+        <div className="container">
+          <div className="hero-text">
+            <h1>Få tryg bolighandel til garanteret lav pris</h1>
+            <h2>Pris kr. 5.995,- inkl. moms</h2>
+            <p class="bp-checkmark">
+              Du undgår ubehagelige overraskelser. Fast pris frem for uklare
+              timepriser.
+            </p>
+            <p class="bp-checkmark">
+              "Ingen handel, intet salær": Du betaler kun, hvis handlen kommer i
+              hus.
+            </p>
+            <p class="bp-checkmark">
+              Du får tilknyttet rådgiver, som er jurist med ekspertise i
+              bolighandel
+            </p>
+            <span className="hero-img-container">
+              <a
+                href="https://dk.trustpilot.com/review/bolig-partner.dk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql.hero
+                      .trustpilotImage.imageFile.childImageSharp.fluid
+                  }
+                />
+              </a>
+            </span>
+          </div>
+          <div className="hero-ring-op">
+            <h2>Request a Call Back to Start the Process</h2>
+            <p>
+              Vore kompetente boligrådgivere sidder klar til at ringe med gratis
+              rådgivning, så vi i fællesskab sikre at vi finder den rigtige
+              løsning til dig.
+            </p>
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              className="hero-form"
+              data-netlify-honeypot="bot-field"
+              onSubmit={onSubmitHandler}
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="bot-field" />
+              <p>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Dit navn"
+                  value={name}
+                  onChange={e => setName(e.currentTarget.value)}
+                />
+              </p>
+              <p>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Din email"
+                  value={email}
+                  onChange={e => setEmail(e.currentTarget.value)}
+                />
+              </p>
+              <p>
+                <input
+                  type="phone"
+                  name="phone"
+                  placeholder="Dit tlf. nr."
+                  value={phone}
+                  onChange={e => setPhone(e.currentTarget.value)}
+                />
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
+          </div>
         </div>
       </section>
       <section className="landing-icon-grid-section">
@@ -558,9 +628,17 @@ export const query = graphql`
             }
             landingACFgraphql {
               hero {
-                heroBullets
-                heroOverskrift
-                heroSubheading
+                trustpilotImage {
+                  sourceUrl
+                  imageFile {
+                    childImageSharp {
+                      fluid(maxWidth: 500, quality: 100) {
+                        aspectRatio
+                        ...GatsbyImageSharpFluid_withWebp
+                      }
+                    }
+                  }
+                }
                 heroImage {
                   sourceUrl
                   imageFile {
