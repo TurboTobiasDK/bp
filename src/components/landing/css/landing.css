@@ -385,10 +385,12 @@ section.landing-ring-op .testimonial-ring-op {
 
 /* team section */
 
+@media (min-width: 993px) {
 .landing-team {
   height: auto;
   padding: 100px 0px;
   background-color: #ffffff;
+}
 }
 
 .team-heading {
@@ -412,6 +414,7 @@ section.landing-ring-op .testimonial-ring-op {
   margin-left: auto;
 }
 
+@media (min-width: 993px) {
 .advisor-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -420,7 +423,9 @@ section.landing-ring-op .testimonial-ring-op {
   padding: 50px 0px;
   position: relative;
 }
+}
 
+@media (min-width: 993px) {
 .advisor-billeder {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -428,6 +433,13 @@ section.landing-ring-op .testimonial-ring-op {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 }
+}
+
+@media (max-width: 992px) {
+  .advisor-billeder {
+    display: none;
+  }
+  }
 
 .advisor-billeder img {
   z-index: 10;
@@ -440,6 +452,7 @@ section.landing-ring-op .testimonial-ring-op {
   flex-direction: column;
 }
 
+@media (min-width: 993px) {
 .advisor-text p {
   background: #f6f6f6;
   padding: 50px 40px;
@@ -456,6 +469,41 @@ section.landing-ring-op .testimonial-ring-op {
   padding-right: 40px;
   padding-left: 250px;
 }
+}
+
+@media (min-width: 993px) {
+  .advisor-text p {
+    background: #f6f6f6;
+    padding: 50px 40px;
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #6b6b6b;
+    position: absolute;
+    left: 366px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    padding-left: 250px;
+  }
+  }
+
+  @media (max-width: 992px) {
+    .advisor-text p {
+      background: #ffffff;
+      padding: 50px 40px;
+      margin-bottom: 0px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 130%;
+      color: #6b6b6b;
+      padding-top: 50px;
+      padding-right: 40px;
+    }
+    }
 
 /* FAQ section */
 .landing-faq-section {
