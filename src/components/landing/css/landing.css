@@ -2,21 +2,10 @@ body {
   overflow: hidden;
 }
 
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto", sans-serif;
-}
-
 /* button */
 .button {
   background-color: #319e60;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   border: none;
   color: #ffffff;
   padding: 10px 15px;
@@ -222,7 +211,7 @@ section.landing-hero .container {
 .features-list p {
   color: #6b6b6b;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
