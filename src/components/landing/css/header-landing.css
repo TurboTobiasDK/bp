@@ -97,6 +97,11 @@ a.landing-get-call {
   margin-right: 5px;
 }
 
+@media all and (max-width: 768px) {
+  a.landing-get-call, a.landing-cta {
+    display: none;
+  }
+}
 /* Media Queries
 --------------------------------------------- */
 

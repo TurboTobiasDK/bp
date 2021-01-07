@@ -73,6 +73,7 @@ h6 {
   object-fit: cover;
 }
 
+@media (min-width: 992px) {
 section.landing-hero .container {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
@@ -81,6 +82,17 @@ section.landing-hero .container {
   align-content: center;
   z-index: 10;
 }
+}
+
+@media (max-width: 991px) {
+  section.landing-hero .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    align-content: center;
+    z-index: 10;
+  }
+  }
 
 .hero-text {
   display: flex;
@@ -117,6 +129,12 @@ section.landing-hero .container {
   margin-top: 10px;
 }
 
+@media (max-width: 992px) {
+.hero-ring-op {
+  display: none !important;
+}
+}
+
 .hero-ring-op {
   background: rgba(0, 0, 0, 0.4);
   padding: 50px;
@@ -128,7 +146,6 @@ section.landing-hero .container {
 }
 
 .hero-ring-op p {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -196,7 +213,7 @@ section.landing-hero .container {
 
 .features-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
   grid-column-gap: 2rem;
   column-gap: 2rem;
   margin-bottom: 3rem;
@@ -219,6 +236,12 @@ section.landing-hero .container {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .list-two {
+    display: none;
+  }
+}
+
 .list-three {
   display: flex;
   flex-direction: column;
@@ -232,7 +255,7 @@ section.landing-hero .container {
 /* testimonial section */
 .testimonial-box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -242,7 +265,6 @@ section.landing-hero .container {
 .testimonial-box h2 {
   padding: 20px 100px;
   margin-bottom: 0px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -253,7 +275,6 @@ section.landing-hero .container {
 
 .testimonial-box p {
   padding: 0px 100px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -263,7 +284,6 @@ section.landing-hero .container {
 }
 
 .testimonial-box .navn {
-  font-family: Roboto;
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
@@ -291,11 +311,22 @@ section.landing-hero .container {
 
 section.landing-ring-op .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
   grid-column-gap: 3rem;
   text-align: center;
   align-content: center;
+}
+
+@media (min-width: 992px) {
+section.landing-ring-op .container {
+  grid-auto-rows: 1fr;
+}
+}
+
+@media (max-width: 992px) {
+section.landing-ring-op .testimonial-ring-op {
+  padding-top: 50px;
+}
 }
 
 .kontakt-ring-op {
@@ -309,7 +340,6 @@ section.landing-ring-op .container {
 }
 
 .kontakt-ring-op p {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -324,7 +354,6 @@ section.landing-ring-op .container {
 }
 
 .testimonial-ring-op h2 {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -335,7 +364,6 @@ section.landing-ring-op .container {
 }
 
 .testimonial-ring-op p {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -345,7 +373,6 @@ section.landing-ring-op .container {
 }
 
 .testimonial-box .trustpilot-navn {
-  font-family: Roboto;
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
@@ -365,7 +392,6 @@ section.landing-ring-op .container {
 }
 
 .team-heading {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -375,7 +401,6 @@ section.landing-ring-op .container {
 }
 
 .team-subhead {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -419,7 +444,6 @@ section.landing-ring-op .container {
   background: #f6f6f6;
   padding: 50px 40px;
   margin-bottom: 0px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -489,7 +513,6 @@ section.landing-ring-op .container {
   background: #ffffff;
   border: 2px solid #f1f1f1;
   cursor: pointer;
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
