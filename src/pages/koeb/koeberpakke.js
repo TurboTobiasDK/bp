@@ -183,27 +183,34 @@ const ServicesPage = props => {
       </section>
       <section className="landing-features-section">
         <div className="container">
-          <h2 className="features-heading">Buyer Package Include</h2>
+          <h2 className="features-heading">
+            Derfor er Køberpakken vores kunders foretrukne valg
+          </h2>
           <p className="subhead">
-            The buyer package is the full solution, where we participate from A
-            - Z and our customers' preferred choices
+            Din rådgiver sikrer, at du ved, præcis hvad du skriver under på. Du
+            undgår ubehagelige overraskelser som fx uenighed om indflytningsdag
+            eller fejl ved boligen, som du ikke kendte til. Det sikrer dig en
+            tryg bolighandel - uden søvnløse nætter og kedelige opringninger fra
+            banken.
           </p>
           <div className="features-list">
             <div className="list-one">
               <p class="bp-checkmark">
-                Vi gennemgår købsaftalen og alle handlens dokumenter
+                Du får boligrådgivning til fast lav pris på kr. 5.995.
               </p>
               <p class="bp-checkmark">
-                Vi fremsender rådgivningsskrivelse til køber, om de særlige
-                forhold ved handlen, man skal være opmærksom på
+                Du har en fast rådgiver, som er jurist med speciale i boligkøb.
               </p>
               <p class="bp-checkmark">
-                Vi udarbejder godkendelsesskrivelse, med eventuelle forbehold
-                for handlen
+                Du får garanti for godt boligkøb: Du skal ikke betale, hvis
+                handlen bliver annulleret.
               </p>
               <p class="bp-checkmark">
-                Vi sørger for korrespondancen med handlens parter om godkendelse
-                af handlen
+                Din boligrådgiver gennemgår købsaftale og alle dokumenter.
+              </p>
+              <p class="bp-checkmark">
+                Du får en rådgivningsskrivelse, der viser, hvilke forhold du
+                skal være opmærksom på.
               </p>
             </div>
             <div className="list-two">
@@ -212,19 +219,21 @@ const ServicesPage = props => {
             <div className="list-three">
               {" "}
               <p class="bp-checkmark">
-                Vi gennemgår købsaftalen og alle handlens dokumenter
+                Vi udarbejder godkendelsesskrivelse med eventuelle forbehold for
+                handlen.
               </p>
               <p class="bp-checkmark">
-                Vi fremsender rådgivningsskrivelse til køber, om de særlige
-                forhold ved handlen, man skal være opmærksom på
+                Vi står for korrespondancen med begge parter om godkendelse af
+                handlen.
               </p>
               <p class="bp-checkmark">
-                Vi udarbejder godkendelsesskrivelse, med eventuelle forbehold
-                for handlen
+                Vi sørger for udarbejdelse eller kontrol af skøde.
               </p>
               <p class="bp-checkmark">
-                Vi sørger for korrespondancen med handlens parter om godkendelse
-                af handlen
+                Vi sørger for udarbejdelse eller kontrol af refusionsopgørelse.
+              </p>
+              <p class="bp-checkmark">
+                Vi godkender handlen, så du og din familie trygt kan flytte ind.
               </p>
             </div>
           </div>
@@ -238,11 +247,8 @@ const ServicesPage = props => {
       <section className="landing-ring-op">
         <div className="container">
           <div className="kontakt-ring-op">
-            <h2>Request a Call Back to Start the Process</h2>
-            <p>
-              Together we review your needs and only when we agree, we will send
-              you an order confirmation
-            </p>
+            <h2>Få uforpligtende rådgivning om hvilke muligheder du har.</h2>
+            <p>Bliv ringet op af en jurist med speciale i boligkøb.</p>
             <form
               name="contact"
               method="POST"
@@ -290,7 +296,7 @@ const ServicesPage = props => {
                 ></textarea>
               </p>
               <p>
-                <button type="submit">Send</button>
+                <button type="submit">Bliv ringet op</button>
               </p>
             </form>
           </div>
@@ -422,56 +428,41 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck1" className="faq-input" />
                   <label className="tab-label" htmlFor="chck1">
-                    Skal der tillægges andre omkostninger til Jeres honorar ved
-                    boligkøb?
+                    Skal jeg som boligkøber betale mere end BoligPartners
+                    honorar på 5995 kr?
                   </label>
                   <div className="tab-content">
-                    Udover vort honorar ved berigtigelsen af et boligkøb skal
-                    der tillægges Statens tinglysningsafgift for skødet, som
-                    udgør kr. 1.660 i fast afgift plus 0,6 % af købesummen
-                    (eller af den seneste offentlige ejendomsvurdering, såfremt
-                    denne er højere end købesummen). Ved visse handler Vest for
-                    Storebælt skal sælger betale halvdelen af denne afgift.
+                    <p>
+                      Du skal kun betale 5995 kr. til BoligPartner. Du skal
+                      desuden betale en tinglysningsafgift til staten.
+                      Tinglysningsafgiften ligger på 1660 kr. i fast afgift plus
+                      0,6 % af købesummen – eller af den seneste offentlige
+                      ejendomsvurdering, såfremt denne er højere end købesummen.
+                    </p>
+                    <p>
+                      Bemærk dog, at Køberpakken er beregnet til dig, der køber
+                      en almindelig bolig.
+                    </p>
+                    <p>
+                      Vi vil også meget gerne hjælpe dig med projektkøb, køb af
+                      landbrug, grundkøb eller køb af ideel anpart. Men du skal
+                      dog regne med at betale et tillæg, fordi sagsbehandlingen
+                      er mere omfattende ved disse boligformer.
+                    </p>
                   </div>
                 </div>
                 <div className="tab">
                   <input type="checkbox" id="chck2" className="faq-input" />
                   <label className="tab-label" htmlFor="chck2">
-                    Hvad betyder berigtigelse af bolighandel?
+                    Skal jeg betale BoligPartner, hvis handlen ikke bliver til
+                    noget?
                   </label>
                   <div className="tab-content">
                     <p>
-                      En berigtigelse dækker over at gennemføre en handel i
-                      overensstemmelse med de vilkår, parterne har skrevet under
-                      på i købsaftalen.
-                    </p>
-                    <p>
-                      I forbindelse med indgåelse af en købsaftale, vil det
-                      typisk blive aftalt, at køber deponerer en udbetaling til
-                      sælgers pengeinstitut eller ejendomsmægleren. Udbetalingen
-                      udgør som oftest 5 % af købesummen. Samtidig vil købers
-                      pengeinstitut stille en bankgaranti for den resterende del
-                      af købesummen. Bankgarantien erstattes af en kontant
-                      deponering på overtagelsesdagen. På denne måde kan sælger
-                      sikre sig at modtage den aftalte betaling. Ved tinglysning
-                      af skødet overgår den fulde ejendomsret over ejendommen
-                      til køber.
-                    </p>
-                    <p>
-                      Der er frist for udarbejdelse af refusionsopgørelse senest
-                      30 dage efter overtagelsesdagen (se under
-                      refusionsopgørelse).
-                    </p>
-                    <p>
-                      Købesummen vil blive frigivet fra sælgers bank til sælger,
-                      når skødet er tinglyst uden anmærkninger (sælgers gamle
-                      lån). Parternes pengeinstitutter er som oftest en lille
-                      måneds tid om at koordinere aflysningen/tinglysningen af
-                      lån.
-                    </p>
-                    <p>
-                      Når disse trin er udført, er handlen berigtiget, og
-                      handlen er således gennemført.
+                      Nej. Hos BoligPartner arbejder vi med garantien: ”Ingen
+                      handel, intet salær”. Hvis handlen ikke gennemføres, er
+                      rådgivningen gratis. Det gælder, uanset hvor meget tid vi
+                      har brugt på jeres sag.
                     </p>
                   </div>
                 </div>
@@ -528,17 +519,15 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck4" className="faq-input" />
                   <label className="tab-label" htmlFor="chck4">
-                    Skal der tillægges andre omkostninger til jeres honorar ved
-                    boligkøb?
+                    Har jeg samme retssikkerhed hos BoligPartner som hos en
+                    lokal advokat?
                   </label>
                   <div className="tab-content">
                     <p>
-                      Udover BoligPartners honorar ved berigtigelsen af et
-                      boligkøb skal der tillægges Statens tinglysningsafgift for
-                      skødet, som udgør kr. 1.660 i fast afgift plus 0,6 % af
-                      købesummen (eller af den seneste offentlige
-                      ejendomsvurdering, såfremt denne er højere end
-                      købesummen).
+                      Ja. BoligPartner er underlagt de samme regler som enhver
+                      anden advokat. Det vil sige, at vi har tavshedspligt og at
+                      vi har en ansvarsforsikring der dækker vores
+                      advokatrådgivning.
                     </p>
                   </div>
                 </div>
@@ -567,41 +556,13 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck6" className="faq-input" />
                   <label className="tab-label" htmlFor="chck6">
-                    Hvad betyder berigtigelse af bolighandel?
+                    Hvordan ved jeg, om Køberpakken egner sig til mig?
                   </label>
                   <div className="tab-content">
                     <p>
-                      En berigtigelse dækker over at gennemføre en handel i
-                      overensstemmelse med de vilkår, parterne har skrevet under
-                      på i købsaftalen.
-                    </p>
-                    <p>
-                      I forbindelse med indgåelse af en købsaftale, vil det
-                      typisk blive aftalt, at køber deponerer en udbetaling til
-                      sælgers pengeinstitut eller ejendomsmægleren. Udbetalingen
-                      udgør som oftest 5 % af købesummen. Samtidig vil købers
-                      pengeinstitut stille en bankgaranti for den resterende del
-                      af købesummen. Bankgarantien erstattes af en kontant
-                      deponering på overtagelsesdagen. På denne måde kan sælger
-                      sikre sig at modtage den aftalte betaling. Ved tinglysning
-                      af skødet overgår den fulde ejendomsret over ejendommen
-                      til køber.
-                    </p>
-                    <p>
-                      Der er frist for udarbejdelse af refusionsopgørelse senest
-                      30 dage efter overtagelsesdagen (se under
-                      refusionsopgørelse).
-                    </p>
-                    <p>
-                      Købesummen vil blive frigivet fra sælgers bank til sælger,
-                      når skødet er tinglyst uden anmærkninger (sælgers gamle
-                      lån). Parternes pengeinstitutter er som oftest en lille
-                      måneds tid om at koordinere aflysningen/tinglysningen af
-                      lån.
-                    </p>
-                    <p>
-                      Når disse trin er udført, er handlen berigtiget, og
-                      handlen er således gennemført.
+                      Book gratis telefon rådgivningsmøde hos os! Det er
+                      selvfølgelig helt uforpligtende. Det koster kun din tid at
+                      blive klogere på tryg bolighandel.
                     </p>
                   </div>
                 </div>
