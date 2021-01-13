@@ -100,11 +100,11 @@ const ServicesPage = props => {
             </span>
           </div>
           <div className="hero-ring-op">
-            <h2>Request a Call Back to Start the Process</h2>
+            <h2>Lad os hjælpe dig med dit boligkøb</h2>
             <p>
-              Vore kompetente boligrådgivere sidder klar til at ringe med gratis
-              rådgivning, så vi i fællesskab sikre at vi finder den rigtige
-              løsning til dig.
+              Udfyld formularen, så ringer vi dig op hurtigst muligt. Sammen
+              gennemgår vi dit behov for at sikre vi finder den rigtige løsning
+              til dig.:
             </p>
             <form
               name="contact"
@@ -144,43 +144,13 @@ const ServicesPage = props => {
                 />
               </p>
               <p>
-                <button type="submit">Send</button>
+                <button type="submit">Bliv ringet op</button>
               </p>
             </form>
           </div>
         </div>
       </section>
-      <section className="landing-icon-grid-section">
-        <div className="container landing-three-grid">
-          <div className="landing-item">
-            <img
-              src={order}
-              className="landing-grid-icon"
-              alt="pakke ikon"
-              style={{ width: 88, height: 90 }}
-            />
-            <p className="icon-text">En lille tekst</p>
-          </div>
-          <div className="landing-item">
-            <img
-              src={denmark}
-              className="landing-grid-icon"
-              alt="denmark icon"
-              style={{ width: 88, height: 90 }}
-            />
-            <p className="icon-text">En lille tekst</p>
-          </div>
-          <div className="landing-item">
-            <img
-              src={handshake}
-              className="landing-grid-icon"
-              alt="handshake icon"
-              style={{ width: 88, height: 90 }}
-            />
-            <p className="icon-text">En lille tekst</p>
-          </div>
-        </div>
-      </section>
+
       <section className="landing-features-section">
         <div className="container">
           <h2 className="features-heading">
@@ -193,6 +163,47 @@ const ServicesPage = props => {
             tryg bolighandel - uden søvnløse nætter og kedelige opringninger fra
             banken.
           </p>
+
+          <div className="landing-three-grid">
+            <div className="landing-item">
+              <img
+                src={order}
+                className="landing-grid-icon"
+                alt="pakke ikon"
+                style={{ width: 88, height: 90 }}
+              />
+              <p className="icon-text">Ingen handel - Intet salær</p>
+              <p className="small-txt">
+                Hvis handlen ikke gennemføres, er rådgivningen gratis
+              </p>
+            </div>
+            <div className="landing-item">
+              <img
+                src={denmark}
+                className="landing-grid-icon"
+                alt="denmark icon"
+                style={{ width: 88, height: 90 }}
+              />
+              <p className="icon-text">Landsdækkende service</p>
+              <p className="small-txt">
+                Uanset hvor i landet du ønsker at købe, yder vi rådgivning
+              </p>
+            </div>
+            <div className="landing-item">
+              <img
+                src={handshake}
+                className="landing-grid-icon"
+                alt="handshake icon"
+                style={{ width: 88, height: 90 }}
+              />
+              <p className="icon-text">En tryg bolighandel</p>
+              <p className="small-txt">
+                Du får en personlig boligrådgiver, som er med dig fra start til
+                slut
+              </p>
+            </div>
+          </div>
+
           <div className="features-list">
             <div className="list-one">
               <p class="bp-checkmark">
@@ -237,6 +248,7 @@ const ServicesPage = props => {
               </p>
             </div>
           </div>
+
           <div class="btn-wrapper">
             <Link to="/ydelser/berigtigelse-af-bolighandel/" className="button">
               Få køberrådgivning
@@ -323,10 +335,13 @@ const ServicesPage = props => {
       </section>
       <section className="landing-team">
         <div className="container">
-          <h2 className="team-heading">Our Own Personal Advisor</h2>
+          <h2 className="team-heading">
+            Erfarne køberrådgivere med fokus på personlig rådgivning
+          </h2>
           <p className="team-subhead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna{" "}
+            Vi tror på, at den direkte kontakt med egen boligrådgiver gennem
+            hele processen er nøglen til tryghed og derved starten på den gode
+            bolighandel.
           </p>
           <div className="advisor-grid">
             <div className="advisor-billeder">
@@ -365,18 +380,20 @@ const ServicesPage = props => {
             </div>
             <div className="advisor-text">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Vi ved, at et køb af en bolig er en stor beslutning, og at det
+                helt naturligt giver mange spørgsmål til processen.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Hos BoligPartner får du tilknyttet en personlig boligrådgiver
+                som kender din sag. Din rådgiver har svarene og sørger samtidig
+                for alt det formelle, så du i stedet kan glæde dig til at starte
+                et nyt kapitel i din nye bolig. <br />
+                <br />
+                Det sikrer en tryg og nem proces, hvor du altid kan få svar på
+                dine spørgsmål om juraen. Det er din garanti for, at dine
+                køberrettigheder respekteres, og alt foregår efter loven. Lad os
+                stå for papirarbejdet – så kan du og din familie glæde jer til
+                at flytte ind i den nye bolig.
               </p>
             </div>
           </div>
@@ -534,23 +551,10 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck5" className="faq-input" />
                   <label className="tab-label" htmlFor="chck5">
-                    Hvad hvis handlen ikke bliver til noget, skal jeg så stadig
-                    betale jeres honorar?
+                    HER MANGLER JEG ET SPØRGSMÅL
                   </label>
                   <div className="tab-content">
-                    <p>
-                      Hos BoligPartner arbejder vi med ”Ingen handel, intet
-                      salær” som en slags ”forsikringsservice” for jer som
-                      købere. "Ingen handel, intet salær" betyder, at i ikke får
-                      udgifter til os såfremt jeres igangsatte boligkøb ikke
-                      bliver realiseret.
-                    </p>
-                    <p>
-                      Garantien gælder for alle rådgivningsmoduler og honorarer.
-                      ”Ingen handel, intet salær” er dermed jeres garanti som
-                      købere og gælder uanset hvor meget tid vi har brugt på
-                      jeres sag.
-                    </p>
+                    <p>lorem ipsum og en masse andet vrøvl</p>
                   </div>
                 </div>
                 <div className="tab">

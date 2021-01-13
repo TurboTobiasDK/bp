@@ -149,9 +149,7 @@ body {
 }
 
 .container.landing-three-grid {
-  background: #f7f7f7;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  background: #ffffff;
   position: relative;
   /* margin-top: -175px; */
 }
@@ -163,6 +161,7 @@ body {
   align-items: center;
   justify-content: center;
   height: auto;
+  margin-bottom: 4rem;
 }
 
 .landing-item {
@@ -174,6 +173,11 @@ body {
   font-weight: 900;
   color: #1a315d;
   margin-bottom: 0;
+}
+
+.small-txt {
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 /* features section */
@@ -193,7 +197,6 @@ body {
 .landing-features-section .subhead {
   text-align: center;
   font-size: 24px;
-  color: #3b4f70;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
@@ -382,24 +385,18 @@ section.landing-ring-op .container {
 }
 
 .team-heading {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 120%;
   text-align: center;
-  color: #666f79;
+  font-size: 40px;
+  font-weight: 900;
+  color: #1a315d;
 }
 
 .team-subhead {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 130%;
   text-align: center;
-  color: #6b6b6b;
-  max-width: 693px;
-  margin-right: auto;
+  font-size: 24px;
   margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 993px) {
