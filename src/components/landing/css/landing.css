@@ -198,6 +198,7 @@ body {
     outline: 1px solid #1a315d;
     transform: translate(-0.5rem, -0.5rem);
     z-index: 3;
+    transition: all 0.36s cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 
@@ -480,57 +481,27 @@ section.landing-ring-op .container {
 /* team section */
 
 @media (min-width: 993px) {
-  .landing-team {
-    height: auto;
-    padding: 100px 0px;
-    background-color: #ffffff;
-  }
-}
-
-.team-heading {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 900;
-  color: #1a315d;
-}
-
-.team-subhead {
-  text-align: center;
-  font-size: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4rem;
-}
-
-@media (min-width: 993px) {
   .advisor-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 8rem;
     padding: 50px 0px;
     position: relative;
-  }
-}
-
-@media (min-width: 993px) {
-  .advisor-billeder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .advisor-billeder {
-    display: none;
+    margin-top: 100px;
   }
 }
 
 .advisor-billeder img {
   z-index: 10;
+  max-width: 479px;
+  max-height: 598px;
+}
+
+.advisor-billeder {
+  z-index: 10;
+  max-width: 479px;
+  max-height: 598px;
 }
 
 .advisor-text {
@@ -538,59 +509,20 @@ section.landing-ring-op .container {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  max-height: 598px;
 }
 
-@media (min-width: 993px) {
-  .advisor-text p {
-    background: #f6f6f6;
-    padding: 50px 40px;
-    margin-bottom: 0px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-    color: #6b6b6b;
-    position: absolute;
-    left: 366px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 40px;
-    padding-left: 250px;
-  }
+.advisor-text p {
+  margin-bottom: 0px;
 }
 
-@media (min-width: 993px) {
-  .advisor-text p {
-    background: #f6f6f6;
-    padding: 50px 40px;
-    margin-bottom: 0px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-    color: #6b6b6b;
-    position: absolute;
-    left: 366px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 40px;
-    padding-left: 250px;
-  }
-}
-
-@media (max-width: 992px) {
-  .advisor-text p {
-    background: #ffffff;
-    padding: 50px 40px;
-    margin-bottom: 0px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-    color: #6b6b6b;
-    padding-top: 50px;
-    padding-right: 40px;
-  }
+.advisor-text h2 {
+  text-align: left;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a315d;
 }
 
 /* FAQ section */

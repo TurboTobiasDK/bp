@@ -375,50 +375,9 @@ const ServicesPage = props => {
       </section>
       <section className="landing-team">
         <div className="container">
-          <h2 className="team-heading">
-            Erfarne køberrådgivere med fokus på personlig rådgivning
-          </h2>
-          <p className="team-subhead">
-            Vi tror på, at den direkte kontakt med egen boligrådgiver gennem
-            hele processen er nøglen til tryghed og derved starten på den gode
-            bolighandel.
-          </p>
           <div className="advisor-grid">
-            <div className="advisor-billeder">
-              <span>
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .gridAdvisorImg.img1.imageFile.childImageSharp.fluid
-                  }
-                />
-              </span>
-              <span>
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .gridAdvisorImg.img2.imageFile.childImageSharp.fluid
-                  }
-                />
-              </span>
-              <span>
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .gridAdvisorImg.img3.imageFile.childImageSharp.fluid
-                  }
-                />
-              </span>
-              <span>
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .gridAdvisorImg.img4.imageFile.childImageSharp.fluid
-                  }
-                />
-              </span>
-            </div>
             <div className="advisor-text">
+              <h2>Køberrådgivning med fokus på personlig rådgivning</h2>
               <p>
                 Vi ved, at et køb af en bolig er en stor beslutning, og at det
                 helt naturligt giver mange spørgsmål til processen.
@@ -435,6 +394,16 @@ const ServicesPage = props => {
                 stå for papirarbejdet – så kan du og din familie glæde jer til
                 at flytte ind i den nye bolig.
               </p>
+            </div>
+            <div className="advisor-billeder">
+              <span>
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql
+                      .gridAdvisorImg.img1.imageFile.childImageSharp.fluid
+                  }
+                />
+              </span>
             </div>
           </div>
         </div>
