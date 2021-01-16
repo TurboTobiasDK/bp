@@ -55,98 +55,63 @@ const ServicesPage = props => {
         title={wpgraphql.landings.edges[0].node.seo.title}
         description={wpgraphql.landings.edges[0].node.seo.metaDesc}
       />
-      <section className="landing-hero">
-        <Img
-          fluid={
-            wpgraphql.landings.edges[0].node.landingACFgraphql.hero.heroImage
-              .imageFile.childImageSharp.fluid
-          }
-          fadeIn={false}
-          loading="eager"
-          id="landing-hero__image"
-          style={{
-            position: "initial",
-          }}
-        />
+      <section className="landing-hero-section">
         <div className="container">
-          <div className="hero-text">
-            <h1>Få tryg bolighandel til garanteret lav pris</h1>
-            <h2>Pris kr. 5.995,- inkl. moms</h2>
-            <p class="bp-checkmark">
-              Du undgår ubehagelige overraskelser. Fast pris frem for uklare
-              timepriser.
-            </p>
-            <p class="bp-checkmark">
-              "Ingen handel, intet salær": Du betaler kun, hvis handlen kommer i
-              hus.
-            </p>
-            <p class="bp-checkmark">
-              Du får tilknyttet rådgiver, som er jurist med ekspertise i
-              bolighandel
-            </p>
-            <span className="hero-img-container">
-              <a
-                href="https://dk.trustpilot.com/review/bolig-partner.dk"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+          <div className="landing-hero-grid">
+            <div className="landing-hero-text">
+              <h1>Få tryg bolighandel til garanteret lav pris</h1>
+              <h2>Pris kr. 5.995,- inkl. moms</h2>
+              <p>
+                Vi ved, at et køb af en bolig er en stor beslutning, og at det
+                helt naturligt giver mange spørgsmål til processen.
+                <br />
+                <br />
+                Book gratis telefon rådgivningsmøde med en af vores erfarne
+                rådgivere ved at indtaste dit telefonnummer herunder. Det er
+                selvfølgelig helt uforpligtende. Det koster kun din tid at blive
+                klogere på tryg bolighandel. <br />
+                <br />
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  className="landing-hero-form"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={onSubmitHandler}
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="bot-field" />
+                  <button type="submit" style={{ float: "right" }}>
+                    Book uforpligtende møde
+                  </button>
+                  <div
+                    className="landing-form-phone"
+                    style={{ overflow: "hidden" }}
+                  >
+                    <input
+                      type="phone"
+                      name="phone"
+                      placeholder="Dit tlf. nr."
+                      value={phone}
+                      onChange={e => setPhone(e.currentTarget.value)}
+                      style={{ width: "100%" }}
+                    />
+                  </div>
+                </form>
+              </p>
+            </div>
+            <div className="landing-hero-billede">
+              <span>
                 <Img
                   fluid={
                     wpgraphql.landings.edges[0].node.landingACFgraphql.hero
-                      .trustpilotImage.imageFile.childImageSharp.fluid
+                      .heroImage.imageFile.childImageSharp.fluid
                   }
+                  fadeIn={false}
+                  loading="eager"
                 />
-              </a>
-            </span>
-          </div>
-          <div className="hero-ring-op">
-            <h2>Lad os hjælpe dig med dit boligkøb</h2>
-            <p>
-              Udfyld formularen, så ringer vi dig op hurtigst muligt. Sammen
-              gennemgår vi dit behov for at sikre vi finder den rigtige løsning
-              til dig.:
-            </p>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              className="hero-form"
-              data-netlify-honeypot="bot-field"
-              onSubmit={onSubmitHandler}
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
-              <p>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Dit navn"
-                  value={name}
-                  onChange={e => setName(e.currentTarget.value)}
-                />
-              </p>
-              <p>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Din email"
-                  value={email}
-                  onChange={e => setEmail(e.currentTarget.value)}
-                />
-              </p>
-              <p>
-                <input
-                  type="phone"
-                  name="phone"
-                  placeholder="Dit tlf. nr."
-                  value={phone}
-                  onChange={e => setPhone(e.currentTarget.value)}
-                />
-              </p>
-              <p>
-                <button type="submit">Bliv ringet op</button>
-              </p>
-            </form>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -665,7 +630,7 @@ export const query = graphql`
                   sourceUrl
                   imageFile {
                     childImageSharp {
-                      fluid(maxHeight: 520, quality: 100) {
+                      fluid(maxHeight: 598, quality: 100) {
                         aspectRatio
                         ...GatsbyImageSharpFluid_withWebp_tracedSVG
                       }
@@ -676,7 +641,7 @@ export const query = graphql`
                   sourceUrl
                   imageFile {
                     childImageSharp {
-                      fluid(maxHeight: 520, quality: 100) {
+                      fluid(maxHeight: 598, quality: 100) {
                         aspectRatio
                         ...GatsbyImageSharpFluid_withWebp_tracedSVG
                       }
@@ -687,7 +652,7 @@ export const query = graphql`
                   sourceUrl
                   imageFile {
                     childImageSharp {
-                      fluid(maxHeight: 520, quality: 100) {
+                      fluid(maxHeight: 598, quality: 100) {
                         aspectRatio
                         ...GatsbyImageSharpFluid_withWebp_tracedSVG
                       }
