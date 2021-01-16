@@ -151,12 +151,12 @@ const ServicesPage = props => {
         </div>
       </section>
 
-      <section className="landing-features-section">
+      <section className="landing-icons-section">
         <div className="container">
-          <h2 className="features-heading">
-            Derfor er Køberpakken vores kunders foretrukne valg
+          <h2 className="landing-icons-heading">
+            Vores kunders foretrukne valg
           </h2>
-          <p className="subhead">
+          <p className="landing-icons-subhead">
             Din rådgiver sikrer, at du ved, præcis hvad du skriver under på. Du
             undgår ubehagelige overraskelser som fx uenighed om indflytningsdag
             eller fejl ved boligen, som du ikke kendte til. Det sikrer dig en
@@ -170,9 +170,15 @@ const ServicesPage = props => {
                 src={order}
                 className="landing-grid-icon"
                 alt="pakke ikon"
-                style={{ width: 88, height: 90 }}
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
               />
-              <p className="icon-text">Ingen handel - Intet salær</p>
+              <p className="landing-icon-text">Ingen handel - Intet salær</p>
               <p className="small-txt">
                 Hvis handlen ikke gennemføres, er rådgivningen gratis
               </p>
@@ -182,9 +188,15 @@ const ServicesPage = props => {
                 src={denmark}
                 className="landing-grid-icon"
                 alt="denmark icon"
-                style={{ width: 88, height: 90 }}
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
               />
-              <p className="icon-text">Landsdækkende service</p>
+              <p className="landing-icon-text">Landsdækkende service</p>
               <p className="small-txt">
                 Uanset hvor i landet du ønsker at købe, yder vi rådgivning
               </p>
@@ -194,68 +206,96 @@ const ServicesPage = props => {
                 src={handshake}
                 className="landing-grid-icon"
                 alt="handshake icon"
-                style={{ width: 88, height: 90 }}
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
               />
-              <p className="icon-text">En tryg bolighandel</p>
+              <p className="landing-icon-text">En tryg bolighandel</p>
               <p className="small-txt">
                 Du får en personlig boligrådgiver, som er med dig fra start til
                 slut
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="features-list">
-            <div className="list-one">
-              <p class="bp-checkmark">
-                Du får boligrådgivning til fast lav pris på kr. 5.995.
+      <section className="landing-features-section">
+        <div className="container">
+          <div className="landing-features-box">
+            <h2>Sådan er processen</h2>
+            <ol>
+              <li class="landing-process-one">Udfyld kontaktformular</li>
+              <li class="landing-process-two">
+                Bliv ringet op af en af vores erfarne køberrådgivere
+              </li>
+              <li class="landing-process-three">
+                Sammen gennemgår vi dit behov og først når vi er enige, sender
+                vi dig en ordrebekræftelse.
+              </li>
+              <li class="landing-process-four">
+                Du får tilknyttet personlig køberrådgiver som kender din sag og
+                er med fra start til slut.
+              </li>
+              <li class="landing-process-five">
+                BoligPartner står for det juridiske – så kan du og din familie
+                trygt flytte ind i jeres nye bolig.
+              </li>
+            </ol>
+            <div className="landing-features-checklist">
+              <h2>BoligPartner sørger for </h2>
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi gennemgår købsaftalen og alle handlens dokumenter
               </p>
-              <p class="bp-checkmark">
-                Du har en fast rådgiver, som er jurist med speciale i boligkøb.
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi fremsender rådgivningsskrivelse, om de særlige forhold ved
+                handlen, du skal være opmærksom på
               </p>
-              <p class="bp-checkmark">
-                Du får garanti for godt boligkøb: Du skal ikke betale, hvis
-                handlen bliver annulleret.
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi udarbejder godkendelsesskrivelse, med eventuelle forbehold
+                for handlen
               </p>
-              <p class="bp-checkmark">
-                Din boligrådgiver gennemgår købsaftale og alle dokumenter.
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi sørger for korrespondancen med handlens parter om godkendelse
+                af handlen
               </p>
-              <p class="bp-checkmark">
-                Du får en rådgivningsskrivelse, der viser, hvilke forhold du
-                skal være opmærksom på.
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi godkender handlen i sin helhed
+              </p>
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi sørger for udarbejdelse eller kontrol af skøde
+              </p>
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi sørger for udarbejdelse eller kontrol af refusionsopgørelse
+              </p>
+              <p className="landing-features-checkmark">
+                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
+                Vi sikre handlens afslutning i sin helhed
               </p>
             </div>
-            <div className="list-two">
-              <img src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-            </div>
-            <div className="list-three">
-              {" "}
-              <p class="bp-checkmark">
-                Vi udarbejder godkendelsesskrivelse med eventuelle forbehold for
-                handlen.
-              </p>
-              <p class="bp-checkmark">
-                Vi står for korrespondancen med begge parter om godkendelse af
-                handlen.
-              </p>
-              <p class="bp-checkmark">
-                Vi sørger for udarbejdelse eller kontrol af skøde.
-              </p>
-              <p class="bp-checkmark">
-                Vi sørger for udarbejdelse eller kontrol af refusionsopgørelse.
-              </p>
-              <p class="bp-checkmark">
-                Vi godkender handlen, så du og din familie trygt kan flytte ind.
-              </p>
-            </div>
-          </div>
-
-          <div class="btn-wrapper">
-            <Link to="/ydelser/berigtigelse-af-bolighandel/" className="button">
-              Få køberrådgivning
-            </Link>
+            <h2>Skal vi hjælpe dig med en tryg bolighandel?</h2>
+            <p>
+              Book gratis telefon rådgivningsmøde hos os ved at udfylde
+              formularen herunder eller ring tlf.{" "}
+              <a href="tel:70605038">70 60 50 38</a>. Det er selvfølgelig helt
+              uforpligtende. Det koster kun din tid at blive klogere på tryg
+              bolighandel.
+            </p>
           </div>
         </div>
       </section>
+
       <section className="landing-ring-op">
         <div className="container">
           <div className="kontakt-ring-op">
