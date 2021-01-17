@@ -66,6 +66,7 @@ const ServicesPage = props => {
                 helt naturligt giver mange spørgsmål til processen.
                 <br />
                 <br />
+                <h3>Book uforpligtende rådgivningsmøde med køberrådgiver</h3>
                 Book gratis telefon rådgivningsmøde med en af vores erfarne
                 rådgivere ved at indtaste dit telefonnummer herunder. Det er
                 selvfølgelig helt uforpligtende. Det koster kun din tid at blive
@@ -408,10 +409,13 @@ const ServicesPage = props => {
       </section>
       <section className="landing-faq-section">
         <div className="container">
-          <h2 className="faq-heading">Oftest stillede spørgsmål</h2>
-          <p className="subhead">
-            The buyer package is the full solution, where we participate from A
-            - Z and our customers' preferred choices
+          <h2 className="landing-faq-heading">Oftest stillende spørgsmål</h2>
+          <p className="landing-faq-subhead">
+            Din rådgiver sikrer, at du ved, præcis hvad du skriver under på. Du
+            undgår ubehagelige overraskelser som fx uenighed om indflytningsdag
+            eller fejl ved boligen, som du ikke kendte til. Det sikrer dig en
+            tryg bolighandel - uden søvnløse nætter og kedelige opringninger fra
+            banken.
           </p>
           <div className="row">
             <div className="col">
@@ -475,35 +479,57 @@ const ServicesPage = props => {
                       ansvaret, bevarer overblikket og sikre jeres interesser i
                       hele forløbet. Køberpakken indeholder:
                     </p>
-                    <p class="bp-checkmark">
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
                       Vi gennemgår købsaftalen og alle handlens dokumenter
                     </p>
-                    <p class="bp-checkmark">
-                      Vi fremsender rådgivningsskrivelse til køber, om de
-                      særlige forhold ved handlen, man skal være opmærksom på
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
+                      Vi fremsender rådgivningsskrivelse, om de særlige forhold
+                      ved handlen, du skal være opmærksom på
                     </p>
-                    <p class="bp-checkmark">
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
                       Vi udarbejder godkendelsesskrivelse, med eventuelle
                       forbehold for handlen
                     </p>
-                    <p class="bp-checkmark">
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
                       Vi sørger for korrespondancen med handlens parter om
                       godkendelse af handlen
                     </p>
-                    <p class="bp-checkmark">
-                      Vi gennemgår købsaftalen og alle handlens dokumenter
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
+                      Vi godkender handlen i sin helhed
                     </p>
-                    <p class="bp-checkmark">
-                      Vi fremsender rådgivningsskrivelse til køber, om de
-                      særlige forhold ved handlen, man skal være opmærksom på
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
+                      Vi sørger for udarbejdelse eller kontrol af skøde
                     </p>
-                    <p class="bp-checkmark">
-                      Vi udarbejder godkendelsesskrivelse, med eventuelle
-                      forbehold for handlen
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
+                      Vi sørger for udarbejdelse eller kontrol af
+                      refusionsopgørelse
                     </p>
-                    <p class="bp-checkmark">
-                      Vi sørger for korrespondancen med handlens parter om
-                      godkendelse af handlen
+                    <p className="landing-features-checkmark">
+                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
+                        ✓
+                      </span>
+                      Vi sikre handlens afslutning i sin helhed
                     </p>
                   </div>
                 </div>

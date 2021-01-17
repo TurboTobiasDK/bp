@@ -46,13 +46,13 @@ body {
 
 .landing-hero-billede img {
   z-index: 10;
-  max-width: 479px;
+  max-width: 100%;
   max-height: 598px;
 }
 
 .landing-hero-billede {
   z-index: 10;
-  max-width: 479px;
+  max-width: 100%;
   max-height: 598px;
 }
 
@@ -83,6 +83,14 @@ body {
   color: #1a315d;
 }
 
+.landing-hero-text h3 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a315d;
+  margin-bottom: 0px;
+}
+
 .landing-hero-section {
   margin-bottom: 100px;
 }
@@ -98,7 +106,7 @@ body {
 
 .landing-hero-form button {
   background-color: #319e60;
-  border: none;
+  border: 1px solid #319e60;
   color: #ffffff;
   padding: 10px;
   text-align: center;
@@ -462,13 +470,13 @@ section.landing-ring-op .container {
 
 .advisor-billeder img {
   z-index: 10;
-  max-width: 479px;
+  max-width: 100%;
   max-height: 598px;
 }
 
 .advisor-billeder {
   z-index: 10;
-  max-width: 479px;
+  max-width: 100%;
   max-height: 598px;
 }
 
@@ -501,22 +509,22 @@ section.landing-ring-op .container {
   background-color: #ffffff;
 }
 
-.landing-faq-section h2 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 900;
+.landing-faq-section .landing-faq-heading {
+  text-align: left;
+  font-size: 36px;
+  font-weight: 700;
   color: #1a315d;
+  max-width: 66.66666667%;
 }
 
-.landing-faq-section .subhead {
-  text-align: center;
-  font-size: 26px;
-  color: #3b4f70;
-  max-width: 693px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 6rem;
+.landing-faq-section .landing-faq-subhead {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 100px;
+  max-width: 66.66666667%;
 }
+
 /* accordion */
 .faq-input {
   position: absolute;
@@ -529,35 +537,31 @@ section.landing-ring-op .container {
 .row .col {
   flex: 1;
 }
-.row .col:last-child {
-  margin-left: 1em;
-}
 /* Accordion styles */
 .tabs {
   overflow: hidden;
 }
 .tab {
   width: 100%;
-  color: white;
   overflow: hidden;
-  margin-top: 20px;
 }
 .tab-label {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 20px;
   background: #ffffff;
-  border: 2px solid #f1f1f1;
+  border-top: 1px solid #cdcccc;
   cursor: pointer;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 130%;
-  color: #3b4f70;
 }
+
+.tab:last-child {
+  border-bottom: 1px solid #cdcccc;
+}
+
 .tab-label:hover {
-  background: #506397;
-  color: #ffffff;
+  color: #1a315d;
 }
 .tab-label::after {
   content: "\276F";
@@ -569,25 +573,22 @@ section.landing-ring-op .container {
 .tab-content {
   max-height: 0;
   padding: 0 1em;
-  color: #3b4f70;
   background: white;
   transition: all 0.35s;
-  max-width: 800px;
+  max-width: 66.66666667%;
+  font-size: 16px;
+  font-weight: 400;
 }
 .tab-close {
   display: flex;
   justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
-  background: #2c3e50;
   cursor: pointer;
 }
 .tab-close:hover {
-  background: #1a252f;
+  color: #1a315d;
 }
 .faq-input:checked + .tab-label {
-  background: #506397;
-  color: #ffffff;
+  color: #1a315d;
 }
 .faq-input:checked + .tab-label::after {
   transform: rotate(90deg);
