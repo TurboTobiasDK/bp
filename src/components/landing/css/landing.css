@@ -534,14 +534,12 @@ body {
   }
 }
 
-@media only screen and (min-width: 769px) {
-  .landing-testimonial-head {
-    font-size: 18px;
-    font-weight: 700;
-    color: #1a315d;
-    margin-top: 60px;
-    margin-bottom: 10px;
-  }
+.landing-testimonial-head {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a315d;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
 .landing-testimonial-review-txt {
@@ -651,4 +649,39 @@ body {
 .faq-input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
+}
+
+/* responsive CSS */
+@media (max-width: 1023px) {
+  .container {
+    max-width: 90% !important;
+  }
+
+  section.landing-features-section .container {
+    max-width: 100% !important;
+  }
+
+  .landing-hero-billede {
+    padding-top: 100px;
+  }
+
+  .advisor-billeder,
+  .advisor-text {
+    margin-top: 40px;
+  }
+
+  .landing-three-grid {
+    grid-row-gap: 0px;
+  }
+  .landing-testimonial-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .landing-hero-text {
+    padding-top: 100px;
+  }
+  nav ul {
+    display: none;
+  }
 }
