@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet"
 import handshake from "../../images/SVG/handshake.svg"
 import order from "../../images/SVG/order.svg"
 import denmark from "../../images/SVG/denmark.svg"
+import user from "../../images/SVG/user.svg"
 
 const ServicesPage = props => {
   const { wpgraphql } = props.data
@@ -376,33 +377,111 @@ const ServicesPage = props => {
       </section>
       <section className="landing-testimonial">
         <div className="container">
-          <div className="testimonial-box">
-            <div className="text-section">
-              <span className="grid-img-container">
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .trustpilotLandingpage.ikonBillede.imageFile
-                      .childImageSharp.fluid
-                  }
-                />
-              </span>
-              <h2>Hurtig og effektiv sagsbehandling.</h2>
-              <p>
-                Louise har været klar i mælet, når der har været spørgsmål og
-                har responderet prompte. Kan kun anbefale Louise Birkedal og
-                Bolig-Partner i Slagelse.
-              </p>
-              <p className="navn">Bjaldby, Copenhagen</p>
-            </div>
-            <div className="img-section">
-              <Img
-                fluid={
-                  wpgraphql.landings.edges[0].node.landingACFgraphql
-                    .trustpilotLandingpage.imgTwoColumn.imageFile
-                    .childImageSharp.fluid
-                }
+          <h2 className="landing-testimonial-heading">
+            Det siger vores kunder
+          </h2>
+          <p className="landing-testimonial-subhead">
+            Det er vigtigt for os, at vi yder personlig og nærværende
+            rådgivning, som er tilpasset vores kunders behov. Læs her, hvad
+            vores kunder siger.
+          </p>
+
+          <div className="landing-testimonial-box">
+            <div className="landing-item">
+              <img
+                src={user}
+                className="landing-grid-icon"
+                alt="user ikon"
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
               />
+              <p className="landing-icon-text">
+                Har kun godt at sige omkring dem
+              </p>
+              <p className="small-txt">
+                "Har kun godt at sige omkring dem. Hurtig respons på min
+                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                anbefalinger!"
+                <p className="testimonial-name">Claus Ramussen</p>
+              </p>
+            </div>
+            <div className="landing-item">
+              <img
+                src={user}
+                className="landing-grid-icon"
+                alt="user ikon"
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
+              />
+              <p className="landing-icon-text">
+                Har kun godt at sige omkring dem
+              </p>
+              <p className="small-txt">
+                "Har kun godt at sige omkring dem. Hurtig respons på min
+                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                anbefalinger!"
+                <p className="testimonial-name">Claus Ramussen</p>
+              </p>
+            </div>
+            <div className="landing-item">
+              <img
+                src={user}
+                className="landing-grid-icon"
+                alt="user ikon"
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
+              />
+              <p className="landing-icon-text">
+                Har kun godt at sige omkring dem
+              </p>
+              <p className="small-txt">
+                "Har kun godt at sige omkring dem. Hurtig respons på min
+                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                anbefalinger!"
+                <p className="testimonial-name">Claus Ramussen</p>
+              </p>
+            </div>
+            <div className="landing-item">
+              <img
+                src={user}
+                className="landing-grid-icon"
+                alt="user ikon"
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
+              />
+              <p className="landing-icon-text">
+                Har kun godt at sige omkring dem
+              </p>
+              <p className="small-txt">
+                "Har kun godt at sige omkring dem. Hurtig respons på min
+                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                anbefalinger!"
+                <p className="testimonial-name">Claus Ramussen</p>
+              </p>
             </div>
           </div>
         </div>

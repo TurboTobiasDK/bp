@@ -324,53 +324,85 @@ body {
 }
 
 /* testimonial section */
-.testimonial-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  grid-auto-rows: 1fr;
+.landing-testimonial {
+  height: auto;
+  padding: 50px 0px;
+  background-color: #ffffff;
+  margin-top: 100px;
 }
 
-.testimonial-box h2 {
-  padding: 20px 100px;
-  margin-bottom: 0px;
-  font-style: normal;
-  font-weight: bold;
+.landing-testimonial .landing-testimonial-heading {
+  text-align: left;
   font-size: 36px;
-  line-height: 130%;
-  text-align: center;
-  color: #ffffff;
+  font-weight: 700;
+  color: #1a315d;
+  max-width: 66.66666667%;
 }
 
-.testimonial-box p {
-  padding: 0px 100px;
-  font-style: normal;
+.landing-testimonial .landing-testimonial-subhead {
+  text-align: left;
+  font-size: 18px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  color: #ffffff;
+  margin-bottom: 100px;
+  max-width: 66.66666667%;
 }
 
-.testimonial-box .navn {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 130%;
-  text-align: center;
-  color: #ffffff;
-  opacity: 0.7;
+.landing-icon-grid-section {
+  background-color: #ffffff;
+  padding: 75px 0px;
 }
 
-.text-section {
-  display: flex;
-  flex-direction: column;
+.container.landing-testimonial-box {
+  background: #ffffff;
+  position: relative;
+}
+
+.landing-testimonial-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+  grid-row-gap: 0px;
   align-items: center;
   justify-content: center;
-  background-color: #506397;
-  color: #ffffff;
+  height: auto;
+  margin-bottom: 50px;
+  background-color: #1a315d;
+}
+
+.landing-item {
+  outline: 1px solid #cdcccc;
+  padding: 40px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 769px) {
+  .landing-item:hover {
+    outline: 1px solid #1a315d;
+    transform: translate(-0.5rem, -0.5rem);
+    z-index: 3;
+    transition: all 0.36s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .landing-icon-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a315d;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+}
+
+.small-txt {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.testimonial-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a315d;
 }
 
 /* bliv ringet op sektion */
@@ -507,6 +539,7 @@ section.landing-ring-op .container {
   padding-top: 50px;
   padding-bottom: 100px;
   background-color: #ffffff;
+  margin-top: 100px;
 }
 
 .landing-faq-section .landing-faq-heading {
