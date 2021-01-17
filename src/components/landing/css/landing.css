@@ -323,130 +323,70 @@ body {
   margin-bottom: 50px;
 }
 
-/* testimonial section */
-.landing-testimonial {
-  height: auto;
-  padding: 50px 0px;
-  background-color: #ffffff;
+/* bliv ringet op sektion */
+
+.landing-ring-op {
+  background-color: #1a315d;
+  padding: 50px;
   margin-top: 100px;
 }
 
-.landing-testimonial .landing-testimonial-heading {
-  text-align: left;
-  font-size: 36px;
-  font-weight: 700;
-  color: #1a315d;
-  max-width: 66.66666667%;
-}
-
-.landing-testimonial .landing-testimonial-subhead {
-  text-align: left;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 100px;
-  max-width: 66.66666667%;
-}
-
-.landing-icon-grid-section {
-  background-color: #ffffff;
-  padding: 75px 0px;
-}
-
-.container.landing-testimonial-box {
-  background: #ffffff;
-  position: relative;
-}
-
-.landing-testimonial-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
-  grid-row-gap: 0px;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  margin-bottom: 50px;
-  background-color: #1a315d;
-}
-
-.landing-item {
-  outline: 1px solid #cdcccc;
-  padding: 40px;
-  position: relative;
-  background-color: #ffffff;
-}
-
-@media only screen and (min-width: 769px) {
-  .landing-item:hover {
-    outline: 1px solid #1a315d;
-    transform: translate(-0.5rem, -0.5rem);
-    z-index: 3;
-    transition: all 0.36s cubic-bezier(0.19, 1, 0.22, 1);
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .landing-icon-text {
-    font-size: 18px;
-    font-weight: 700;
-    color: #1a315d;
-    margin-top: 120px;
-    margin-bottom: 20px;
-  }
-}
-
-.small-txt {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.testimonial-name {
-  font-size: 16px;
-  font-weight: 700;
-  color: #1a315d;
-}
-
-/* bliv ringet op sektion */
-.landing-ring-op {
-  height: auto;
-  background-color: #506397;
-  padding: 50px 0px;
-}
-
-section.landing-ring-op .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-  grid-column-gap: 3rem;
-  text-align: center;
-  align-content: center;
-}
-
-@media (min-width: 992px) {
-  section.landing-ring-op .container {
+@media (min-width: 993px) {
+  .landing-ring-op-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
+    grid-column-gap: 8rem;
+    padding: 50px 0px;
+    position: relative;
   }
-}
-
-@media (max-width: 992px) {
-  section.landing-ring-op .testimonial-ring-op {
-    padding-top: 50px;
-  }
-}
-
-.kontakt-ring-op {
-  background: rgba(255, 255, 255, 0.4);
-  padding: 50px;
 }
 
 .kontakt-ring-op h2 {
-  color: #ffffff;
+  text-align: left;
   font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .kontakt-ring-op p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: 400;
   color: #ffffff;
+}
+
+.landing-request-call-form input {
+  background-color: #f0efef;
+  border: 1px solid #f0efef;
+  color: #1a315d;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.landing-request-call-form textarea {
+  background-color: #f0efef;
+  border: 1px solid #f0efef;
+  color: #1a315d;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.landing-request-call-form button {
+  background-color: #319e60;
+  border: 1px solid #319e60;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  cursor: pointer;
+  width: 100%;
 }
 
 .testimonial-ring-op {
@@ -457,32 +397,25 @@ section.landing-ring-op .container {
 }
 
 .testimonial-ring-op h2 {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 130%;
   text-align: center;
   color: #ffffff;
   padding-top: 10px;
 }
 
 .testimonial-ring-op p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 16px;
+  font-weight: 400;
   color: #ffffff;
   text-align: center;
 }
 
 .testimonial-box .trustpilot-navn {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 130%;
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
   color: #ffffff;
-  opacity: 0.8;
   padding-top: 30px;
 }
 
@@ -529,6 +462,90 @@ section.landing-ring-op .container {
 .advisor-text h2 {
   text-align: left;
   font-size: 36px;
+  font-weight: 700;
+  color: #1a315d;
+}
+
+/* testimonial section */
+.landing-testimonial {
+  height: auto;
+  padding: 50px 0px;
+  background-color: #ffffff;
+  margin-top: 100px;
+}
+
+.landing-testimonial .landing-testimonial-heading {
+  text-align: left;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a315d;
+  max-width: 66.66666667%;
+}
+
+.trustpilot-testimonial-img-container {
+  display: block;
+  width: 130px;
+  height: 37px;
+  margin-bottom: 10px;
+}
+
+.landing-testimonial .landing-testimonial-subhead {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 100px;
+  max-width: 66.66666667%;
+}
+
+.container.landing-testimonial-box {
+  background: #ffffff;
+  position: relative;
+}
+
+.landing-testimonial-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 50px;
+  background-color: #1a315d;
+}
+
+.landing-testimonial-review-box {
+  outline: 1px solid #cdcccc;
+  padding: 40px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 769px) {
+  .landing-testimonial-review-box:hover {
+    outline: 1px solid #1a315d;
+    transform: translate(-0.5rem, -0.5rem);
+    z-index: 3;
+    transition: all 0.36s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .landing-testimonial-head {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a315d;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+.landing-testimonial-review-txt {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.testimonial-reviewer-name {
+  font-size: 16px;
   font-weight: 700;
   color: #1a315d;
 }

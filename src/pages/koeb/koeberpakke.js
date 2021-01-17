@@ -265,78 +265,80 @@ const ServicesPage = props => {
 
       <section className="landing-ring-op">
         <div className="container">
-          <div className="kontakt-ring-op">
-            <h2>Få uforpligtende rådgivning om hvilke muligheder du har.</h2>
-            <p>Bliv ringet op af en jurist med speciale i boligkøb.</p>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              className="hero-form"
-              data-netlify-honeypot="bot-field"
-              onSubmit={onSubmitHandler}
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
-              <p>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Dit navn"
-                  value={name}
-                  onChange={e => setName(e.currentTarget.value)}
+          <div className="landing-ring-op-grid">
+            <div className="kontakt-ring-op">
+              <h2>Få uforpligtende rådgivning om hvilke muligheder du har.</h2>
+              <p>Bliv ringet op af en jurist med speciale i boligkøb.</p>
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                className="landing-request-call-form"
+                data-netlify-honeypot="bot-field"
+                onSubmit={onSubmitHandler}
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="bot-field" />
+                <p>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Dit navn"
+                    value={name}
+                    onChange={e => setName(e.currentTarget.value)}
+                  />
+                </p>
+                <p>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Din email"
+                    value={email}
+                    onChange={e => setEmail(e.currentTarget.value)}
+                  />
+                </p>
+                <p>
+                  <input
+                    type="phone"
+                    name="phone"
+                    placeholder="Dit tlf. nr."
+                    value={phone}
+                    onChange={e => setPhone(e.currentTarget.value)}
+                  />
+                </p>
+                <p>
+                  <textarea
+                    name="message"
+                    placeholder="Skriv evt. hvad det handler om"
+                    value={message}
+                    onChange={e => setMessage(e.currentTarget.value)}
+                    rows="5"
+                  ></textarea>
+                </p>
+                <p>
+                  <button type="submit">Bliv ringet op</button>
+                </p>
+              </form>
+            </div>
+            <div className="testimonial-ring-op">
+              <span className="grid-img-container">
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql
+                      .trustpilotLandingpage.ikonBillede.imageFile
+                      .childImageSharp.fluid
+                  }
                 />
-              </p>
+              </span>
+              <h2>Stor tryghed ved køb</h2>
               <p>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Din email"
-                  value={email}
-                  onChange={e => setEmail(e.currentTarget.value)}
-                />
+                Jeg har som førstegangskøber følt mig særdeles tryg igennem hele
+                processen vedr. Mit køb. Rådgiver har sørget for at vejlede mig
+                undervejs og stillet sig til rådighed for alle spørgsmål. Jeg
+                vil give mine bedste anbefalinger!
               </p>
-              <p>
-                <input
-                  type="phone"
-                  name="phone"
-                  placeholder="Dit tlf. nr."
-                  value={phone}
-                  onChange={e => setPhone(e.currentTarget.value)}
-                />
-              </p>
-              <p>
-                <textarea
-                  name="message"
-                  placeholder="Skriv evt. hvad det handler om"
-                  value={message}
-                  onChange={e => setMessage(e.currentTarget.value)}
-                  rows="5"
-                ></textarea>
-              </p>
-              <p>
-                <button type="submit">Bliv ringet op</button>
-              </p>
-            </form>
-          </div>
-          <div className="testimonial-ring-op">
-            <span className="grid-img-container">
-              <Img
-                fluid={
-                  wpgraphql.landings.edges[0].node.landingACFgraphql
-                    .trustpilotLandingpage.ikonBillede.imageFile.childImageSharp
-                    .fluid
-                }
-              />
-            </span>
-            <h2>Stor tryghed ved køb</h2>
-            <p>
-              Jeg har som førstegangskøber følt mig særdeles tryg igennem hele
-              processen vedr. Mit køb. Rådgiver har sørget for at vejlede mig
-              undervejs og stillet sig til rådighed for alle spørgsmål. Jeg vil
-              give mine bedste anbefalinger!
-            </p>
-            <p className="trustpilot-navn">Jannie Christensen</p>
+              <p className="trustpilot-navn">Jannie Christensen</p>
+            </div>
           </div>
         </div>
       </section>
@@ -387,7 +389,7 @@ const ServicesPage = props => {
           </p>
 
           <div className="landing-testimonial-box">
-            <div className="landing-item">
+            <div className="landing-testimonial-review-box">
               <img
                 src={user}
                 className="landing-grid-icon"
@@ -400,18 +402,27 @@ const ServicesPage = props => {
                   right: "40px",
                 }}
               />
-              <p className="landing-icon-text">
+              <p className="landing-testimonial-head">
                 Har kun godt at sige omkring dem
               </p>
-              <p className="small-txt">
+              <span className="trustpilot-testimonial-img-container">
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql
+                      .trustpilotLandingpage.ikonBillede.imageFile
+                      .childImageSharp.fluid
+                  }
+                />
+              </span>
+              <p className="landing-testimonial-review-txt">
                 "Har kun godt at sige omkring dem. Hurtig respons på min
                 henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
                 og særdeles konkurrence dygtige priser. Sender dem mine bedste
                 anbefalinger!"
-                <p className="testimonial-name">Claus Ramussen</p>
+                <p className="testimonial-reviewer-name">Claus Ramussen</p>
               </p>
             </div>
-            <div className="landing-item">
+            <div className="landing-testimonial-review-box">
               <img
                 src={user}
                 className="landing-grid-icon"
@@ -424,18 +435,27 @@ const ServicesPage = props => {
                   right: "40px",
                 }}
               />
-              <p className="landing-icon-text">
+              <p className="landing-testimonial-head">
                 Har kun godt at sige omkring dem
               </p>
-              <p className="small-txt">
+              <span className="trustpilot-testimonial-img-container">
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql
+                      .trustpilotLandingpage.ikonBillede.imageFile
+                      .childImageSharp.fluid
+                  }
+                />
+              </span>
+              <p className="landing-testimonial-review-txt">
                 "Har kun godt at sige omkring dem. Hurtig respons på min
                 henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
                 og særdeles konkurrence dygtige priser. Sender dem mine bedste
                 anbefalinger!"
-                <p className="testimonial-name">Claus Ramussen</p>
+                <p className="testimonial-reviewer-name">Claus Ramussen</p>
               </p>
             </div>
-            <div className="landing-item">
+            <div className="landing-testimonial-review-box">
               <img
                 src={user}
                 className="landing-grid-icon"
@@ -448,18 +468,27 @@ const ServicesPage = props => {
                   right: "40px",
                 }}
               />
-              <p className="landing-icon-text">
+              <p className="landing-testimonial-head">
                 Har kun godt at sige omkring dem
               </p>
-              <p className="small-txt">
+              <span className="trustpilot-testimonial-img-container">
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql
+                      .trustpilotLandingpage.ikonBillede.imageFile
+                      .childImageSharp.fluid
+                  }
+                />
+              </span>
+              <p className="landing-testimonial-review-txt">
                 "Har kun godt at sige omkring dem. Hurtig respons på min
                 henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
                 og særdeles konkurrence dygtige priser. Sender dem mine bedste
                 anbefalinger!"
-                <p className="testimonial-name">Claus Ramussen</p>
+                <p className="testimonial-reviewer-name">Claus Ramussen</p>
               </p>
             </div>
-            <div className="landing-item">
+            <div className="landing-testimonial-review-box">
               <img
                 src={user}
                 className="landing-grid-icon"
@@ -472,15 +501,24 @@ const ServicesPage = props => {
                   right: "40px",
                 }}
               />
-              <p className="landing-icon-text">
+              <p className="landing-testimonial-head">
                 Har kun godt at sige omkring dem
               </p>
-              <p className="small-txt">
+              <span className="trustpilot-testimonial-img-container">
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql
+                      .trustpilotLandingpage.ikonBillede.imageFile
+                      .childImageSharp.fluid
+                  }
+                />
+              </span>
+              <p className="landing-testimonial-review-txt">
                 "Har kun godt at sige omkring dem. Hurtig respons på min
                 henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
                 og særdeles konkurrence dygtige priser. Sender dem mine bedste
                 anbefalinger!"
-                <p className="testimonial-name">Claus Ramussen</p>
+                <p className="testimonial-reviewer-name">Claus Ramussen</p>
               </p>
             </div>
           </div>
