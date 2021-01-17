@@ -130,7 +130,7 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: #1a315d;
-  max-width: 66.66666667%;
+  max-width: 600px;
 }
 
 .landing-icons-section .landing-icons-subhead {
@@ -138,7 +138,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 100px;
-  max-width: 66.66666667%;
+  max-width: 600px;
 }
 
 .landing-icon-grid-section {
@@ -202,7 +202,7 @@ body {
 }
 
 .landing-features-box {
-  max-width: 66.66666667%;
+  max-width: 800px;
   padding: 2rem;
   margin-right: auto;
   margin-left: auto;
@@ -479,7 +479,7 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: #1a315d;
-  max-width: 66.66666667%;
+  max-width: 600px;
 }
 
 .trustpilot-testimonial-img-container {
@@ -494,7 +494,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 100px;
-  max-width: 66.66666667%;
+  max-width: 600px;
 }
 
 .container.landing-testimonial-box {
@@ -564,7 +564,7 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: #1a315d;
-  max-width: 66.66666667%;
+  max-width: 600px;
 }
 
 .landing-faq-section .landing-faq-subhead {
@@ -572,7 +572,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 100px;
-  max-width: 66.66666667%;
+  max-width: 600px;
 }
 
 /* accordion */
@@ -625,7 +625,7 @@ body {
   padding: 0 1em;
   background: white;
   transition: all 0.35s;
-  max-width: 66.66666667%;
+  max-width: 600px;
   font-size: 16px;
   font-weight: 400;
 }
