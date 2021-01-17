@@ -214,6 +214,11 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: #1a315d;
+  max-width: 600px;
+}
+
+.landing-features-cta {
+  max-width: 600px;
 }
 
 .landing-features-section a {

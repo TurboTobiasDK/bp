@@ -201,16 +201,15 @@ const ServicesPage = props => {
                 Bliv ringet op af en af vores erfarne køberrådgivere
               </li>
               <li class="landing-process-three">
-                Sammen gennemgår vi dit behov og først når vi er enige, sender
-                vi dig en ordrebekræftelse.
+                Sammen gennemgår vi dit behov og videreforløb.
               </li>
               <li class="landing-process-four">
-                Du får tilknyttet personlig køberrådgiver som kender din sag og
-                er med fra start til slut.
+                Du får tilknyttet personlig køberrådgiver som er med fra start
+                til slut.
               </li>
               <li class="landing-process-five">
-                BoligPartner står for det juridiske – så kan du og din familie
-                trygt flytte ind i jeres nye bolig.
+                BoligPartner står for det juridiske, så kan du og din familie
+                trygt flytte.
               </li>
             </ol>
             <div className="landing-features-checklist">
@@ -221,8 +220,8 @@ const ServicesPage = props => {
               </p>
               <p className="landing-features-checkmark">
                 <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi fremsender rådgivningsskrivelse, om de særlige forhold ved
-                handlen, du skal være opmærksom på
+                Vi fremsender rådgivningsskrivelse, om forhold du skal være
+                opmærksom på
               </p>
               <p className="landing-features-checkmark">
                 <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
@@ -231,8 +230,7 @@ const ServicesPage = props => {
               </p>
               <p className="landing-features-checkmark">
                 <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi sørger for korrespondancen med handlens parter om godkendelse
-                af handlen
+                Vi sørger for korrespondancen med handlens parter om handlen
               </p>
               <p className="landing-features-checkmark">
                 <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
@@ -251,13 +249,11 @@ const ServicesPage = props => {
                 Vi sikre handlens afslutning i sin helhed
               </p>
             </div>
-            <h2>Skal vi hjælpe dig med en tryg bolighandel?</h2>
-            <p>
-              Book gratis telefon rådgivningsmøde hos os ved at udfylde
-              formularen herunder eller ring tlf.{" "}
-              <a href="tel:70605038">70 60 50 38</a>. Det er selvfølgelig helt
-              uforpligtende. Det koster kun din tid at blive klogere på tryg
-              bolighandel.
+            <h2>Skal vi hjælpe dig med din bolighandel?</h2>
+            <p class="landing-features-cta">
+              Ring tlf. <a href="tel:70605038">70 60 50 38</a> eller udfyld
+              formularen herunder for et gratis uforpligtende rådgivningsmøde om
+              din bolighandel.
             </p>
           </div>
         </div>
@@ -606,8 +602,8 @@ const ServicesPage = props => {
                       <span style={{ color: "#319e60", paddingRight: "5px" }}>
                         ✓
                       </span>
-                      Vi fremsender rådgivningsskrivelse, om de særlige forhold
-                      ved handlen, du skal være opmærksom på
+                      Vi fremsender rådgivningsskrivelse, om forhold du skal
+                      være opmærksom på
                     </p>
                     <p className="landing-features-checkmark">
                       <span style={{ color: "#319e60", paddingRight: "5px" }}>
@@ -621,7 +617,7 @@ const ServicesPage = props => {
                         ✓
                       </span>
                       Vi sørger for korrespondancen med handlens parter om
-                      godkendelse af handlen
+                      handlen
                     </p>
                     <p className="landing-features-checkmark">
                       <span style={{ color: "#319e60", paddingRight: "5px" }}>
