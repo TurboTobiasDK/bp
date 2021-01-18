@@ -325,23 +325,29 @@ const ServicesPage = props => {
               </form>
             </div>
             <div className="testimonial-ring-op">
-              <span className="grid-img-container">
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .trustpilotLandingpage.ikonBillede.imageFile
-                      .childImageSharp.fluid
-                  }
-                />
-              </span>
-              <h2>Stor tryghed ved køb</h2>
-              <p>
-                Jeg har som førstegangskøber følt mig særdeles tryg igennem hele
-                processen vedr. Mit køb. Rådgiver har sørget for at vejlede mig
-                undervejs og stillet sig til rådighed for alle spørgsmål. Jeg
-                vil give mine bedste anbefalinger!
-              </p>
-              <p className="trustpilot-navn">Jannie Christensen</p>
+              <a
+                href="https://dk.trustpilot.com/review/bolig-partner.dk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="grid-img-container">
+                  <Img
+                    fluid={
+                      wpgraphql.landings.edges[0].node.landingACFgraphql
+                        .trustpilotLandingpage.ikonBillede.imageFile
+                        .childImageSharp.fluid
+                    }
+                  />
+                </span>
+                <h2>Stor tryghed ved køb</h2>
+                <p>
+                  Jeg har som førstegangskøber følt mig særdeles tryg igennem
+                  hele processen vedr. Mit køb. Rådgiver har sørget for at
+                  vejlede mig undervejs og stillet sig til rådighed for alle
+                  spørgsmål. Jeg vil give mine bedste anbefalinger!
+                </p>
+                <p className="trustpilot-navn">Jannie Christensen</p>
+              </a>
             </div>
           </div>
         </div>
@@ -393,138 +399,162 @@ const ServicesPage = props => {
           </p>
 
           <div className="landing-testimonial-box">
-            <div className="landing-testimonial-review-box">
-              <img
-                src={user}
-                className="landing-grid-icon"
-                alt="user ikon"
-                style={{
-                  width: "42px",
-                  height: "42px",
-                  position: "absolute",
-                  top: "40px",
-                  right: "40px",
-                }}
-              />
-              <p className="landing-testimonial-head">
-                Har kun godt at sige omkring dem
-              </p>
-              <span className="trustpilot-testimonial-img-container">
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .trustpilotLandingpage.ikonBillede.imageFile
-                      .childImageSharp.fluid
-                  }
+            <a
+              href="https://dk.trustpilot.com/review/bolig-partner.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="landing-testimonial-review-box">
+                <img
+                  src={user}
+                  className="landing-grid-icon"
+                  alt="user ikon"
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    position: "absolute",
+                    top: "40px",
+                    right: "40px",
+                  }}
                 />
-              </span>
-              <p className="landing-testimonial-review-txt">
-                "Har kun godt at sige omkring dem. Hurtig respons på min
-                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                anbefalinger!"
-                <p className="testimonial-reviewer-name">Claus Ramussen</p>
-              </p>
-            </div>
-            <div className="landing-testimonial-review-box">
-              <img
-                src={user}
-                className="landing-grid-icon"
-                alt="user ikon"
-                style={{
-                  width: "42px",
-                  height: "42px",
-                  position: "absolute",
-                  top: "40px",
-                  right: "40px",
-                }}
-              />
-              <p className="landing-testimonial-head">
-                Har kun godt at sige omkring dem
-              </p>
-              <span className="trustpilot-testimonial-img-container">
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .trustpilotLandingpage.ikonBillede.imageFile
-                      .childImageSharp.fluid
-                  }
+                <p className="landing-testimonial-head">
+                  Har kun godt at sige omkring dem
+                </p>
+                <span className="trustpilot-testimonial-img-container">
+                  <Img
+                    fluid={
+                      wpgraphql.landings.edges[0].node.landingACFgraphql
+                        .trustpilotLandingpage.ikonBillede.imageFile
+                        .childImageSharp.fluid
+                    }
+                  />
+                </span>
+                <p className="landing-testimonial-review-txt">
+                  "Har kun godt at sige omkring dem. Hurtig respons på min
+                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                  anbefalinger!"
+                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://dk.trustpilot.com/review/bolig-partner.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="landing-testimonial-review-box">
+                <img
+                  src={user}
+                  className="landing-grid-icon"
+                  alt="user ikon"
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    position: "absolute",
+                    top: "40px",
+                    right: "40px",
+                  }}
                 />
-              </span>
-              <p className="landing-testimonial-review-txt">
-                "Har kun godt at sige omkring dem. Hurtig respons på min
-                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                anbefalinger!"
-                <p className="testimonial-reviewer-name">Claus Ramussen</p>
-              </p>
-            </div>
-            <div className="landing-testimonial-review-box">
-              <img
-                src={user}
-                className="landing-grid-icon"
-                alt="user ikon"
-                style={{
-                  width: "42px",
-                  height: "42px",
-                  position: "absolute",
-                  top: "40px",
-                  right: "40px",
-                }}
-              />
-              <p className="landing-testimonial-head">
-                Har kun godt at sige omkring dem
-              </p>
-              <span className="trustpilot-testimonial-img-container">
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .trustpilotLandingpage.ikonBillede.imageFile
-                      .childImageSharp.fluid
-                  }
+                <p className="landing-testimonial-head">
+                  Har kun godt at sige omkring dem
+                </p>
+                <span className="trustpilot-testimonial-img-container">
+                  <Img
+                    fluid={
+                      wpgraphql.landings.edges[0].node.landingACFgraphql
+                        .trustpilotLandingpage.ikonBillede.imageFile
+                        .childImageSharp.fluid
+                    }
+                  />
+                </span>
+                <p className="landing-testimonial-review-txt">
+                  "Har kun godt at sige omkring dem. Hurtig respons på min
+                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                  anbefalinger!"
+                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://dk.trustpilot.com/review/bolig-partner.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="landing-testimonial-review-box">
+                <img
+                  src={user}
+                  className="landing-grid-icon"
+                  alt="user ikon"
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    position: "absolute",
+                    top: "40px",
+                    right: "40px",
+                  }}
                 />
-              </span>
-              <p className="landing-testimonial-review-txt">
-                "Har kun godt at sige omkring dem. Hurtig respons på min
-                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                anbefalinger!"
-                <p className="testimonial-reviewer-name">Claus Ramussen</p>
-              </p>
-            </div>
-            <div className="landing-testimonial-review-box">
-              <img
-                src={user}
-                className="landing-grid-icon"
-                alt="user ikon"
-                style={{
-                  width: "42px",
-                  height: "42px",
-                  position: "absolute",
-                  top: "40px",
-                  right: "40px",
-                }}
-              />
-              <p className="landing-testimonial-head">
-                Har kun godt at sige omkring dem
-              </p>
-              <span className="trustpilot-testimonial-img-container">
-                <Img
-                  fluid={
-                    wpgraphql.landings.edges[0].node.landingACFgraphql
-                      .trustpilotLandingpage.ikonBillede.imageFile
-                      .childImageSharp.fluid
-                  }
+                <p className="landing-testimonial-head">
+                  Har kun godt at sige omkring dem
+                </p>
+                <span className="trustpilot-testimonial-img-container">
+                  <Img
+                    fluid={
+                      wpgraphql.landings.edges[0].node.landingACFgraphql
+                        .trustpilotLandingpage.ikonBillede.imageFile
+                        .childImageSharp.fluid
+                    }
+                  />
+                </span>
+                <p className="landing-testimonial-review-txt">
+                  "Har kun godt at sige omkring dem. Hurtig respons på min
+                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                  anbefalinger!"
+                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://dk.trustpilot.com/review/bolig-partner.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="landing-testimonial-review-box">
+                <img
+                  src={user}
+                  className="landing-grid-icon"
+                  alt="user ikon"
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    position: "absolute",
+                    top: "40px",
+                    right: "40px",
+                  }}
                 />
-              </span>
-              <p className="landing-testimonial-review-txt">
-                "Har kun godt at sige omkring dem. Hurtig respons på min
-                henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                anbefalinger!"
-                <p className="testimonial-reviewer-name">Claus Ramussen</p>
-              </p>
-            </div>
+                <p className="landing-testimonial-head">
+                  Har kun godt at sige omkring dem
+                </p>
+                <span className="trustpilot-testimonial-img-container">
+                  <Img
+                    fluid={
+                      wpgraphql.landings.edges[0].node.landingACFgraphql
+                        .trustpilotLandingpage.ikonBillede.imageFile
+                        .childImageSharp.fluid
+                    }
+                  />
+                </span>
+                <p className="landing-testimonial-review-txt">
+                  "Har kun godt at sige omkring dem. Hurtig respons på min
+                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
+                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
+                  anbefalinger!"
+                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
