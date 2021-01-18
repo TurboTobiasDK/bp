@@ -63,16 +63,10 @@ const ServicesPage = props => {
               <h1>Få tryg bolighandel til garanteret lav pris</h1>
               <h2>Pris kr. 5.995,- inkl. moms</h2>
               <p>
-                Vi ved, at et køb af en bolig er en stor beslutning, og at det
-                helt naturligt giver mange spørgsmål til processen.
-                <br />
-                <br />
-                <h3>Book uforpligtende rådgivningsmøde med køberrådgiver</h3>
                 Book gratis telefon rådgivningsmøde med en af vores erfarne
                 rådgivere ved at indtaste dit telefonnummer herunder. Det er
                 selvfølgelig helt uforpligtende. Det koster kun din tid at blive
-                klogere på tryg bolighandel. <br />
-                <br />
+                klogere på tryg bolighandel.
                 <form
                   name="contact"
                   method="POST"
@@ -101,6 +95,20 @@ const ServicesPage = props => {
                   </div>
                 </form>
               </p>
+              <span className="hero-img-container">
+                <a
+                  href="https://dk.trustpilot.com/review/bolig-partner.dk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Img
+                    fluid={
+                      wpgraphql.landings.edges[0].node.landingACFgraphql.hero
+                        .trustpilotImage.imageFile.childImageSharp.fluid
+                    }
+                  />
+                </a>
+              </span>
             </div>
             <div className="landing-hero-billede">
               <span>
@@ -522,13 +530,10 @@ const ServicesPage = props => {
       </section>
       <section className="landing-faq-section">
         <div className="container">
-          <h2 className="landing-faq-heading">Oftest stillende spørgsmål</h2>
+          <h2 className="landing-faq-heading">Oftest stillede spørgsmål</h2>
           <p className="landing-faq-subhead">
-            Din rådgiver sikrer, at du ved, præcis hvad du skriver under på. Du
-            undgår ubehagelige overraskelser som fx uenighed om indflytningsdag
-            eller fejl ved boligen, som du ikke kendte til. Det sikrer dig en
-            tryg bolighandel - uden søvnløse nætter og kedelige opringninger fra
-            banken.
+            Vi ved, at et køb af en bolig er en stor beslutning, og at det helt
+            naturligt giver mange spørgsmål til processen.
           </p>
           <div className="row">
             <div className="col">

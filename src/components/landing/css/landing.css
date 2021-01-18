@@ -50,6 +50,12 @@ body {
   max-height: 598px;
 }
 
+.hero-img-container {
+  display: block;
+  width: 196px;
+  height: 37px;
+}
+
 .landing-hero-billede {
   z-index: 10;
   max-width: 100%;
@@ -102,6 +108,7 @@ body {
   padding: 10px;
   font-size: 16px;
   font-weight: 400;
+  margin: 20px 0;
 }
 
 .landing-hero-form button {
@@ -115,6 +122,7 @@ body {
   font-weight: 600;
   text-transform: none;
   cursor: pointer;
+  margin: 20px 0;
 }
 
 /* landing page icons section */
