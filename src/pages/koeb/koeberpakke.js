@@ -78,7 +78,7 @@ const ServicesPage = props => {
                   <input type="hidden" name="form-name" value="contact" />
                   <input type="hidden" name="bot-field" />
                   <button type="submit" style={{ float: "right" }}>
-                    Book uforpligtende møde
+                    Ja tak, kontakt mig
                   </button>
                   <div
                     className="landing-form-phone"
