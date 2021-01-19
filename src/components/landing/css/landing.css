@@ -167,7 +167,7 @@ a {
 
 .landing-three-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
   grid-row-gap: 20px;
   align-items: center;
   justify-content: center;
@@ -178,7 +178,7 @@ a {
 
 .landing-item {
   outline: 1px solid #cdcccc;
-  padding: 40px;
+  padding: 30px;
   position: relative;
   background-color: #ffffff;
 }

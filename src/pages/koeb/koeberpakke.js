@@ -63,10 +63,13 @@ const ServicesPage = props => {
               <h1>Få tryg bolighandel til garanteret lav pris</h1>
               <h2>Pris kr. 5.995,- inkl. moms</h2>
               <p>
-                Book gratis telefon rådgivningsmøde med en af vores erfarne
-                rådgivere ved at indtaste dit telefonnummer herunder. Det er
-                selvfølgelig helt uforpligtende. Det koster kun din tid at blive
-                klogere på tryg bolighandel.
+                Vores erfarne rådgivere sidder klar til at ringe med{" "}
+                <span style={{ fontWeight: 700 }}>
+                  gratis uforpligtende rådgivning
+                </span>
+                , så vi i fællesskab sikre at vi finder den rigtige løsning til
+                dig. Det koster kun din tid at blive klogere på en tryg
+                bolighandel.
                 <form
                   name="contact"
                   method="POST"
@@ -78,7 +81,7 @@ const ServicesPage = props => {
                   <input type="hidden" name="form-name" value="contact" />
                   <input type="hidden" name="bot-field" />
                   <button type="submit" style={{ float: "right" }}>
-                    Ja tak, kontakt mig
+                    Ja tak, ring mig op
                   </button>
                   <div
                     className="landing-form-phone"
@@ -128,15 +131,12 @@ const ServicesPage = props => {
 
       <section className="landing-icons-section">
         <div className="container">
-          <h2 className="landing-icons-heading">
-            Vores kunders foretrukne valg
-          </h2>
+          <h2 className="landing-icons-heading">Dine fordele</h2>
           <p className="landing-icons-subhead">
-            Din rådgiver sikrer, at du ved, præcis hvad du skriver under på. Du
-            undgår ubehagelige overraskelser som fx uenighed om indflytningsdag
-            eller fejl ved boligen, som du ikke kendte til. Det sikrer dig en
-            tryg bolighandel - uden søvnløse nætter og kedelige opringninger fra
-            banken.
+            Hos BoligPartner, får du mere end bare køberrådgivning. Hos
+            BoligParter får du faglig ekspertise og faste attraktive
+            pakkeløsninger med mange fordele frem for uklare timepriser. Derved
+            er du sikker på at undgå ubehagelige overraskelser.
           </p>
 
           <div className="landing-three-grid">
@@ -173,7 +173,7 @@ const ServicesPage = props => {
               />
               <p className="landing-icon-text">Landsdækkende service</p>
               <p className="small-txt">
-                Uanset hvor i landet du ønsker at købe, yder vi rådgivning
+                Uanset hvor i landet du ønsker at bolig, yder vi rådgivning
               </p>
             </div>
             <div className="landing-item">
@@ -189,10 +189,28 @@ const ServicesPage = props => {
                   right: "40px",
                 }}
               />
-              <p className="landing-icon-text">En tryg bolighandel</p>
+              <p className="landing-icon-text">Personlig rådgivning</p>
               <p className="small-txt">
                 Du får en personlig boligrådgiver, som er med dig fra start til
                 slut
+              </p>
+            </div>
+            <div className="landing-item">
+              <img
+                src={handshake}
+                className="landing-grid-icon"
+                alt="handshake icon"
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  position: "absolute",
+                  top: "40px",
+                  right: "40px",
+                }}
+              />
+              <p className="landing-icon-text">Rådgivning til fast lav pris</p>
+              <p className="small-txt">
+                Fuldt overblik over økonomien fremfor uklare timepriser.
               </p>
             </div>
           </div>
