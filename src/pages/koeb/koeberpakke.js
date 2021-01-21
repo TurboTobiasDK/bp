@@ -63,13 +63,11 @@ const ServicesPage = props => {
               <h1>Få tryg bolighandel til garanteret lav pris</h1>
               <h2>Pris kr. 5.995,- inkl. moms</h2>
               <p>
-                Vores erfarne rådgivere sidder klar til at ringe med{" "}
+                Vores erfarne boligrådgivere sidder klar til at ringe med{" "}
                 <span style={{ fontWeight: 700 }}>
-                  gratis uforpligtende rådgivning
-                </span>
-                , så vi i fællesskab sikre at vi finder den rigtige løsning til
-                dig. Det koster kun din tid at blive klogere på en tryg
-                bolighandel.
+                  uforpligtende rådgivning
+                </span> om dine muligheder, så vi i fællesskab sikrer at vi finder den rigtige løsning til
+                dit behov.
                 <form
                   name="contact"
                   method="POST"
@@ -133,10 +131,7 @@ const ServicesPage = props => {
         <div className="container">
           <h2 className="landing-icons-heading">Dine fordele</h2>
           <p className="landing-icons-subhead">
-            Hos BoligPartner, får du mere end bare køberrådgivning. Hos
-            BoligParter får du faglig ekspertise og faste attraktive
-            pakkeløsninger med mange fordele frem for uklare timepriser. Derved
-            er du sikker på at undgå ubehagelige overraskelser.
+            Hos BoligPartner, får du mere end bare køberrådgivning. Hos BoligParter får du faglig ekspertise, hvor én af vores fornemmeste opgaver er at skabe tryghed i processen, bevare overblikket og formidle de juridiske forhold ved din ejendomshandel på en let og forståelig måde.
           </p>
 
           <div className="landing-three-grid">
@@ -155,7 +150,7 @@ const ServicesPage = props => {
               />
               <p className="landing-icon-text">Ingen handel - Intet salær</p>
               <p className="small-txt">
-                Hvis handlen ikke gennemføres, er rådgivningen gratis
+                Hvis handlen ikke gennemføres, skal du heller ikke betale
               </p>
             </div>
             <div className="landing-item">
@@ -173,7 +168,7 @@ const ServicesPage = props => {
               />
               <p className="landing-icon-text">Landsdækkende service</p>
               <p className="small-txt">
-                Uanset hvor i landet du ønsker at bolig, yder vi rådgivning
+                Uanset hvor i landet du ønsker at købe bolig, yder vi rådgivning
               </p>
             </div>
             <div className="landing-item">
@@ -210,7 +205,7 @@ const ServicesPage = props => {
               />
               <p className="landing-icon-text">Rådgivning til fast lav pris</p>
               <p className="small-txt">
-                Fuldt overblik over økonomien fremfor uklare timepriser.
+                Fast pris på boligrådgivning, fremfor uklare timepriser.
               </p>
             </div>
           </div>
@@ -234,7 +229,7 @@ const ServicesPage = props => {
                 til slut.
               </li>
               <li class="landing-process-five">
-                BoligPartner står for det juridiske, så kan du og din familie
+                BoligPartner overtager ansvaret, så kan du og din familie
                 trygt flytte.
               </li>
             </ol>
@@ -278,8 +273,7 @@ const ServicesPage = props => {
             <h2>Skal vi hjælpe dig med din bolighandel?</h2>
             <p class="landing-features-cta">
               Ring tlf. <a href="tel:70605038">70 60 50 38</a> eller udfyld
-              formularen herunder for et gratis uforpligtende rådgivningsmøde om
-              din bolighandel.
+              formularen herunder for en uforpligtende snak om dine muligheder.
             </p>
           </div>
         </div>
@@ -290,7 +284,7 @@ const ServicesPage = props => {
           <div className="landing-ring-op-grid">
             <div className="kontakt-ring-op">
               <h2>Få uforpligtende rådgivning om hvilke muligheder du har.</h2>
-              <p>Bliv ringet op af en jurist med speciale i boligkøb.</p>
+              <p>Bliv ringet op, så vi kan tage en snak om dit behov.</p>
               <form
                 name="contact"
                 method="POST"
@@ -376,20 +370,10 @@ const ServicesPage = props => {
             <div className="advisor-text">
               <h2>Køberrådgivning med fokus på personlig rådgivning</h2>
               <p>
-                Vi ved, at et køb af en bolig er en stor beslutning, og at det
-                helt naturligt giver mange spørgsmål til processen.
-                <br />
-                <br />
                 Hos BoligPartner får du tilknyttet en personlig boligrådgiver
-                som kender din sag. Din rådgiver har svarene og sørger samtidig
-                for alt det formelle, så du i stedet kan glæde dig til at starte
-                et nyt kapitel i din nye bolig. <br />
+                som kender din sag. Din boligrådgiver sikrer dine rettigheder og sørger for de bedste vilkår for dig som køber, så du og din familie i stedet kan glæde jer til at flytte ind i jeres nye bolig.<br />
                 <br />
-                Det sikrer en tryg og nem proces, hvor du altid kan få svar på
-                dine spørgsmål om juraen. Det er din garanti for, at dine
-                køberrettigheder respekteres, og alt foregår efter loven. Lad os
-                stå for papirarbejdet – så kan du og din familie glæde jer til
-                at flytte ind i den nye bolig.
+                Vi tror på, at den direkte kontakt med egen boligrådgiver gennem hele processen er nøglen til tryghed og derved starten på den gode bolighandel.
               </p>
             </div>
             <div className="advisor-billeder">
@@ -411,9 +395,7 @@ const ServicesPage = props => {
             Det siger vores kunder
           </h2>
           <p className="landing-testimonial-subhead">
-            Det er vigtigt for os, at vi yder personlig og nærværende
-            rådgivning, som er tilpasset vores kunders behov. Læs her, hvad
-            vores kunder siger.
+            Når vi skriver personlig rådgivning, så er det fordi vi mener det! Derfor er vi ekstra glade for, at det også er det som vores købere oplever.
           </p>
 
           <div className="landing-testimonial-box">
@@ -436,7 +418,7 @@ const ServicesPage = props => {
                   }}
                 />
                 <p className="landing-testimonial-head">
-                  Har kun godt at sige omkring dem
+                  Super rådgivning og ekspedition
                 </p>
                 <span className="trustpilot-testimonial-img-container">
                   <Img
@@ -448,11 +430,8 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Har kun godt at sige omkring dem. Hurtig respons på min
-                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                  anbefalinger!"
-                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                  "BoligPartner har været en stor hjælp i forbindelse med mit første boligkøb. Rådgiver Sanne Herstal har ydet en fantastisk service og en detaljeret gennemgang af alle dokumenter. Der svares altid hurtigt på mail eller telefon, og hele sagen blev ekspederet super hurtigt."
+                  <p className="testimonial-reviewer-name">Lars Larsen, Roskilde</p>
                 </p>
               </div>
             </a>
@@ -475,7 +454,7 @@ const ServicesPage = props => {
                   }}
                 />
                 <p className="landing-testimonial-head">
-                  Har kun godt at sige omkring dem
+                  God og tryg støtte gennem huskøb
                 </p>
                 <span className="trustpilot-testimonial-img-container">
                   <Img
@@ -487,11 +466,8 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Har kun godt at sige omkring dem. Hurtig respons på min
-                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                  anbefalinger!"
-                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                  "Louise har været rigtig god til, at hjælpe os igennem købet af vores nye hus. Vi har ikke skulle tænke på noget under processen og har følt os trygge i hendes hænder! Man har altid kunne komme i kontakt med Louise, hvis der opstod nogen spørgsmål i sagen. Vi kan varmt anbefale BoligPartner."
+                  <p className="testimonial-reviewer-name">Anne</p>
                 </p>
               </div>
             </a>
@@ -514,7 +490,7 @@ const ServicesPage = props => {
                   }}
                 />
                 <p className="landing-testimonial-head">
-                  Har kun godt at sige omkring dem
+                  Det har været en rigtig positiv proces
                 </p>
                 <span className="trustpilot-testimonial-img-container">
                   <Img
@@ -526,11 +502,8 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Har kun godt at sige omkring dem. Hurtig respons på min
-                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                  anbefalinger!"
-                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                  "Det har været en rigtig positiv proces, hvor BoligPartner har stået til rådighed hele tiden over mail og telefon med svar på alle vores spørgmsål og hjulpet os som førstegangskøbere rigtig godt igennem med alt. Vi har følt os godt dækket ind og trygge hele vejen igennem."
+                  <p className="testimonial-reviewer-name">Anna S., Århus</p>
                 </p>
               </div>
             </a>
@@ -553,7 +526,7 @@ const ServicesPage = props => {
                   }}
                 />
                 <p className="landing-testimonial-head">
-                  Har kun godt at sige omkring dem
+                  Vi er første gangs købere
                 </p>
                 <span className="trustpilot-testimonial-img-container">
                   <Img
@@ -565,11 +538,9 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Har kun godt at sige omkring dem. Hurtig respons på min
-                  henvendelse. Seriøse og brugbare svar retur. Seriøs vejledning
-                  og særdeles konkurrence dygtige priser. Sender dem mine bedste
-                  anbefalinger!"
-                  <p className="testimonial-reviewer-name">Claus Ramussen</p>
+                  "Vi er første gangs købere, og har derfor haft det svært med alle de nye ting vi skulle finde ud af. Men med det bedste hjælp fik vi løst det hurtigt og smertefrit af Louise, fra bolig partner! Rigtig god service!
+                  Vi vil helt sikkert bruge jer igen!"
+                  <p className="testimonial-reviewer-name">Sanne, Slagelse</p>
                 </p>
               </div>
             </a>
@@ -594,20 +565,10 @@ const ServicesPage = props => {
                   </label>
                   <div className="tab-content">
                     <p>
-                      Du skal kun betale 5995 kr. til BoligPartner. Du skal
-                      desuden betale en tinglysningsafgift til staten.
-                      Tinglysningsafgiften ligger på 1660 kr. i fast afgift plus
-                      0,6 % af købesummen – eller af den seneste offentlige
-                      ejendomsvurdering, såfremt denne er højere end købesummen.
+                      Du skal kun betale kr. 5.995 i honorar til BoligPartner, uanset hvor lang tid vi bruger på din sag. Det er din garanti for en fast og fair pris. Du skal som køber desuden betale tinglysningsafgift til staten. Tinglysningsafgiften er delt i to og opgøres som en fast afgift på kr. 1.750 og en variabel afgift på 0,6 % af købesummen.
                     </p>
                     <p>
-                      Bemærk dog, at Køberpakken er beregnet til dig, der køber
-                      en almindelig bolig.
-                    </p>
-                    <p>
-                      Vi vil også meget gerne hjælpe dig med projektkøb, køb af
-                      landbrug, grundkøb eller køb af ideel anpart. Men du skal
-                      dog regne med at betale et tillæg, fordi sagsbehandlingen
+                      Vi vil også meget gerne hjælpe dig med projektkøb, nedlagt landbrug, grundkøb eller køb af ideel anpart. I disse sager vil der være et tillæg på kr. 1.500, fordi sagsbehandlingen
                       er mere omfattende ved disse boligformer.
                     </p>
                   </div>
@@ -621,8 +582,7 @@ const ServicesPage = props => {
                   <div className="tab-content">
                     <p>
                       Nej. Hos BoligPartner arbejder vi med garantien: ”Ingen
-                      handel, intet salær”. Hvis handlen ikke gennemføres, er
-                      rådgivningen gratis. Det gælder, uanset hvor meget tid vi
+                      handel - Intet salær”. Hvis handlen ikke gennemføres, skal du ikke betale. Det gælder, uanset hvor meget tid vi
                       har brugt på jeres sag.
                     </p>
                   </div>
@@ -703,34 +663,31 @@ const ServicesPage = props => {
                   <input type="checkbox" id="chck4" className="faq-input" />
                   <label className="tab-label" htmlFor="chck4">
                     Har jeg samme retssikkerhed hos BoligPartner som hos en
-                    lokal advokat?
+                    traditionel advokat?
                   </label>
                   <div className="tab-content">
                     <p>
-                      Ja. BoligPartner er underlagt de samme regler som enhver
-                      anden advokat. Det vil sige, at vi har tavshedspligt og at
-                      vi har en ansvarsforsikring der dækker vores
-                      advokatrådgivning.
+                      Ja. BoligPartner er fuldt ud rådgiveransvarsforsikret i forhold til den rådgivning vi yder dig som køber, så du er i trygge hænder.
                     </p>
                   </div>
                 </div>
                 <div className="tab">
                   <input type="checkbox" id="chck5" className="faq-input" />
                   <label className="tab-label" htmlFor="chck5">
-                    HER MANGLER JEG ET SPØRGSMÅL
+                    Kan ejendomsmægleren ikke rådgive mig?
                   </label>
                   <div className="tab-content">
-                    <p>lorem ipsum og en masse andet vrøvl</p>
+                    <p>Nej, ejendomsmægleren må kun rådgive og vejlede fra én side af bordet. Det blev i 2015 vedtaget ved lov (loven om fast ejendom), at ejendomsmæglere fremadrettet kun må varetage sælgers interesser. Derfor er det blevet endnu mere vigtigt, at du som køber har egen rådgiver med i handlen fra start til slut.</p>
                   </div>
                 </div>
                 <div className="tab">
                   <input type="checkbox" id="chck6" className="faq-input" />
                   <label className="tab-label" htmlFor="chck6">
-                    Hvordan ved jeg, om Køberpakken egner sig til mig?
+                    Hvordan ved jeg, om jeres boligrådgivning egner sig til mig?
                   </label>
                   <div className="tab-content">
                     <p>
-                      Book gratis telefon rådgivningsmøde hos os! Det er
+                      Lad os tage en snak om dit behov og dine muligheder! Det er
                       selvfølgelig helt uforpligtende. Det koster kun din tid at
                       blive klogere på tryg bolighandel.
                     </p>
