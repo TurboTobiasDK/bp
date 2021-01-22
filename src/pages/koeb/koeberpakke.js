@@ -66,8 +66,9 @@ const ServicesPage = props => {
                 Vores erfarne boligrådgivere sidder klar til at ringe med{" "}
                 <span style={{ fontWeight: 700 }}>
                   uforpligtende rådgivning
-                </span> om dine muligheder, så vi i fællesskab sikrer at vi finder den rigtige løsning til
-                dit behov.
+                </span>{" "}
+                om dine muligheder, så vi i fællesskab sikrer at vi finder den
+                rigtige løsning til dit behov.
                 <form
                   name="contact"
                   method="POST"
@@ -131,7 +132,11 @@ const ServicesPage = props => {
         <div className="container">
           <h2 className="landing-icons-heading">Dine fordele</h2>
           <p className="landing-icons-subhead">
-            Hos BoligPartner, får du mere end bare køberrådgivning. Hos BoligParter får du faglig ekspertise, hvor én af vores fornemmeste opgaver er at skabe tryghed i processen, bevare overblikket og formidle de juridiske forhold ved din ejendomshandel på en let og forståelig måde.
+            Hos BoligPartner, får du mere end bare køberrådgivning. Hos
+            BoligParter får du faglig ekspertise, hvor én af vores fornemmeste
+            opgaver er at skabe tryghed i processen, bevare overblikket og
+            formidle de juridiske forhold ved din ejendomshandel på en let og
+            forståelig måde.
           </p>
 
           <div className="landing-three-grid">
@@ -229,8 +234,8 @@ const ServicesPage = props => {
                 til slut.
               </li>
               <li class="landing-process-five">
-                BoligPartner overtager ansvaret, så kan du og din familie
-                trygt flytte.
+                BoligPartner overtager ansvaret, så kan du og din familie trygt
+                flytte.
               </li>
             </ol>
             <div className="landing-features-checklist">
@@ -283,8 +288,8 @@ const ServicesPage = props => {
         <div className="container">
           <div className="landing-ring-op-grid">
             <div className="kontakt-ring-op">
-              <h2>Få uforpligtende rådgivning om hvilke muligheder du har.</h2>
-              <p>Bliv ringet op, så vi kan tage en snak om dit behov.</p>
+              <h2>Få uforpligtende rådgivning om dine muligheder</h2>
+              <p>Bliv ringet op af en køberrådgiver.</p>
               <form
                 name="contact"
                 method="POST"
@@ -332,7 +337,7 @@ const ServicesPage = props => {
                   ></textarea>
                 </p>
                 <p>
-                  <button type="submit">Bliv ringet op</button>
+                  <button type="submit">Ring mig op</button>
                 </p>
               </form>
             </div>
@@ -371,9 +376,18 @@ const ServicesPage = props => {
               <h2>Køberrådgivning med fokus på personlig rådgivning</h2>
               <p>
                 Hos BoligPartner får du tilknyttet en personlig boligrådgiver
-                som kender din sag. Din boligrådgiver sikrer dine rettigheder og sørger for de bedste vilkår for dig som køber, så du og din familie i stedet kan glæde jer til at flytte ind i jeres nye bolig.<br />
+                som kender din sag. Din boligrådgiver sikrer dine rettigheder og
+                sørger for de bedste vilkår for dig som køber, så du og din
+                familie i stedet kan glæde jer til at flytte ind i jeres nye
+                bolig.
                 <br />
-                Vi tror på, at den direkte kontakt med egen boligrådgiver gennem hele processen er nøglen til tryghed og derved starten på den gode bolighandel.
+                <br />
+                Vi tror på, at den direkte kontakt med egen boligrådgiver gennem
+                hele processen er nøglen til tryghed og derved starten på den
+                gode bolighandel.
+                <br />
+                <br />
+                <button>Mød din køberrådgiver</button>
               </p>
             </div>
             <div className="advisor-billeder">
@@ -395,7 +409,9 @@ const ServicesPage = props => {
             Det siger vores kunder
           </h2>
           <p className="landing-testimonial-subhead">
-            Når vi skriver personlig rådgivning, så er det fordi vi mener det! Derfor er vi ekstra glade for, at det også er det som vores købere oplever.
+            Når vi skriver personlig rådgivning, så er det fordi vi mener det!
+            Derfor er vi ekstra glade for, at det også er det som vores købere
+            oplever.
           </p>
 
           <div className="landing-testimonial-box">
@@ -430,8 +446,14 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "BoligPartner har været en stor hjælp i forbindelse med mit første boligkøb. Rådgiver Sanne Herstal har ydet en fantastisk service og en detaljeret gennemgang af alle dokumenter. Der svares altid hurtigt på mail eller telefon, og hele sagen blev ekspederet super hurtigt."
-                  <p className="testimonial-reviewer-name">Lars Larsen, Roskilde</p>
+                  "BoligPartner har været en stor hjælp i forbindelse med mit
+                  første boligkøb. Rådgiver Sanne Herstal har ydet en fantastisk
+                  service og en detaljeret gennemgang af alle dokumenter. Der
+                  svares altid hurtigt på mail eller telefon, og hele sagen blev
+                  ekspederet super hurtigt."
+                  <p className="testimonial-reviewer-name">
+                    Lars Larsen, Roskilde
+                  </p>
                 </p>
               </div>
             </a>
@@ -466,7 +488,11 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Louise har været rigtig god til, at hjælpe os igennem købet af vores nye hus. Vi har ikke skulle tænke på noget under processen og har følt os trygge i hendes hænder! Man har altid kunne komme i kontakt med Louise, hvis der opstod nogen spørgsmål i sagen. Vi kan varmt anbefale BoligPartner."
+                  "Louise har været rigtig god til, at hjælpe os igennem købet
+                  af vores nye hus. Vi har ikke skulle tænke på noget under
+                  processen og har følt os trygge i hendes hænder! Man har altid
+                  kunne komme i kontakt med Louise, hvis der opstod nogen
+                  spørgsmål i sagen. Vi kan varmt anbefale BoligPartner."
                   <p className="testimonial-reviewer-name">Anne</p>
                 </p>
               </div>
@@ -502,7 +528,11 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Det har været en rigtig positiv proces, hvor BoligPartner har stået til rådighed hele tiden over mail og telefon med svar på alle vores spørgmsål og hjulpet os som førstegangskøbere rigtig godt igennem med alt. Vi har følt os godt dækket ind og trygge hele vejen igennem."
+                  "Det har været en rigtig positiv proces, hvor BoligPartner har
+                  stået til rådighed hele tiden over mail og telefon med svar på
+                  alle vores spørgmsål og hjulpet os som førstegangskøbere
+                  rigtig godt igennem med alt. Vi har følt os godt dækket ind og
+                  trygge hele vejen igennem."
                   <p className="testimonial-reviewer-name">Anna S., Århus</p>
                 </p>
               </div>
@@ -538,8 +568,11 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Vi er første gangs købere, og har derfor haft det svært med alle de nye ting vi skulle finde ud af. Men med det bedste hjælp fik vi løst det hurtigt og smertefrit af Louise, fra bolig partner! Rigtig god service!
-                  Vi vil helt sikkert bruge jer igen!"
+                  "Vi er første gangs købere, og har derfor haft det svært med
+                  alle de nye ting vi skulle finde ud af. Men med det bedste
+                  hjælp fik vi løst det hurtigt og smertefrit af Louise, fra
+                  bolig partner! Rigtig god service! Vi vil helt sikkert bruge
+                  jer igen!"
                   <p className="testimonial-reviewer-name">Sanne, Slagelse</p>
                 </p>
               </div>
@@ -565,11 +598,19 @@ const ServicesPage = props => {
                   </label>
                   <div className="tab-content">
                     <p>
-                      Du skal kun betale kr. 5.995 i honorar til BoligPartner, uanset hvor lang tid vi bruger på din sag. Det er din garanti for en fast og fair pris. Du skal som køber desuden betale tinglysningsafgift til staten. Tinglysningsafgiften er delt i to og opgøres som en fast afgift på kr. 1.750 og en variabel afgift på 0,6 % af købesummen.
+                      Du skal kun betale kr. 5.995 i honorar til BoligPartner,
+                      uanset hvor lang tid vi bruger på din sag. Det er din
+                      garanti for en fast og fair pris. Du skal som køber
+                      desuden betale tinglysningsafgift til staten.
+                      Tinglysningsafgiften er delt i to og opgøres som en fast
+                      afgift på kr. 1.750 og en variabel afgift på 0,6 % af
+                      købesummen.
                     </p>
                     <p>
-                      Vi vil også meget gerne hjælpe dig med projektkøb, nedlagt landbrug, grundkøb eller køb af ideel anpart. I disse sager vil der være et tillæg på kr. 1.500, fordi sagsbehandlingen
-                      er mere omfattende ved disse boligformer.
+                      Vi vil også meget gerne hjælpe dig med projektkøb, nedlagt
+                      landbrug, grundkøb eller køb af ideel anpart. I disse
+                      sager vil der være et tillæg på kr. 1.500, fordi
+                      sagsbehandlingen er mere omfattende ved disse boligformer.
                     </p>
                   </div>
                 </div>
@@ -582,8 +623,9 @@ const ServicesPage = props => {
                   <div className="tab-content">
                     <p>
                       Nej. Hos BoligPartner arbejder vi med garantien: ”Ingen
-                      handel - Intet salær”. Hvis handlen ikke gennemføres, skal du ikke betale. Det gælder, uanset hvor meget tid vi
-                      har brugt på jeres sag.
+                      handel - Intet salær”. Hvis handlen ikke gennemføres, skal
+                      du ikke betale. Det gælder, uanset hvor meget tid vi har
+                      brugt på jeres sag.
                     </p>
                   </div>
                 </div>
@@ -667,7 +709,9 @@ const ServicesPage = props => {
                   </label>
                   <div className="tab-content">
                     <p>
-                      Ja. BoligPartner er fuldt ud rådgiveransvarsforsikret i forhold til den rådgivning vi yder dig som køber, så du er i trygge hænder.
+                      Ja. BoligPartner er fuldt ud rådgiveransvarsforsikret i
+                      forhold til den rådgivning vi yder dig som køber, så du er
+                      i trygge hænder.
                     </p>
                   </div>
                 </div>
@@ -677,7 +721,14 @@ const ServicesPage = props => {
                     Kan ejendomsmægleren ikke rådgive mig?
                   </label>
                   <div className="tab-content">
-                    <p>Nej, ejendomsmægleren må kun rådgive og vejlede fra én side af bordet. Det blev i 2015 vedtaget ved lov (loven om fast ejendom), at ejendomsmæglere fremadrettet kun må varetage sælgers interesser. Derfor er det blevet endnu mere vigtigt, at du som køber har egen rådgiver med i handlen fra start til slut.</p>
+                    <p>
+                      Nej, ejendomsmægleren må kun rådgive og vejlede fra én
+                      side af bordet. Det blev i 2015 vedtaget ved lov (loven om
+                      fast ejendom), at ejendomsmæglere fremadrettet kun må
+                      varetage sælgers interesser. Derfor er det blevet endnu
+                      mere vigtigt, at du som køber har egen rådgiver med i
+                      handlen fra start til slut.
+                    </p>
                   </div>
                 </div>
                 <div className="tab">
@@ -687,13 +738,45 @@ const ServicesPage = props => {
                   </label>
                   <div className="tab-content">
                     <p>
-                      Lad os tage en snak om dit behov og dine muligheder! Det er
-                      selvfølgelig helt uforpligtende. Det koster kun din tid at
-                      blive klogere på tryg bolighandel.
+                      Lad os tage en snak om dit behov og dine muligheder! Det
+                      er selvfølgelig helt uforpligtende. Det koster kun din tid
+                      at blive klogere på tryg bolighandel.
                     </p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="landing-team">
+        <div className="container">
+          <div className="advisor-grid">
+            <div className="advisor-text">
+              <h2>Har du stadig spørgsmål omkring køberrådgivning?</h2>
+              <p>
+                Ønsker du at møde din kommende køberrådgiver eller vil du bare
+                gerne vide lidt mere om vores ydelser, sidder vores erfarne
+                køberrådgivere klar til at svare på dine spørgsmål.
+                <br />
+                <br />
+                Vi tror på, at den direkte kontakt med egen køberrådgiver gennem
+                hele processen er nøglen til tryghed og derved starten på den
+                gode bolighandel.
+                <br />
+                <br />
+                <button>Jeg vil gerne vide mere</button>
+              </p>
+            </div>
+            <div className="advisor-billeder">
+              <span>
+                <Img
+                  fluid={
+                    wpgraphql.landings.edges[0].node.landingACFgraphql
+                      .gridAdvisorImg.img2.imageFile.childImageSharp.fluid
+                  }
+                />
+              </span>
             </div>
           </div>
         </div>
