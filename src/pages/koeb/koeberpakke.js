@@ -704,7 +704,7 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck4" className="faq-input" />
                   <label className="tab-label" htmlFor="chck4">
-                    Har jeg samme retssikkerhed hos BoligPartner som hos en
+                    Har jeg samme sikkerhed hos BoligPartner som hos en
                     traditionel advokat?
                   </label>
                   <div className="tab-content">
@@ -718,7 +718,7 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck5" className="faq-input" />
                   <label className="tab-label" htmlFor="chck5">
-                    Kan ejendomsmægleren ikke rådgive mig?
+                    Kan ejendomsmægleren ikke bare rådgive mig?
                   </label>
                   <div className="tab-content">
                     <p>
