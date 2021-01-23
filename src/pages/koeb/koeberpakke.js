@@ -1,16 +1,16 @@
 import React, { useState } from "react"
 import Layout from "../../components/landing/js/layout"
 import SEO from "../../components/seo"
-import { graphql, Link } from "gatsby"
-import parse from "html-react-parser"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../../components/landing/css/landing.css"
 import { useNavigate } from "@reach/router"
 import { Helmet } from "react-helmet"
 
 import handshake from "../../images/SVG/handshake.svg"
-import order from "../../images/SVG/order.svg"
+import mailphone from "../../images/SVG/mailphone.svg"
 import denmark from "../../images/SVG/denmark.svg"
+import price from "../../images/SVG/price-list.svg"
 import user from "../../images/SVG/user.svg"
 
 const ServicesPage = props => {
@@ -60,15 +60,13 @@ const ServicesPage = props => {
         <div className="container">
           <div className="landing-hero-grid">
             <div className="landing-hero-text">
-              <h1>Undgå utryghed når du skal handle bolig</h1>
+              <h1>Få en tryg og overskuelig bolighandel</h1>
               <h2>Pris kr. 5.995,- inkl. moms</h2>
               <p>
-                Få sikret dine interesser med køberrådgivning. Vores
-                køberrådgivere sidder klar med{" "}
-                <span style={{ fontWeight: 700 }}>
-                  uforpligtende rådgivning
-                </span>{" "}
-                om hvordan du opnår de bedste købsvilkår i din bolighandel.
+                Opnå de bedste købsvilkår i din bolighandel. Vores
+                køberrådgivere sidder til at tage en{" "}
+                <span style={{ fontWeight: 700 }}>uforpligtende snak</span> om
+                dine muligheder.
                 <form
                   name="contact"
                   method="POST"
@@ -142,7 +140,7 @@ const ServicesPage = props => {
           <div className="landing-three-grid">
             <div className="landing-item">
               <img
-                src={order}
+                src={handshake}
                 className="landing-grid-icon"
                 alt="pakke ikon"
                 style={{
@@ -178,12 +176,12 @@ const ServicesPage = props => {
             </div>
             <div className="landing-item">
               <img
-                src={handshake}
+                src={mailphone}
                 className="landing-grid-icon"
-                alt="handshake icon"
+                alt="mail & phone icon"
                 style={{
-                  width: "42px",
-                  height: "42px",
+                  width: "35px",
+                  height: "35px",
                   position: "absolute",
                   top: "40px",
                   right: "40px",
@@ -197,18 +195,18 @@ const ServicesPage = props => {
             </div>
             <div className="landing-item">
               <img
-                src={handshake}
+                src={price}
                 className="landing-grid-icon"
-                alt="handshake icon"
+                alt="pricelist icon"
                 style={{
-                  width: "42px",
-                  height: "42px",
+                  width: "35px",
+                  height: "35px",
                   position: "absolute",
                   top: "40px",
                   right: "40px",
                 }}
               />
-              <p className="landing-icon-text">Rådgivning til fast lav pris</p>
+              <p className="landing-icon-text">Rådgivning til fast pris</p>
               <p className="small-txt">
                 Fast pris på boligrådgivning, fremfor uklare timepriser.
               </p>
@@ -284,11 +282,9 @@ const ServicesPage = props => {
             <div className="kontakt-ring-op">
               <h2>Har du spørgsmål til din bolighandel?</h2>
               <p>
-                Bliv ringet op af køberrådgiver og få{" "}
-                <span style={{ fontWeight: 700 }}>
-                  uforpligtende rådgivning
-                </span>{" "}
-                om hvordan du opnår de bedste købsvilkår i din bolighandel.
+                Bliv ringet op af køberrådgiver og en{" "}
+                <span style={{ fontWeight: 700 }}>uforpligtende snak</span> om
+                dine muligheder.
               </p>
               <form
                 name="contact"
@@ -419,6 +415,7 @@ const ServicesPage = props => {
               href="https://dk.trustpilot.com/review/bolig-partner.dk"
               target="_blank"
               rel="noopener noreferrer"
+              className="tp-link-testimonial-box"
             >
               <div className="landing-testimonial-review-box">
                 <img
@@ -461,6 +458,7 @@ const ServicesPage = props => {
               href="https://dk.trustpilot.com/review/bolig-partner.dk"
               target="_blank"
               rel="noopener noreferrer"
+              className="tp-link-testimonial-box"
             >
               <div className="landing-testimonial-review-box">
                 <img
@@ -488,12 +486,12 @@ const ServicesPage = props => {
                   />
                 </span>
                 <p className="landing-testimonial-review-txt">
-                  "Louise har været rigtig god til, at hjælpe os igennem købet
-                  af vores nye hus. Vi har ikke skulle tænke på noget under
-                  processen og har følt os trygge i hendes hænder! Man har altid
-                  kunne komme i kontakt med Louise, hvis der opstod nogen
-                  spørgsmål i sagen. Vi kan varmt anbefale BoligPartner."
-                  <p className="testimonial-reviewer-name">Anne</p>
+                  "Louise tog os i hånden og guidede os igennem vores første køb
+                  af ejendom (ejerlejlighed) - altid til rådighed og sikrede sig
+                  at vi var trygge gennem hele processen!"
+                  <p className="testimonial-reviewer-name">
+                    Marc Nilsson, København N
+                  </p>
                 </p>
               </div>
             </a>
@@ -501,6 +499,7 @@ const ServicesPage = props => {
               href="https://dk.trustpilot.com/review/bolig-partner.dk"
               target="_blank"
               rel="noopener noreferrer"
+              className="tp-link-testimonial-box"
             >
               <div className="landing-testimonial-review-box">
                 <img
@@ -541,6 +540,7 @@ const ServicesPage = props => {
               href="https://dk.trustpilot.com/review/bolig-partner.dk"
               target="_blank"
               rel="noopener noreferrer"
+              className="tp-link-testimonial-box"
             >
               <div className="landing-testimonial-review-box">
                 <img
@@ -626,21 +626,6 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck3" className="faq-input" />
                   <label className="tab-label" htmlFor="chck3">
-                    Hvad hvis der sker misforståelser, er I ansvarsforsikret?
-                  </label>
-                  <div className="tab-content">
-                    <p>
-                      Ja. BoligPartners rådgivning og sagsbehandling er
-                      ansvarsforsikret via HDI Gerling. Det betyder, at du som
-                      køber er sikret, hvis BoligPartner skulle begå fejl i
-                      behandlingen af din sag. Det er din sikkerhed for en tryg
-                      bolighandel.
-                    </p>
-                  </div>
-                </div>
-                <div className="tab">
-                  <input type="checkbox" id="chck4" className="faq-input" />
-                  <label className="tab-label" htmlFor="chck4">
                     Hvad er forskellen på BoligPartner og en traditionel
                     advokat?
                   </label>
@@ -649,8 +634,8 @@ const ServicesPage = props => {
                   </div>
                 </div>
                 <div className="tab">
-                  <input type="checkbox" id="chck5" className="faq-input" />
-                  <label className="tab-label" htmlFor="chck5">
+                  <input type="checkbox" id="chck4" className="faq-input" />
+                  <label className="tab-label" htmlFor="chck4">
                     Kan ejendomsmægleren ikke bare rådgive mig?
                   </label>
                   <div className="tab-content">
@@ -665,8 +650,8 @@ const ServicesPage = props => {
                   </div>
                 </div>
                 <div className="tab">
-                  <input type="checkbox" id="chck6" className="faq-input" />
-                  <label className="tab-label" htmlFor="chck6">
+                  <input type="checkbox" id="chck5" className="faq-input" />
+                  <label className="tab-label" htmlFor="chck5">
                     Hvilke typer af ejendomme arbejder I med?
                   </label>
                   <div className="tab-content">
@@ -683,14 +668,18 @@ const ServicesPage = props => {
                   </div>
                 </div>
                 <div className="tab">
-                  <input type="checkbox" id="chck7" className="faq-input" />
-                  <label className="tab-label" htmlFor="chck7">
+                  <input type="checkbox" id="chck6" className="faq-input" />
+                  <label className="tab-label" htmlFor="chck6">
                     Yder i rådgivning i mit lokalområde?
                   </label>
                   <div className="tab-content">
                     <p>
-                      Ja, vi arbejder landsdækkende. Uanset hvor i landet du
-                      ønsker at købe bolig, yder vi rådgivning.
+                      Ja. Det har ingen betydning om du handler i øst eller
+                      vest. Juraen er den samme, og vi har erfaring med
+                      bolighandler i hele landet. BoligPartners rådgivning er
+                      landsdækkende og foregår hovedsageligt online, hvor du
+                      altid kan komme i kontakt med din køberrådgiver på enten
+                      mail eller telefon på tidspunkter som passer dig bedst.
                     </p>
                   </div>
                 </div>

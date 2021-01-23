@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import Img from "gatsby-image"
 import phone from "../../../images/SVG/phone.svg"
@@ -24,9 +24,7 @@ export default () => {
           <Img fixed={data.file.childImageSharp.fixed} />
         </div>
         <ul className="landing-menu">
-          <li className="landing-get-call">
-            Bliv ringet op
-          </li>
+          <li className="landing-get-call">Bliv ringet op</li>
           <li>
             <a href="tel:70605038" className="landing-cta">
               <img
