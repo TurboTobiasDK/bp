@@ -21,15 +21,11 @@ export default () => {
     <nav>
       <div className="container">
         <div id="landing-logo">
-          <Link to="/" aria-label="BoligPartner logo">
-            <Img fixed={data.file.childImageSharp.fixed} />
-          </Link>
+          <Img fixed={data.file.childImageSharp.fixed} />
         </div>
         <ul className="landing-menu">
-          <li>
-            <Link to="/kontakt" className="landing-get-call">
-              Bliv ringet op
-            </Link>
+          <li className="landing-get-call">
+            Bliv ringet op
           </li>
           <li>
             <a href="tel:70605038" className="landing-cta">

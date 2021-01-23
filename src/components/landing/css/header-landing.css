@@ -91,14 +91,17 @@ a.landing-cta {
   padding: 5px 20px;
 }
 
-a.landing-get-call {
+.landing-get-call {
   border: 2px solid#319e60;
   color: #319e60;
   margin-right: 5px;
+  padding: 5px 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 @media all and (max-width: 768px) {
-  a.landing-get-call, a.landing-cta {
+  .landing-get-call, a.landing-cta {
     display: none;
   }
 }

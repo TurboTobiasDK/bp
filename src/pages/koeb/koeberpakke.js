@@ -60,7 +60,7 @@ const ServicesPage = props => {
         <div className="container">
           <div className="landing-hero-grid">
             <div className="landing-hero-text">
-              <h1>Undgå utryghed, når du skal handle bolig</h1>
+              <h1>Undgå utryghed når du skal handle bolig</h1>
               <h2>Pris kr. 5.995,- inkl. moms</h2>
               <p>
                 Få sikret dine interesser med køberrådgivning. Vores
@@ -626,11 +626,11 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck3" className="faq-input" />
                   <label className="tab-label" htmlFor="chck3">
-                    Hvad hvis I begår fejl i jeres rådgivning?
+                    Hvad hvis der sker misforståelser, er I ansvarsforsikret?
                   </label>
                   <div className="tab-content">
                     <p>
-                      BoligPartners rådgivning og sagsbehandling er
+                      Ja. BoligPartners rådgivning og sagsbehandling er
                       ansvarsforsikret via HDI Gerling. Det betyder, at du som
                       køber er sikret, hvis BoligPartner skulle begå fejl i
                       behandlingen af din sag. Det er din sikkerhed for en tryg
