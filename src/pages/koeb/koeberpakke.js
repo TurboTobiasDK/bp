@@ -60,15 +60,15 @@ const ServicesPage = props => {
         <div className="container">
           <div className="landing-hero-grid">
             <div className="landing-hero-text">
-              <h1>Få tryg bolighandel til garanteret lav pris</h1>
+              <h1>Undgå utryghed, når du skal handle bolig</h1>
               <h2>Pris kr. 5.995,- inkl. moms</h2>
               <p>
-                Vores erfarne boligrådgivere sidder klar til at ringe med{" "}
+                Få sikret dine interesser med køberrådgivning. Vores
+                køberrådgivere sidder klar med{" "}
                 <span style={{ fontWeight: 700 }}>
                   uforpligtende rådgivning
                 </span>{" "}
-                om dine muligheder, så vi i fællesskab sikrer at vi finder den
-                rigtige løsning til dit behov.
+                om hvordan du opnår de bedste købsvilkår i din bolighandel.
                 <form
                   name="contact"
                   method="POST"
@@ -80,7 +80,7 @@ const ServicesPage = props => {
                   <input type="hidden" name="form-name" value="contact" />
                   <input type="hidden" name="bot-field" />
                   <button type="submit" style={{ float: "right" }}>
-                    Ja tak, ring mig op
+                    Ring mig op
                   </button>
                   <div
                     className="landing-form-phone"
@@ -240,40 +240,34 @@ const ServicesPage = props => {
             </ol>
             <div className="landing-features-checklist">
               <h2>BoligPartner sørger for </h2>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi gennemgår købsaftalen og alle handlens dokumenter
-              </p>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi fremsender rådgivningsskrivelse, om forhold du skal være
-                opmærksom på
-              </p>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi udarbejder godkendelsesskrivelse, med eventuelle forbehold
-                for handlen
-              </p>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi sørger for korrespondancen med handlens parter om handlen
-              </p>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi godkender handlen i sin helhed
-              </p>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi sørger for udarbejdelse eller kontrol af skøde
-              </p>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi sørger for udarbejdelse eller kontrol af refusionsopgørelse
-              </p>
-              <p className="landing-features-checkmark">
-                <span style={{ color: "#319e60", paddingRight: "5px" }}>✓</span>
-                Vi sikre handlens afslutning i sin helhed
-              </p>
+              <ol>
+                <li className="landing-features-checkmark">
+                  Vi gennemgår købsaftalen og alle handlens dokumenter
+                </li>
+                <li className="landing-features-checkmark">
+                  Vi fremsender rådgivningsskrivelse, om forhold du skal være
+                  opmærksom på
+                </li>
+                <li className="landing-features-checkmark">
+                  Vi udarbejder godkendelsesskrivelse, med eventuelle forbehold
+                  for handlen
+                </li>
+                <li className="landing-features-checkmark">
+                  Vi sørger for korrespondancen med handlens parter om handlen
+                </li>
+                <li className="landing-features-checkmark">
+                  Vi godkender handlen i sin helhed
+                </li>
+                <li className="landing-features-checkmark">
+                  Vi sørger for udarbejdelse eller kontrol af skøde
+                </li>
+                <li className="landing-features-checkmark">
+                  Vi sørger for udarbejdelse eller kontrol af refusionsopgørelse
+                </li>
+                <li className="landing-features-checkmark">
+                  Vi sikre handlens afslutning i sin helhed
+                </li>
+              </ol>
             </div>
             <h2>Skal vi hjælpe dig med din bolighandel?</h2>
             <p class="landing-features-cta">
@@ -288,8 +282,14 @@ const ServicesPage = props => {
         <div className="container">
           <div className="landing-ring-op-grid">
             <div className="kontakt-ring-op">
-              <h2>Få uforpligtende rådgivning om dine muligheder</h2>
-              <p>Bliv ringet op af en køberrådgiver.</p>
+              <h2>Har du spørgsmål til din bolighandel?</h2>
+              <p>
+                Bliv ringet op af køberrådgiver og få{" "}
+                <span style={{ fontWeight: 700 }}>
+                  uforpligtende rådgivning
+                </span>{" "}
+                om hvordan du opnår de bedste købsvilkår i din bolighandel.
+              </p>
               <form
                 name="contact"
                 method="POST"
@@ -593,8 +593,8 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck1" className="faq-input" />
                   <label className="tab-label" htmlFor="chck1">
-                    Skal jeg som boligkøber betale mere end BoligPartners
-                    honorar på 5995 kr?
+                    Er prisen på kr 5.995 fast, eller skal jeg betale andre
+                    udgifter udover?
                   </label>
                   <div className="tab-content">
                     <p>
@@ -605,12 +605,6 @@ const ServicesPage = props => {
                       Tinglysningsafgiften er delt i to og opgøres som en fast
                       afgift på kr. 1.750 og en variabel afgift på 0,6 % af
                       købesummen.
-                    </p>
-                    <p>
-                      Vi vil også meget gerne hjælpe dig med projektkøb, nedlagt
-                      landbrug, grundkøb eller køb af ideel anpart. I disse
-                      sager vil der være et tillæg på kr. 1.500, fordi
-                      sagsbehandlingen er mere omfattende ved disse boligformer.
                     </p>
                   </div>
                 </div>
@@ -632,87 +626,26 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck3" className="faq-input" />
                   <label className="tab-label" htmlFor="chck3">
-                    Hvad koster det, hvis jeg vælger at bruge jeres rådgivning?
+                    Hvad hvis I begår fejl i jeres rådgivning?
                   </label>
                   <div className="tab-content">
                     <p>
-                      Til forskel fra traditionelle advokatkontorer, hvor du
-                      betaler pr. timebasis, får du hos BoligPartner i stedet en
-                      fast, lav pris på den ønskede hjælp. Dette giver dig
-                      overblik og tryghed i dit valg.
-                    </p>
-                    <p>
-                      BoligPartners køberpakke koster <b>5.995,- inkl. moms</b>,
-                      hvor du får tryghed igennem hele processen. Vi overtager
-                      ansvaret, bevarer overblikket og sikre jeres interesser i
-                      hele forløbet. Køberpakken indeholder:
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi gennemgår købsaftalen og alle handlens dokumenter
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi fremsender rådgivningsskrivelse, om forhold du skal
-                      være opmærksom på
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi udarbejder godkendelsesskrivelse, med eventuelle
-                      forbehold for handlen
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi sørger for korrespondancen med handlens parter om
-                      handlen
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi godkender handlen i sin helhed
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi sørger for udarbejdelse eller kontrol af skøde
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi sørger for udarbejdelse eller kontrol af
-                      refusionsopgørelse
-                    </p>
-                    <p className="landing-features-checkmark">
-                      <span style={{ color: "#319e60", paddingRight: "5px" }}>
-                        ✓
-                      </span>
-                      Vi sikre handlens afslutning i sin helhed
+                      BoligPartners rådgivning og sagsbehandling er
+                      ansvarsforsikret via HDI Gerling. Det betyder, at du som
+                      køber er sikret, hvis BoligPartner skulle begå fejl i
+                      behandlingen af din sag. Det er din sikkerhed for en tryg
+                      bolighandel.
                     </p>
                   </div>
                 </div>
                 <div className="tab">
                   <input type="checkbox" id="chck4" className="faq-input" />
                   <label className="tab-label" htmlFor="chck4">
-                    Har jeg samme sikkerhed hos BoligPartner som hos en
-                    traditionel advokat?
+                    Hvad er forskellen på BoligPartner og en traditionel
+                    advokat?
                   </label>
                   <div className="tab-content">
-                    <p>
-                      Ja. BoligPartner er fuldt ud rådgiveransvarsforsikret i
-                      forhold til den rådgivning vi yder dig som køber, så du er
-                      i trygge hænder.
-                    </p>
+                    <p>Her mangler jeg et svar.</p>
                   </div>
                 </div>
                 <div className="tab">
@@ -734,13 +667,30 @@ const ServicesPage = props => {
                 <div className="tab">
                   <input type="checkbox" id="chck6" className="faq-input" />
                   <label className="tab-label" htmlFor="chck6">
-                    Hvordan ved jeg, om jeres boligrådgivning egner sig til mig?
+                    Hvilke typer af ejendomme arbejder I med?
                   </label>
                   <div className="tab-content">
                     <p>
-                      Lad os tage en snak om dit behov og dine muligheder! Det
-                      er selvfølgelig helt uforpligtende. Det koster kun din tid
-                      at blive klogere på tryg bolighandel.
+                      BoligPartner arbejder hovedsageligt med almindelige huse,
+                      ejerlejligheder og sommerhuse.
+                    </p>
+                    <p>
+                      Vi vil også meget gerne hjælpe dig med projektkøb, nedlagt
+                      landbrug, grundkøb eller køb af ideel anpart. I disse
+                      sager vil der være et tillæg på kr. 1.500, fordi
+                      sagsbehandlingen er mere omfattende ved disse boligformer.
+                    </p>
+                  </div>
+                </div>
+                <div className="tab">
+                  <input type="checkbox" id="chck7" className="faq-input" />
+                  <label className="tab-label" htmlFor="chck7">
+                    Yder i rådgivning i mit lokalområde?
+                  </label>
+                  <div className="tab-content">
+                    <p>
+                      Ja, vi arbejder landsdækkende. Uanset hvor i landet du
+                      ønsker at købe bolig, yder vi rådgivning.
                     </p>
                   </div>
                 </div>

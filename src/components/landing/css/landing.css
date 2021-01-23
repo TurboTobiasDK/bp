@@ -333,6 +333,30 @@ button {
   border-radius: 50%;
 }
 
+.landing-features-box ol li {
+  list-style: none;
+  padding-left: 40px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.landing-features-checkmark:before {
+  content: "✓";
+  background-color: #319e60;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-left: -40px;
+  margin-right: 18px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
 .landing-features-checkmark {
   font-size: 16px;
   font-weight: 400;
