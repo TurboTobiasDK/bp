@@ -282,7 +282,7 @@ const ServicesPage = props => {
             <div className="kontakt-ring-op">
               <h2>Har du spørgsmål til din bolighandel?</h2>
               <p>
-                Bliv ringet op af køberrådgiver og en{" "}
+                Bliv ringet op af køberrådgiver og få en{" "}
                 <span style={{ fontWeight: 700 }}>uforpligtende snak</span> om
                 dine muligheder.
               </p>
@@ -630,7 +630,22 @@ const ServicesPage = props => {
                     advokat?
                   </label>
                   <div className="tab-content">
-                    <p>Her mangler jeg et svar.</p>
+                    <p>
+                      Ligesom en traditionel advokat er BoligPartner
+                      rådgiveransvarsforsikret. BoligPartners rådgivning og
+                      sagsbehandling er fuldt ansvarsforsikret via HDI Gerling.
+                      Kvalitetsmæssigt er der ingen forskel på den juridisk
+                      rådgivning fra BoligPartner og rådgivning fra advokat i
+                      jeres købsproces.
+                    </p>
+                    <p>
+                      Både BoligPartner og en traditionel advokat kan yde
+                      køberrådgivning om boligkøb og hjælpe dig med at
+                      gennemskue indhold og betydning af dokumenter.
+                      BoligPartner vil ofte yde dig en mere helhedsorienteret
+                      køberrådgivning og hjælpe dig trygt gennem købsprocessen
+                      fra start til slut, eftersom det er det eneste vi laver.
+                    </p>
                   </div>
                 </div>
                 <div className="tab">
