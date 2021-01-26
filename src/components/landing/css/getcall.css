@@ -1,0 +1,68 @@
+/* bliv ringet op sektion */
+
+.getCall-landing {
+    background-color: #ffffff;
+    padding: 50px;
+    margin-top: 100px;
+  }
+  
+  @media (min-width: 993px) {
+    .landing-ring-op-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      grid-column-gap: 8rem;
+      padding: 50px 0px;
+      position: relative;
+      align-items: center;
+    }
+  }
+  
+  .getCall-landing h2 {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 700 !important;
+    color: #1a315d !important;
+  }
+  
+  .kontakt-ring-op p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8) !important;
+  }
+  
+  .landing-request-call-form input {
+    background-color: #f0efef;
+    border: 1px solid #f0efef;
+    color: #1a315d;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+  }
+  
+  .landing-request-call-form textarea {
+    background-color: #f0efef;
+    border: 1px solid #f0efef;
+    color: #1a315d;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+  }
+  
+  .landing-request-call-form button {
+    background-color: #319e60;
+    border: 1px solid #319e60;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  

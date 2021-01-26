@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Layout from "../../components/landing/js/layout"
 import SEO from "../../components/seo"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import "../../components/landing/css/landing.css"
 import { useNavigate } from "@reach/router"
@@ -45,12 +45,6 @@ const ServicesPage = props => {
     })
 
     navigate("/tak-for-din-henvendelse")
-  }
-
-  const [modalState, setModalState] = useState(false)
-
-  const toggleModalState = () => {
-    setModalState(!modalState)
   }
 
   return (
@@ -389,7 +383,7 @@ const ServicesPage = props => {
                 gode bolighandel.
                 <br />
                 <br />
-                <button>Mød din køberrådgiver</button>
+                <button><Link to="/bliv-ringet-op/" style={{ color: '#ffffff' }}>Mød din køberrådgiver</Link></button>
               </p>
             </div>
             <div className="advisor-billeder">
@@ -725,8 +719,8 @@ const ServicesPage = props => {
                 gode bolighandel.
                 <br />
                 <br />
-                <button onClick={() => toggleModalState()}>
-                  Jeg vil gerne vide mere
+                <button><Link to="/bliv-ringet-op/" style={{ color: '#ffffff' }}>
+                  Jeg vil gerne vide mere</Link>
                 </button>
               </p>
             </div>
@@ -743,77 +737,6 @@ const ServicesPage = props => {
           </div>
         </div>
       </section>
-      <div className={`modalBackground modalShowing-${modalState}`}>
-        <div className="modalInner">
-          <div className="modalImage">
-            <img
-              src="https://images.unsplash.com/photo-1586931775007-ad3c3913f216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
-              alt="modal pic"
-            />
-          </div>
-          <div className="modalText">
-            <h2>Bliv ringet op af køberrådgiver</h2>
-            <p>
-              Bliv ringet op af køberrådgiver og få en{" "}
-              <span style={{ fontWeight: 700 }}>uforpligtende snak</span> om
-              dine muligheder.
-            </p>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              className="landing-request-call-form"
-              data-netlify-honeypot="bot-field"
-              onSubmit={onSubmitHandler}
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
-              <p>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Dit navn"
-                  value={name}
-                  onChange={e => setName(e.currentTarget.value)}
-                />
-              </p>
-              <p>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Din email"
-                  value={email}
-                  onChange={e => setEmail(e.currentTarget.value)}
-                />
-              </p>
-              <p>
-                <input
-                  type="phone"
-                  name="phone"
-                  placeholder="Dit tlf. nr."
-                  value={phone}
-                  onChange={e => setPhone(e.currentTarget.value)}
-                />
-              </p>
-              <p>
-                <textarea
-                  name="message"
-                  placeholder="Skriv evt. hvad det handler om"
-                  value={message}
-                  onChange={e => setMessage(e.currentTarget.value)}
-                  rows="5"
-                ></textarea>
-              </p>
-              <p>
-                <button type="submit">Ring mig op</button>
-              </p>
-            </form>
-            <button className="exitButton" onClick={() => toggleModalState()}>
-              X
-            </button>
-          </div>
-        </div>
-      </div>
     </Layout>
   )
 }

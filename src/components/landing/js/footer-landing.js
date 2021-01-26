@@ -19,7 +19,7 @@ export default () => {
           />
         </div>
         <div className="footer-support-info">
-          <p>Tlf. 11 22 33 44 </p>
+          <p>Tlf. 70 60 50 38 </p>
           <p>E-mail info@bolig-partner.dk</p>
           <p>CVR 31 38 92 59</p>
         </div>
