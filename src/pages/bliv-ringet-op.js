@@ -49,7 +49,7 @@ const GetCall = props => {
             <section className="getCall-landing">
                 <div className="container">
                     <div className="landing-ring-op-grid">
-                        <div className="kontakt-ring-op">
+                        <div className="getcall-ring-op">
                             <h2>Bliv ringet op af køberrådgiver</h2>
                             <p>
                                 Bliv ringet op af køberrådgiver og få en{" "}
