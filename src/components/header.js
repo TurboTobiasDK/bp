@@ -87,8 +87,7 @@ export default () => {
                 alt="phone icon"
                 style={{ width: 16, height: 16 }}
                 className="icon"
-              />{" "}
-              70 60 50 38
+              />70 60 50 38
             </a>
           </li>
         </ul>
