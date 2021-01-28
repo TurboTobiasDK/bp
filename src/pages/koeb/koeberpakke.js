@@ -65,7 +65,7 @@ const ServicesPage = props => {
               <p>
                 Opnå de bedste købsvilkår i din bolighandel. Vores
                 køberrådgivere sidder til at tage en{" "}
-                <span style={{ fontWeight: 700 }}>uforpligtende snak</span> om
+                <span style={{ fontWeight: 700 }}> uforpligtende snak</span> om
                 dine muligheder.
                 <form
                   name="contact"
