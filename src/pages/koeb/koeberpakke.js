@@ -60,7 +60,7 @@ const ServicesPage = props => {
         <div className="container">
           <div className="landing-hero-grid">
             <div className="landing-hero-text">
-              <h1>Få en tryg og overskuelig bolighandel</h1>
+              <h1>Få en tryg bolighandel med køberrådgivning</h1>
               <h2>Pris kr. 5.995,- inkl. moms</h2>
               <p>
                 Opnå de bedste købsvilkår i din bolighandel. Vores
