@@ -61,7 +61,7 @@ const ServicesPage = props => {
                     <div className="landing-hero-grid">
                         <div className="landing-hero-text">
                             <h1>Få køberrådgivning med Visma Logbuy</h1>
-                            <h2>Pris kr. <span style={{ textDecoration: 'line-through' }}>5.995</span> 5.095,- inkl. moms <br />med Visma Logbuy</h2>
+                            <h2>Pris kr. <span style={{ textDecoration: 'line-through' }}>5.995</span> 5.095,- inkl. moms</h2>
                             <p>
                                 Opnå de bedste købsvilkår i din bolighandel. Vores
                 køberrådgivere sidder til at tage en{" "}
