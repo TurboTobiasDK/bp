@@ -83,7 +83,7 @@ const IndexPage = props => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Din email"
+                  placeholder="Din E-mail"
                   aria-label="email"
                 />
               </p>
