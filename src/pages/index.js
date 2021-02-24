@@ -7,6 +7,7 @@ import "../components/css/forside.css"
 import handshake from "../images/SVG/handshake.svg"
 import order from "../images/SVG/order.svg"
 import denmark from "../images/SVG/denmark.svg"
+import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 
@@ -15,6 +16,10 @@ const IndexPage = props => {
 
   return (
     <Layout>
+      <SEO
+        title={wpgraphql.pages.edges[0].node.seo.title}
+        description={wpgraphql.pages.edges[0].node.seo.metaDesc}
+      />
       <section className="hero">
         <Img
           fluid={
@@ -373,6 +378,10 @@ export const query = graphql`
       pages(where: { id: 91 }) {
         edges {
           node {
+            seo {
+              metaDesc
+              title
+            }
             undersideACFgraphql {
               mainText
               overskriftIkonMidt
